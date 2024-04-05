@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters</title>
-    <link rel="stylesheet" type="text/css" href="css/application.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
 </head>
 
 <body>
 
+<div id="page-wrapper" class="reusable-wrapper">
+
     <!-- Header -->
-    <header>
+    <header id="page-header">
 
         <!-- Logo -->
         <img src="images\f-logo.webp"></img>
@@ -54,18 +57,18 @@
     </header>
 
     <!-- Main Section -->
-    <main>
+    <main id="page-main">
 
         <!-- Carousel Banner Thingy -->
-        <div>
+        <section>
             <!-- TODO: For now, just add one image and overlaying text and button -->
             <h1>The East of England's Leading Technology Company</h1>
             <h2>Performance-driven digital and technology services with complete transparency.</h2>
             <a href="#">WHY CHOOSE US?</a>
-        </div>
+        </section>
 
         <!-- Our Services (Cards) -->
-        <div>
+        <section>
             <div>
                 <h2>Our Services</h2>
                 <h3>
@@ -90,41 +93,44 @@
 
             </div>
 
+            <!-- Logo Roller -->
+            <div>
+                
+            </div>
 
-        </div>
-        
-        <!-- Logo Roller -->
-        <div>
-            
-        </div>
+        </section>
 
-        <!-- Welcome to Netmatters (About us, Testimonials, Reviews) -->
-        <h2>Welcome To Netmatters</h2>
-        <p>Netmatters is a leading Bespoke Software, IT Support, and Digital Marketing company based in the East of England with offices in London, Cambridge, Wymondham, and Great Yarmouth.</p>
-        <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.</p>
-        <p>We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
-        <a href="#">Why Choose Us?</a>
-        <a href="#">Our Culture</a>
+        <!-- About Us -->
+        <section>
+            <div>
+                <h2>Welcome To Netmatters</h2>
+                <p>Netmatters is a leading Bespoke Software, IT Support, and Digital Marketing company based in the East of England with offices in London, Cambridge, Wymondham, and Great Yarmouth.</p>
+                <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.</p>
+                <p>We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
+                <a href="#">Why Choose Us?</a>
+                <a href="#">Our Culture</a>
+            </div>
 
-
-        <div>
-            <h2>What Our Clients Think</h2>
-            <blockquote>
-                Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!
-                <footer>
-                    <p>Eleanor Bishop, Head of Marketing - </p>
-                    <cite>
-                        <a href="#">
-                        Ashcroft Partnership LLP</a>
-                    </cite>
-                </footer>
-            </blockquote> 
-        </div>
-        <a href="#">Google Reviews</a>
-        <a href="#">Trustpilot Reviews</a>
+            <div>
+                <h2>What Our Clients Think</h2>
+                <blockquote>
+                    Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!
+                    <footer>
+                        <p>Eleanor Bishop, Head of Marketing - </p>
+                        <cite>
+                            <a href="#">
+                            Ashcroft Partnership LLP</a>
+                        </cite>
+                    </footer>
+                </blockquote> 
+            </div>
+            <a href="#">Google Reviews</a>
+            <a href="#">Trustpilot Reviews</a>
+        </section>
 
         <!-- Latest News -->
-        <div> 
+        <section> 
+
             <header>
                 <h2>Latest News</h2>
                 <a href="#">View All</a>
@@ -174,55 +180,95 @@
                 </div>
             </footer>
 
+        </section>
 
-
-
-
-        </div>
-
-
-        <!-- Sign up to Newsletter Container -->
-        <div>
+        <!-- Email Newsletter -->
+        <section>
             <form>
-                <header>Email Newsletter Sign-Up</header>
-                
-                <a href="#"></a>
+                <!-- Header -->
+                <div>
+                    <h2>Email Newsletter Sign-Up</h2>
+                </div>
+
+                <!-- Name Input Box -->
+                <div>
+                    <label class="form__label--hidden" for="newsletter_name">Your Name *</label> 
+                    <input class="form__input" type="text" id="newsletter_name">
+                </div>
+
+                <!-- Email Input Box -->
+                <div>
+                    <label class="form__label--hidden" for="newsletter_email">Your Email *</label> 
+                    <input class="form__input" type="email" id="newsletter_email">
+                </div>
+
+                <!-- Checkbox and Privacy Policy -->
+                <div>
+                    <!--
+                        TODO: You cannot style the default checkbox with CSS.
+                        Instead, display: none; the checkbox and use CSS to create a new one until it looks like the Netmatters one
+                    -->
+                    <input type="checkbox" id="newsletter_checkbox">
+                    <label for="newsletter_checkbox">
+                        <p>Please tick this box if you wish to receive marketing information from us. Please see our 
+                            <a href="#">Privacy Policy</a>
+                            for more information on how we keep your data safe
+                        </p>
+                    </label>
+                    
+                </div>
+
+                <!-- Subscribe Button -->
+                <div>
+                    <input type="submit" value="Subscribe">
+                </div>
 
             </form>
-        </div>
+
+        </section>
 
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer id="page-footer">
 
-        <!-- Logo -->
-        <img src="images\f-logo.webp"></img>
-
-        <!-- Social Media Icons -->
-        <h3>FOLLOW US ON:</h3>
+        <!-- Company Info -->
         <div>
-            <a href="#">Facebook</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">X</a>
-            <a href="#">Instagram</a>
+            <!-- Logo -->
+            <img src="images\f-logo.webp"></img>
+
+            <!-- Social Media Icons -->
+            
+            <div class="footer__socials">
+                <h3>FOLLOW US ON:</h3>
+                
+                <!-- TODO: These obviously need to be Icons rather than placeholder text -->
+                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">X</a>
+                <a href="#">Instagram</a>
+            </div>
         </div>
 
         <!-- Various Links -->
-        <div>
-            <ul>
-                <h3>ABOUT NETMATTERS</h3>
-                <li>News</li>
-                <li>Our Careers</li>
-                <li>Our Team
-                <li>Contact Us</li>
-                <li>Privacy Policy</li>
-                <li>Cookie Policy</li>
-                <li>Data Retention & Disposal Policy</li>
-                <li>CCTV Policy</li>
-                <li>Environmental Policy</li>
-                <li>Terms & Conditions</li>
-            </ul>
+        <div class="footer__links">
+            
+            <div>
+                <ul>
+                    <h3>ABOUT NETMATTERS</h3>
+                    <li>News</li>
+                    <li>Our Careers</li>
+                    <li>Our Team
+                    <li>Contact Us</li>
+                    <li>Privacy Policy</li>
+                    <li>Cookie Policy</li>
+                    <li>Data Retention & Disposal Policy</li>
+                    <li>CCTV Policy</li>
+                    <li>Environmental Policy</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+            </div>
+
 
             <ul>
                 <h3>OUR SERVICES</h3>
@@ -256,13 +302,15 @@
             </ul>
         </div>
 
-        <div>
+        <div class="footer__copyright">
             <p>© Copyright Netmatters 2024. All rights reserved.</p>
             <a>Sitemap</a>
         </div>
         
 
     </footer>
+
+</div>
 
 </body>
 
