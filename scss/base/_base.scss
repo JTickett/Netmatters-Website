@@ -6,7 +6,16 @@
 //  TODO: Make a container class
 
 .reusable-wrapper {
-    margin: 0px 15px; 
+    margin: 0px 0px; 
+    margin-left: 10px;
+    text-align: left;
 }
 
+body {
+    font-family: Poppins, sans-serif;
+}
 
+li {
+    list-style-type: none;
+    //color: tomato;
+}

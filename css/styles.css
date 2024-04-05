@@ -1,3 +1,32 @@
+/* line 8, ../Assessment1/Netmatters-Website/scss/base/_base.scss */
+.reusable-wrapper {
+  margin: 0px 0px;
+  margin-left: 10px;
+  text-align: left;
+}
 
+/* line 14, ../Assessment1/Netmatters-Website/scss/base/_base.scss */
+body {
+  font-family: Poppins, sans-serif;
+}
 
-/*# sourceMappingURL=application.css.map */
+/* line 18, ../Assessment1/Netmatters-Website/scss/base/_base.scss */
+li {
+  list-style-type: none;
+}
+
+/* line 6, ../Assessment1/Netmatters-Website/scss/modules/_footer.scss */
+.footer {
+  display: grid;
+  background-color: #323544;
+  color: #ffffff;
+}
+
+/* line 19, ../Assessment1/Netmatters-Website/scss/modules/_footer.scss */
+ul {
+  margin: 0px 0px;
+  border: 0px 0px;
+  padding-inline-start: 0px;
+}
+
+/*# sourceMappingURL=styles.css.map */
