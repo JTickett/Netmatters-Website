@@ -2,22 +2,75 @@
 // Footer Styles Partial
 // =====================================================
 
-
-.footer {
-
-    display: grid;
-
-
-    background-color: $footer-background-color;
-    color: $white;
-
-    
-
-}
-
+// Elements
 
 ul {
     margin: 0px 0px;
     border: 0px 0px;
     padding-inline-start: 0px;
+}
+
+
+h4 {
+    font-weight: 400;
+}
+
+li {
+    font-size: 13px;
+    line-height: 22px;
+}
+
+a{
+    text-decoration: none;
+    color: $footer-text-color;
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+// Classes
+
+.footer {
+
+    width: 100%;
+    //display: grid;
+    justify-content: left;
+    padding: 0px 15px;
+    background-color: $footer-background-color;
+    color: $white;
+    letter-spacing: 0.4px;
+}
+
+.footer__logo{
+    width: 320px;
+    height: auto;
+    padding-top: 27px;
+}
+
+.footer__license {
+    width: 100%;
+    background-color: $footer-bottom-color;
+    padding: 5px 20px;
+    font-size: 13px;
+}
+
+.footer__socials__icon{
+
+    //display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: red;
+    background-color: $footer-bottom-color;
+    border-color: green;
+    border-style: inset;
+
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    line-height: 1.5;
+    
 }

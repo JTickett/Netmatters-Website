@@ -1,32 +1,75 @@
-/* line 8, ../Assessment1/Netmatters-Website/scss/base/_base.scss */
 .reusable-wrapper {
   margin: 0px 0px;
-  margin-left: 10px;
   text-align: left;
 }
 
-/* line 14, ../Assessment1/Netmatters-Website/scss/base/_base.scss */
 body {
   font-family: Poppins, sans-serif;
 }
 
-/* line 18, ../Assessment1/Netmatters-Website/scss/base/_base.scss */
 li {
   list-style-type: none;
 }
 
-/* line 6, ../Assessment1/Netmatters-Website/scss/modules/_footer.scss */
-.footer {
-  display: grid;
-  background-color: #323544;
-  color: #ffffff;
-}
-
-/* line 19, ../Assessment1/Netmatters-Website/scss/modules/_footer.scss */
 ul {
   margin: 0px 0px;
   border: 0px 0px;
   padding-inline-start: 0px;
+}
+
+h4 {
+  font-weight: 400;
+}
+
+li {
+  font-size: 13px;
+  line-height: 22px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  width: 100%;
+  justify-content: left;
+  padding: 0px 15px;
+  background-color: #323544;
+  color: #ffffff;
+  letter-spacing: 0.4px;
+}
+
+.footer__logo {
+  width: 320px;
+  height: auto;
+  padding-top: 27px;
+}
+
+.footer__license {
+  width: 100%;
+  background-color: #212330;
+  padding: 5px 20px;
+  font-size: 13px;
+}
+
+.footer__socials__icon {
+  justify-content: center;
+  align-items: center;
+  color: red;
+  background-color: #212330;
+  border-color: green;
+  border-style: inset;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  line-height: 1.5;
 }
 
 /*# sourceMappingURL=styles.css.map */
