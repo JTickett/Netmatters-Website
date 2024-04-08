@@ -1,0 +1,32 @@
+// =====================================================
+// Our Services Styles Partial
+// =====================================================
+
+// This should contain cards in a grid/flex that adapt to screen size
+// Beneath the cards is a rolling carousel of images showing Logos/Awards
+
+#services {
+
+
+
+}
+
+#services-card-wrapper {
+    display: grid;
+    text-align: center;
+}
+
+.services__card {
+    display: grid;
+    background-color: aqua;
+
+    align-self: center;
+
+    border: 1px solid red;
+    border-radius: 10px;
+
+    padding: 20px;
+    margin: 30px 20px 20px;
+
+    text-decoration: none;
+}

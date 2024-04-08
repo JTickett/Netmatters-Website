@@ -29,18 +29,18 @@
         <img src="images\f-logo.webp"></img>
 
         <!-- Support & Contact Buttons (or Telephone in Mobile View) -->
-        <button>Support</button>
-        <button>Contact</button>
+        <button class="button">Support</button>
+        <button class="button">Contact</button>
 
         <!-- Search Bar (Mobile *and* Desktop version) -->
         <form>
             <input type="text" placeholder="Search..">
-            <button type="submit">Search</button>
+            <button class="button" type="submit">Search</button>
         </form>
 
-        <form>
+        <form class="hidden">
             <input type="text" placeholder="Search..">
-            <button type="submit">Search</button>
+            <button class="button" type="submit">Search</button>
         </form>
         
         <!-- Burger Icon -->
@@ -51,7 +51,7 @@
         </a>
 
         <!-- Coloured Nav Bar (7 x Links) -->
-        <nav>
+        <nav class="hidden">
             <ul>
                 <li>Bespoke Software</li>
                 <li>IT Support</li>
@@ -69,44 +69,83 @@
     <main id="page-main">
 
         <!-- Carousel Banner Thingy -->
-        <section id="banner">
-            <!-- TODO: For now, just add one image and overlaying text and button -->
-            <!-- <img src="images/home-YLei.webp"> -->
+        <section class="centered" id="banner">
             <h1>The East of England's Leading Technology Company</h1>
-            <h2>Performance-driven digital and technology services with complete transparency.</h2>
+            <p>Performance-driven digital and technology services with complete transparency.</p>
             <a class="button" href="#">Why Choose Us?</a>
         </section>
 
         <!-- Our Services (Cards) -->
         <section id="services">
-            <div>
+            <header>
                 <h2>Our Services</h2>
-                <h3>
-                    <!-- TODO: Add arrow icon -->
-                    <a href="#">View Our Work</a>
+                <h3 class="hidden">
+                    <a href="#">View Our Work
+                        <em>&#8594;</em>
+                        <span class="icon-arrow-right2"></span>
+                    </a>
                 </h3>
-            </div>
+            </header>
             
             <!-- Wrapper for Cards -->
-            <div>
+            <main id="services-card-wrapper" class="services_card_wrapper">
+                <div>
+                    <a class="services__card" href="#" id="card1">
+                        <div>
+                            <!-- Icon -->
+                        </div>
+                        <h3>Bespoke Software</h3>
+                        <p>
+                            Bespoke software solutions for all your business needs including integrations and reporting.
+                        </p>
+                        <span class="button" href="#">
+                            Read More
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a class="services__card" href="#" id="card2">
+                        <div>
+                            <!-- Icon -->
+                        </div>
+                        <h3>IT Support</h3>
+                        <p>
+                            Fully managed IT support and consultancy packages tailored to meet your exact business needs.
+                        </p>
+                        <span class="button" href="#">
+                            Read More
+                        </span>
+                    </a>
+                </div>
+                <div>
+                    <a class="services__card" href="#" id="card3">
+                        <div>
+                            <!-- Icon -->
+                        </div>
+                        <h3>Digital Marketing</h3>
+                        <p>
+                            Driven brand awareness & ROI through creative digital marketing campaigns.
+                        </p>
+                        <span class="button" href="#">
+                            Read More
+                        </span>
+                    </a>
+                </div>
 
-                <a href="#" id="card1">
-                    <div>
-                        <!-- Icon -->
-                    </div>
-                    <h3>Bespoke Software</h3>
-                    <p>Bespoke software solutions for all your business needs including integrations and reporting.</p>
-                    <a class="button" href="#">Button</a>
-                </a>
+                <h3>
+                    <a href="#">View Our Work
+                        <em>&#8594;</em>
+                    </a>
+                </h3>
 
                 <!-- TODO: Rest of cards go here once design settled -->
 
-            </div>
+            </main>
 
             <!-- Logo Roller -->
-            <div>
+            <footer>
                 
-            </div>
+            </footer>
 
         </section>
 
@@ -273,7 +312,7 @@
                 
                 <!-- TODO: These obviously need to be Icons rather than placeholder text -->
                 <a href="#">
-                    <div class="footer__socials__icon" id="footer_social_fb">
+                    <div class="footer__socials__icon icon-instagram" id="footer_social_fb">
                         F
                     </div>
                 </a>
