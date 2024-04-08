@@ -69,15 +69,16 @@
     <main id="page-main">
 
         <!-- Carousel Banner Thingy -->
-        <section>
+        <section id="banner">
             <!-- TODO: For now, just add one image and overlaying text and button -->
+            <!-- <img src="images/home-YLei.webp"> -->
             <h1>The East of England's Leading Technology Company</h1>
             <h2>Performance-driven digital and technology services with complete transparency.</h2>
-            <a href="#">WHY CHOOSE US?</a>
+            <a class="button" href="#">Why Choose Us?</a>
         </section>
 
         <!-- Our Services (Cards) -->
-        <section>
+        <section id="services">
             <div>
                 <h2>Our Services</h2>
                 <h3>
@@ -95,7 +96,7 @@
                     </div>
                     <h3>Bespoke Software</h3>
                     <p>Bespoke software solutions for all your business needs including integrations and reporting.</p>
-                    <a href="#">Button</a>
+                    <a class="button" href="#">Button</a>
                 </a>
 
                 <!-- TODO: Rest of cards go here once design settled -->
@@ -110,14 +111,25 @@
         </section>
 
         <!-- About Us -->
-        <section>
-            <div>
+        <section class="about">
+            <div class="">
                 <h2>Welcome To Netmatters</h2>
-                <p>Netmatters is a leading Bespoke Software, IT Support, and Digital Marketing company based in the East of England with offices in London, Cambridge, Wymondham, and Great Yarmouth.</p>
+                <p>
+                    Netmatters is a leading 
+                    <a href="#">Bespoke Software</a>, 
+                    <a href="#">IT Support</a>, and 
+                    <a href="#">Digital Marketing</a>
+                    company based in the East of England with offices in 
+                    <a href="#">London</a>, 
+                    <a href="#">Cambridge</a>, 
+                    <a href="#">Wymondham</a>, and 
+                    <a href="#">Great Yarmouth</a>.
+                </p>
+                    
                 <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.</p>
                 <p>We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
-                <a href="#">Why Choose Us?</a>
-                <a href="#">Our Culture</a>
+                <a class="button" href="#">Why Choose Us?</a>
+                <a class="button" href="#">Our Culture</a>
             </div>
 
             <div>
@@ -133,12 +145,12 @@
                     </footer>
                 </blockquote> 
             </div>
-            <a href="#">Google Reviews</a>
-            <a href="#">Trustpilot Reviews</a>
+            <a class="button" href="#">Google Reviews</a>
+            <a class="button" href="#">Trustpilot Reviews</a>
         </section>
 
         <!-- Latest News -->
-        <section> 
+        <section id="news"> 
 
             <header>
                 <h2>Latest News</h2>
@@ -163,7 +175,7 @@
                     <div>
                         <h3>1st Line Technician</h3>
                         <p>Salary Range £25k-£29k + Bonuses + Pension Hours 40 hours per week, Monday - Friday Location Wymondh...</p>
-                        <a href="#">Read More</a>
+                        <a class="button" href="#">Read More</a>
                         <!-- User Container -->
                         <div>
                             <img src="images/bethany-shakespeare-F6Iu.webp">
@@ -192,48 +204,56 @@
         </section>
 
         <!-- Email Newsletter -->
-        <section>
-            <form>
-                <!-- Header -->
-                <div>
-                    <h2>Email Newsletter Sign-Up</h2>
-                </div>
+        <section id="email">
+            <div class="email">
+                <form>
+                    <!-- Header -->
+                    <div>
+                        <h2 class="email__header">Email Newsletter Sign-Up</h2>
+                    </div>
 
-                <!-- Name Input Box -->
-                <div>
-                    <label class="form__label--hidden" for="newsletter_name">Your Name *</label> 
-                    <input class="form__input" type="text" id="newsletter_name">
-                </div>
+                    <!-- Name Input Box -->
+                    <div>
+                        <label class="form__label--hidden email__text" for="newsletter_name">
+                            Your Name *
+                        </label><br> 
+                        <input class="form__input email__text" type="text" id="newsletter_name">
+                    </div>
 
-                <!-- Email Input Box -->
-                <div>
-                    <label class="form__label--hidden" for="newsletter_email">Your Email *</label> 
-                    <input class="form__input" type="email" id="newsletter_email">
-                </div>
+                    <!-- Email Input Box -->
+                    <div>
+                        <label class="form__label--hidden email__text" for="newsletter_email">
+                            Your Email *
+                        </label><br> 
+                        <input class="form__input email__text" type="email" id="newsletter_email">
+                    </div>
 
-                <!-- Checkbox and Privacy Policy -->
-                <div>
-                    <!--
-                        TODO: You cannot style the default checkbox with CSS.
-                        Instead, display: none; the checkbox and use CSS to create a new one until it looks like the Netmatters one
-                    -->
-                    <input type="checkbox" id="newsletter_checkbox">
-                    <label for="newsletter_checkbox">
-                        <p>Please tick this box if you wish to receive marketing information from us. Please see our 
-                            <a href="#">Privacy Policy</a>
-                            for more information on how we keep your data safe
-                        </p>
-                    </label>
-                    
-                </div>
+                    <!-- Checkbox and Privacy Policy -->
+                    <div>
+                        <!--
+                            TODO: You cannot style the default checkbox with CSS.
+                            Instead, display: none; the checkbox and use CSS to create a new one until it looks like the Netmatters one
+                        -->
+                        <input type="checkbox" id="email_checkbox">
+                        <label for="email_checkbox">
+                            <p class="email__text">
+                                Please tick this box if you wish to receive marketing information from us. Please see our 
+                                <a class="email__text" href="#">
+                                    Privacy Policy
+                                </a>
+                                for more information on how we keep your data safe
+                            </p>
+                        </label>
+                        
+                    </div>
 
-                <!-- Subscribe Button -->
-                <div>
-                    <input type="submit" value="Subscribe">
-                </div>
+                    <!-- Subscribe Button -->
+                    <div>
+                        <input class="button" type="submit" value="Subscribe">
+                    </div>
 
-            </form>
-
+                </form>
+            </div>
         </section>
 
     </main>

@@ -1,0 +1,21 @@
+// =====================================================
+// Banner Styles Partial
+// =====================================================
+// Note: For now this is just a static background image.
+
+#banner {
+
+    background: url($banner_back_1) repeat 0 0;
+    color: $white;
+
+    img{
+        align-self: auto;
+        height: auto;
+        width: 100vw;
+    }
+
+}
+
+
+
+

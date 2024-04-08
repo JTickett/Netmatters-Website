@@ -20,12 +20,13 @@ li {
     line-height: 22px;
 }
 
-a{
+//<a> tags within <li> to target only links at bottom of page.
+li a {
     text-decoration: none;
     color: $footer-text-color;
 }
 
-a:hover {
+li a:hover {
     text-decoration: underline; 
 }
 

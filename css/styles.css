@@ -11,6 +11,61 @@ li {
   list-style-type: none;
 }
 
+.button {
+  background-color: green;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 5px 15px;
+  height: auto;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+#banner {
+  background: url("../images/home-YLei.webp") repeat 0 0;
+  color: #ffffff;
+}
+#banner img {
+  align-self: auto;
+  height: auto;
+  width: 100vw;
+}
+
+.about {
+  background-color: #323544;
+}
+.about p, .about a, .about h2, .about h3, .about h5, .about blockquote {
+  color: #ffffff;
+}
+.about h2 {
+  font-weight: 600;
+  font-size: 2.25rem;
+}
+.about__text {
+  color: #ffffff;
+}
+
+.email {
+  background-color: #ddd;
+  color: #333645;
+}
+.email__header {
+  font-weight: 400;
+  font-size: 32px;
+}
+.email__text {
+  font-weight: 600;
+}
+.email__text a:hover, .email__text a:focus {
+  color: #121419;
+}
+.email__text a:visited {
+  color: #121419;
+}
+
 ul {
   margin: 0px 0px;
   border: 0px 0px;
@@ -26,12 +81,12 @@ li {
   line-height: 22px;
 }
 
-a {
+li a {
   text-decoration: none;
   color: #ffffff;
 }
 
-a:hover {
+li a:hover {
   text-decoration: underline;
 }
 
