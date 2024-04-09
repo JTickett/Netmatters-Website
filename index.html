@@ -32,8 +32,8 @@
         <img id="page-header__logo" src="images\f-logo.webp"></img>
 
         <!-- Support & Contact Buttons (or Telephone in Mobile View) -->
-        <a id="page-header__supportbtn" class="button" href="#">Support</a>
-        <a id="page-header__contactbtn" class="button" href="#">Contact</a>
+        <a id="page-header__supportbtn" class="hidden button" href="#">Support</a>
+        <a id="page-header__contactbtn" class="button hidden" href="#">Contact</a>
 
         <!-- Search Bar (Mobile *and* Desktop version) -->
         <form id="page-header__searchbox">
@@ -145,7 +145,6 @@
                         </span>
                     </a>
                 </div>
-
                 <div class="services__card">
                     <a href="#" id="card4">
                         
@@ -162,7 +161,6 @@
                         </span>
                     </a>
                 </div>
-
                 <div class="services__card">
                     <a href="#" id="card5">
                         
@@ -179,7 +177,6 @@
                         </span>
                     </a>
                 </div>
-
                 <div class="services__card">
                     <a href="#" id="card6">
                         
@@ -196,7 +193,6 @@
                         </span>
                     </a>
                 </div>
-
                 <div class="services__card">
                     <a href="#" id="card7">
                         
@@ -214,6 +210,7 @@
                     </a>
                 </div>
 
+                <!-- "View Our Work" Link that only displays in Mobile View -->
                 <h3>
                     <a id="services__viewmore" href="#">
                         View Our Work
@@ -221,13 +218,23 @@
                     </a>
                 </h3>
 
-                <!-- TODO: Rest of cards go here once design settled -->
-
             </main>
 
             <!-- Logo Roller -->
             <footer>
-                
+
+                <div class="hidden" id="cert-logo-roller">
+                    <div>
+                        Carbon Charter
+                    </div>
+                    <div>
+                        Google Partner
+                    </div>
+                    <div>
+                        Living Wage
+                    </div>
+                </div>
+
             </footer>
 
         </section>

@@ -245,8 +245,17 @@
   text-align: center;
 }
 
-.hidden {
-  display: none;
+.button {
+  background-color: green;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 5px 15px;
+  height: auto;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 .reusable-wrapper {
@@ -263,17 +272,8 @@ li {
   list-style-type: none;
 }
 
-.button {
-  background-color: green;
-  color: #ffffff;
-  display: inline-block;
-  font-weight: 400;
-  text-transform: uppercase;
-  border-radius: 3px;
-  padding: 5px 15px;
-  height: auto;
-  box-sizing: border-box;
-  text-decoration: none;
+.hidden {
+  display: none;
 }
 
 #page-header {
