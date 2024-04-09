@@ -32,6 +32,24 @@
     
 }
 
+.services__card__icon{
+
+    //For the Icon
+    span {
+
+        display: inline-block;
+        
+        padding: 20px;
+        margin: 20px;
+        font-size: 30px;
+
+        background-color: tomato;
+        color: $white;
+        border-radius: 50%;
+
+    }
+}
+
 .services__card {
     display: grid;
     background-color: $white;
@@ -68,7 +86,7 @@
             top: -20px;
             transition: 1s ease;
             color:white;
-            background-color: purple;
+            background-color: rgb(187, 164, 255);
             border-radius: 10px;
         }
         

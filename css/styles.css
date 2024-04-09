@@ -110,6 +110,7 @@
 
 .icon-twitter:before {
   content: "\ea96";
+  font-size: 50px;
 }
 
 .icon-linkedin2:before {
@@ -322,6 +323,16 @@ li {
   text-decoration: underline;
 }
 
+.services__card__icon span {
+  display: inline-block;
+  padding: 20px;
+  margin: 20px;
+  font-size: 30px;
+  background-color: tomato;
+  color: #ffffff;
+  border-radius: 50%;
+}
+
 .services__card {
   display: grid;
   background-color: #ffffff;
@@ -356,7 +367,7 @@ li {
   top: -20px;
   transition: 1s ease;
   color: white;
-  background-color: purple;
+  background-color: rgb(187, 164, 255);
   border-radius: 10px;
 }
 
