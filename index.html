@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters</title>
+
+    <!-- Title & Favicon -->
+    <title> Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters </title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico?">
+    <!-- Currently unable to find NM favicon in the Homepage <head> ...how is this working?! -->
     
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -66,7 +70,7 @@
     </header>
 
     <!-- Main Section -->
-    <main id="page-main">
+    <main id="page-main" class="reusable-wrapper">
 
         <!-- Carousel Banner Thingy -->
         <section class="centered" id="banner">
@@ -189,36 +193,37 @@
 
             <header>
                 <h2>Latest News</h2>
-                <a href="#">View All</a>
+                <a class="hidden" href="#">View All</a>
             </header>
 
             <!-- Container for Cards -->
             <main>
                 <!-- 1st Job Card Container -->
-                <div>
-                    <a href="#">Job Link</a>
+                <div class="news__card">
+                    <a href="#" id="news__card1">
 
-                    <!-- Image Container -->
-                    <div>
-                        <a href="#">
-                            <img src="images/1st-line-technician-PiSq.webp">
-                        </a>>
-                        <a href="#">Careers</a>
-                    </div>
-
-                    <!-- Detail Container -->
-                    <div>
-                        <h3>1st Line Technician</h3>
-                        <p>Salary Range £25k-£29k + Bonuses + Pension Hours 40 hours per week, Monday - Friday Location Wymondh...</p>
-                        <a class="button" href="#">Read More</a>
-                        <!-- User Container -->
+                        <!-- Image Container -->
                         <div>
-                            <img src="images/bethany-shakespeare-F6Iu.webp">
-                            <h5>Posted by Bethany Shakespeare</h5>
-                            <p>28th March 2024</p>
+                            <a href="#">
+                                <img src="images/1st-line-technician-PiSq.webp">
+                            </a>>
+                            <a href="#">Careers</a>
                         </div>
 
-                    </div>
+                        <!-- Detail Container -->
+                        <div>
+                            <h3>1st Line Technician</h3>
+                            <p>Salary Range £25k-£29k + Bonuses + Pension Hours 40 hours per week, Monday - Friday Location Wymondh...</p>
+                            <a class="button" href="#">Read More</a>
+                            <!-- User Container -->
+                            <div>
+                                <img src="images/bethany-shakespeare-F6Iu.webp">
+                                <h5>Posted by Bethany Shakespeare</h5>
+                                <p>28th March 2024</p>
+                            </div>
+
+                        </div>
+                    </a>
                 </div>
 
             </main>
@@ -226,9 +231,9 @@
             <!-- TODO: Other Cards go here -->
 
             <footer>
-                <h2>
+                <h3>
                     <a href="">View All</a>
-                </h2>
+                </h3>
     
                 <!-- Logo Roller -->
                 <div>

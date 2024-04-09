@@ -6,8 +6,7 @@
 
 // Page Wrapper (This is only for laying out the main page contents)
 #page-wrapper {
-    display: grid;
-
+    //display: grid;
 }
 
 
@@ -25,6 +24,7 @@
 .reusable-wrapper {
     margin: 0px 0px; 
     //margin-left: 10px;
+    display: grid;
     text-align: left;
 }
 
@@ -39,16 +39,9 @@ li {
 
 
 .button {
-    background-color: green;
-    color: $white;
-    display: inline-block;
-    font-weight: 400;
-    text-transform: uppercase;
-    border-radius: 3px;
-    padding: 5px 15px;
-    height: auto;
-    box-sizing: border-box;
-    text-decoration: none;
+
+  @include button(green);
+
 }
 
 

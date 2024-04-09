@@ -1,0 +1,24 @@
+// =====================================================
+// Mixins Partial
+// =====================================================
+
+
+
+//Buttons
+
+@mixin button ($color){
+
+    //Assign colour passed as parameter
+    background-color: $color;
+
+    //Default styles of buttons
+    color: $white;
+    display: inline-block;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 5px 15px;
+    height: auto;
+    box-sizing: border-box;
+    text-decoration: none;
+}
