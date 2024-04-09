@@ -275,52 +275,6 @@ li {
   text-decoration: none;
 }
 
-@font-face {
-  font-family: "icomoon";
-  src: url("fonts/icomoon.eot?bbvdy0");
-  src: url("fonts/icomoon.eot?bbvdy0#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?bbvdy0") format("truetype"), url("fonts/icomoon.woff?bbvdy0") format("woff"), url("fonts/icomoon.svg?bbvdy0#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-[class^=icon-], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-mouse:before {
-  content: "\e900";
-}
-
-.icon-arrow-right2:before {
-  content: "\ea3c";
-}
-
-.icon-facebook:before {
-  content: "\ea90";
-}
-
-.icon-instagram:before {
-  content: "\ea92";
-}
-
-.icon-twitter:before {
-  content: "\ea96";
-}
-
-.icon-linkedin2:before {
-  content: "\eaca";
-}
-
 #page-header {
   display: grid;
   grid-auto-flow: column;
@@ -531,6 +485,24 @@ li a:hover {
   color: #ffffff;
   letter-spacing: 0.4px;
 }
+.footer__socials__icon {
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  color: #ffffff;
+  background-color: #212330;
+  border-color: green;
+  border-style: inset;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  line-height: 1.5;
+}
+.footer__socials__icon:hover {
+  background-color: red;
+}
 
 .footer__logo {
   width: 320px;
@@ -543,21 +515,6 @@ li a:hover {
   background-color: #212330;
   padding: 5px 20px;
   font-size: 13px;
-}
-
-.footer__socials__icon {
-  justify-content: center;
-  align-items: center;
-  color: red;
-  background-color: #212330;
-  border-color: green;
-  border-style: inset;
-  height: 50px;
-  width: 50px;
-  display: inline-block;
-  text-align: center;
-  margin: auto;
-  line-height: 1.5;
 }
 
 /*# sourceMappingURL=styles.css.map */

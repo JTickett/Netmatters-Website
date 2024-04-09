@@ -41,6 +41,38 @@ li a:hover {
     background-color: $footer-background-color;
     color: $white;
     letter-spacing: 0.4px;
+
+    &__socials__icon {
+
+        $social_name : "";
+        
+        justify-content: center;
+        align-items: center;
+    
+        font-size: 26px;
+    
+        color: $white;
+        background-color: $footer-bottom-color;
+        border-color: green;
+        border-style: inset;
+    
+        height: 50px;
+        width: 50px;
+        display: inline-block;
+        text-align: center;
+        margin: auto;
+        line-height: 1.5;
+    
+
+        &:hover{
+            background-color: red;
+    
+            // TODO: 
+            // Include a mixin here.
+            // Pass the name of the social network to it.
+            // The mixin should set the background colour based on the name.
+        }
+    }
 }
 
 .footer__logo{
@@ -54,26 +86,4 @@ li a:hover {
     background-color: $footer-bottom-color;
     padding: 5px 20px;
     font-size: 13px;
-}
-
-.footer__socials__icon{
-
-    //display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: red;
-    background-color: $footer-bottom-color;
-    border-color: green;
-    border-style: inset;
-
-    height: 50px;
-    width: 50px;
-    display: inline-block;
-    text-align: center;
-    margin: auto;
-    line-height: 1.5;
-
-    //font-family: "icomoon";
-    
 }
