@@ -79,6 +79,18 @@ li {
   content: "\eaca";
 }
 
+#page-header {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+#page-header__logo,
+#page-header__supportbtn,
+#page-header__contactbtn,
+#page-header__searchbox {
+  align-self: center;
+}
+
 #banner {
   background: url("../images/home-YLei.webp") repeat 0 0;
   color: #ffffff;

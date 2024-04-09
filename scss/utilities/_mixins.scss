@@ -4,9 +4,7 @@
 
 
 
-//Buttons
-
-@mixin button ($color){
+@mixin button ($color) {
 
     //Assign colour passed as parameter
     background-color: $color;
@@ -21,4 +19,11 @@
     height: auto;
     box-sizing: border-box;
     text-decoration: none;
+}
+
+@mixin basicgrid {
+    margin: 0px 0px; 
+    //margin-left: 10px;
+    display: grid;
+    text-align: left;
 }

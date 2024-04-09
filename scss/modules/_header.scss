@@ -3,3 +3,21 @@
 // =====================================================
 
 
+#page-header{
+    
+    display: grid;
+    grid-auto-flow: column;
+
+    //grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+}
+
+#page-header__logo,
+#page-header__supportbtn,
+#page-header__contactbtn,
+#page-header__searchbox {
+
+    align-self: center;
+
+}
+

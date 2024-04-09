@@ -22,10 +22,13 @@
 //  TODO: Make a container class
 
 .reusable-wrapper {
-    margin: 0px 0px; 
-    //margin-left: 10px;
-    display: grid;
-    text-align: left;
+
+  @include basicgrid;
+
+    // margin: 0px 0px; 
+    // //margin-left: 10px;
+    // display: grid;
+    // text-align: left;
 }
 
 body {
