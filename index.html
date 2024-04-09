@@ -29,18 +29,18 @@
         <img src="images\f-logo.webp"></img>
 
         <!-- Support & Contact Buttons (or Telephone in Mobile View) -->
-        <button class="button">Support</button>
-        <button class="button">Contact</button>
+        <a class="button" href="#">Support</a>
+        <a class="button" href="#">Contact</a>
 
         <!-- Search Bar (Mobile *and* Desktop version) -->
         <form>
             <input type="text" placeholder="Search..">
-            <button class="button" type="submit">Search</button>
+            <a class="button" type="submit" href="#">Search</a>
         </form>
 
         <form class="hidden">
             <input type="text" placeholder="Search..">
-            <button class="button" type="submit">Search</button>
+            <a class="button" type="submit" href="#">Search</a>
         </form>
         
         <!-- Burger Icon -->
@@ -70,9 +70,11 @@
 
         <!-- Carousel Banner Thingy -->
         <section class="centered" id="banner">
-            <h1>The East of England's Leading Technology Company</h1>
-            <p>Performance-driven digital and technology services with complete transparency.</p>
-            <a class="button" href="#">Why Choose Us?</a>
+            <div>
+                <h1>The East of England's Leading Technology Company</h1>
+                <p>Performance-driven digital and technology services with complete transparency.</p>
+                <a class="button" href="#">Why Choose Us?</a>
+            </div>
         </section>
 
         <!-- Our Services (Cards) -->
@@ -89,25 +91,21 @@
             
             <!-- Wrapper for Cards -->
             <main id="services-card-wrapper" class="services_card_wrapper">
-                <div>
-                    <a class="services__card" href="#" id="card1">
-                        <div>
-                            <!-- Icon -->
-                        </div>
-                        <h3>Bespoke Software</h3>
-                        <p>
-                            Bespoke software solutions for all your business needs including integrations and reporting.
-                        </p>
-                        <span class="button" href="#">
-                            Read More
-                        </span>
+                <div class="services__card">
+                    <a href="#" id="card1">
+                        
+                            <h3>Bespoke Software</h3>
+                            <p>
+                                Bespoke software solutions for all your business needs including integrations and reporting.
+                            </p>
+                            <span class="button" href="#">
+                                Read More
+                            </span>
+                        
                     </a>
                 </div>
-                <div>
-                    <a class="services__card" href="#" id="card2">
-                        <div>
-                            <!-- Icon -->
-                        </div>
+                <div class="services__card">
+                    <a href="#" id="card2">
                         <h3>IT Support</h3>
                         <p>
                             Fully managed IT support and consultancy packages tailored to meet your exact business needs.
@@ -117,11 +115,8 @@
                         </span>
                     </a>
                 </div>
-                <div>
-                    <a class="services__card" href="#" id="card3">
-                        <div>
-                            <!-- Icon -->
-                        </div>
+                <div class="services__card">
+                    <a href="#" id="card3">
                         <h3>Digital Marketing</h3>
                         <p>
                             Driven brand awareness & ROI through creative digital marketing campaigns.
@@ -133,7 +128,8 @@
                 </div>
 
                 <h3>
-                    <a href="#">View Our Work
+                    <a id="services__viewmore" href="#">
+                        View Our Work
                         <em>&#8594;</em>
                     </a>
                 </h3>

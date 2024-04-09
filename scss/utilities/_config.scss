@@ -5,12 +5,13 @@
 
 // Colours
 
-$white              :   #ffffff;
-$black              :   #000000;
+$white              : #ffffff;
+$grey-light         : #f0f0f0;
+$black              : #000000;
 
 $footer-blue        :   #323544;
 $footer-bottom      :   #212330;
-$newsletter-grey    :   #ddd;
+$newsletter-grey    :   #dddddd;
 
 
 // Theme
@@ -24,7 +25,9 @@ $footer-background-color            : $footer-blue;
 $footer-text-color                  : $white;
 $footer-bottom-color                : $footer-bottom;
 
+$card-background-color              : $grey-light;
 $card-text-color                    : #464957;
+
 
 // Image Paths
 
