@@ -23,53 +23,66 @@
 
 <body>
 
-<div id="page-wrapper" class="reusable-wrapper">
+<div id="page-wrapper" class="reusable-container">
 
     <!-- Header -->
     <header id="page-header">
 
-        <!-- Logo -->
-        <img id="page-header__logo" src="images\f-logo.webp"></img>
+        <div id="header-container">
 
-        <!-- Support & Contact Buttons (or Telephone in Mobile View) -->
-        <a id="page-header__supportbtn" class="hidden button" href="#">Support</a>
-        <a id="page-header__contactbtn" class="button hidden" href="#">Contact</a>
+            <!-- Logo -->
+            <div id="header-logo">
+                <img id="page-header__logo" src="images\f-logo.webp"></img>
+            </div>
+            
+            <!-- Telephone Icon, or Support & Contact Buttons -->
+            <div>
+                <a id="page-header__phone" href="#">
+                    <span class="icon-call"></span>
+                </a>
+            </div>
+            <a id="page-header__supportbtn" class="hidden button" href="#">Support</a>
+            <a id="page-header__contactbtn" class="button hidden" href="#">Contact</a>
 
-        <!-- Search Bar (Mobile *and* Desktop version) -->
-        <form id="page-header__searchbox">
-            <input type="text" placeholder="Search..">
-            <a class="button" type="submit" href="#">Search</a>
-        </form>
+            <!-- Search Bar (Mobile *and* Desktop version) -->
+            <form id="page-header__searchbox">
+                <input type="text" placeholder="Search..">
+                <a class="button" type="submit" href="#">
+                    <span class="icon-search"></span>
+                </a>
+            </form>
 
-        <form class="hidden">
-            <input type="text" placeholder="Search..">
-            <a class="button" type="submit" href="#">Search</a>
-        </form>
-        
-        <!-- Burger Icon -->
-        <a>
-            <span>
-                
-            </span>
-        </a>
+            <form class="hidden">
+                <input type="text" placeholder="Search..">
+                <a class="button" type="submit" href="#">Search</a>
+            </form>
+            
+            <!-- Burger Icon -->
+            <a>
+                <span>
+                    
+                </span>
+            </a>
 
-        <!-- Coloured Nav Bar (7 x Links) -->
-        <nav class="hidden">
-            <ul>
-                <li>Bespoke Software</li>
-                <li>IT Support</li>
-                <li>Digital Marketing</li>
-                <li>Telecoms Services</li>
-                <li>Web Design</li>
-                <li>Cyber Security</li>
-                <li>Developer Course</li>
-            </ul>>
-        </nav>
+            <!-- Coloured Nav Bar (7 x Links) -->
+            <nav class="hidden">
+                <ul>
+                    <li>Bespoke Software</li>
+                    <li>IT Support</li>
+                    <li>Digital Marketing</li>
+                    <li>Telecoms Services</li>
+                    <li>Web Design</li>
+                    <li>Cyber Security</li>
+                    <li>Developer Course</li>
+                </ul>>
+            </nav>
+
+        </div>
 
     </header>
 
     <!-- Main Section -->
-    <main id="page-main" class="reusable-wrapper">
+    <main id="page-main" class="reusable-container">
 
         <!-- Carousel Banner Thingy -->
         <section class="centered" id="banner">

@@ -110,7 +110,6 @@
 
 .icon-twitter:before {
   content: "\ea96";
-  font-size: 50px;
 }
 
 .icon-linkedin2:before {
@@ -258,10 +257,11 @@
   text-decoration: none;
 }
 
-.reusable-wrapper {
-  margin: 0px 0px;
-  display: grid;
-  text-align: left;
+.reusable-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 body {
@@ -286,6 +286,16 @@ li {
 #page-header__contactbtn,
 #page-header__searchbox {
   align-self: center;
+  flex-direction: row;
+}
+
+#header-container {
+  display: flex;
+  align-items: center;
+}
+
+#header-logo {
+  flex-direction: row;
 }
 
 #banner {

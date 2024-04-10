@@ -18,6 +18,20 @@
 #page-header__searchbox {
 
     align-self: center;
+    flex-direction: row;
 
 }
+
+// This is the wrapped for all the header
+// Use Flex to make up the mobile view first.
+#header-container {
+    display: flex;
+    align-items: center;
+}
+
+#header-logo {
+    flex-direction: row;
+}
+
+
 

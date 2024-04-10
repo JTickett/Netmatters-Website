@@ -18,8 +18,23 @@
   @include button(green);
 }
 
-.reusable-wrapper {
-  @include basicgrid;
+.reusable-container {
+  
+  //Don't use a mixin!
+  //@include basicgrid;
+
+    //Moyo
+    //Anywhere the "container" class is used on the NM Homepage has this
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    // mine
+    //margin: 0px 0px; 
+    //display: grid;
+    //text-align: left;
+
 }
 
 body {
