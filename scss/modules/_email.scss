@@ -4,25 +4,22 @@
 
 
 .email {
+
     background-color: $newsletter-background-color;
     color: $newsletter-text-color;
+    display: grid;
     
     //Header
     &__header {
         font-weight: 400;
         font-size: 32px;
-        margin-top: 0;
     }
     
     //Other text (and links)
     &__text{
         font-weight: 600;
 
-        a:hover, a:focus{
-            color: $newsletter-link-alt-color;
-        }
-        //TODO: Check if this is right or better way to achieve it.
-        a:visited{
+        a:hover, a:focus, a:visited {
             color: $newsletter-link-alt-color;
         }
 

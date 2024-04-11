@@ -4,12 +4,15 @@
 
 
 
-@mixin button ($color) {
+@mixin button ($color, $bordercolor:null) {
 
-    //Assign colour passed as parameter
+    // Assign colour passed as parameter
     background-color: $color;
 
-    //Default styles of buttons
+    // Optional border style from parameter
+    border-color: $bordercolor;
+
+    // Default styles of buttons (Will adjust later)
     color: $white;
     display: inline-block;
     font-weight: 400;
@@ -21,17 +24,5 @@
     text-decoration: none;
 }
 
-@mixin basicgrid {
-    margin: 0px 0px; 
-    //margin-left: 10px;
-    display: grid;
-    text-align: left;
-
-    
 
 
-
-
-}
-
-// Border style 

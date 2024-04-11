@@ -2,14 +2,90 @@
 // Footer Styles Partial
 // =====================================================
 
-// Elements
+// Classes
 
-ul {
-    margin: 0px 0px;
-    border: 0px 0px;
-    padding-inline-start: 0px;
+.footer {
+
+    //socials, links, license. These 3 are the main parts
+
+    //display: grid;
+    justify-content: left;
+
+    background-color: $footer-background-color;
+    color: $white;
+    letter-spacing: 0.4px;
+
+    #footer-logo{
+        width: 320px;
+        height: auto;
+        padding-top: 27px;
+    }
+    
+
+    &__socials {
+
+        //Nothing here yet
+        background-color: $footer-background-color;
+
+        &__icon {
+
+            $social_name : "";
+            
+            justify-content: center;
+            align-items: center;
+        
+            font-size: 26px;
+        
+            color: $white;
+            background-color: $footer-bottom-color;
+            border-color: green;
+            border-style: inset;
+        
+            height: 50px;
+            width: 50px;
+            display: inline-block;
+            text-align: center;
+            margin: auto;
+            line-height: 1.5;
+        
+            &:hover{
+                background-color: red;
+        
+                // TODO: 
+                // Include a mixin here.
+                // Pass the name of the social network to it.
+                // The mixin should set the background colour based on the name.
+            }
+        }
+    }
+
+    &__links {
+
+        background-color: $footer-background-color;
+    }
+
+    &__license {
+        //width: 100%;
+        background-color: $footer-bottom-color;
+        //padding: 5px 20px;
+        font-size: 13px;
+    }
+
+
+
+
 }
 
+
+
+
+// ------------------------------ Elements
+
+ul {
+    //margin: 0px 0px;
+    //border: 0px 0px;
+    padding-inline-start: 0px;
+}
 
 h4 {
     font-weight: 400;
@@ -28,62 +104,4 @@ li a {
 
 li a:hover {
     text-decoration: underline; 
-}
-
-// Classes
-
-.footer {
-
-    width: 100%;
-    //display: grid;
-    justify-content: left;
-    padding: 0px 15px;
-    background-color: $footer-background-color;
-    color: $white;
-    letter-spacing: 0.4px;
-
-    &__socials__icon {
-
-        $social_name : "";
-        
-        justify-content: center;
-        align-items: center;
-    
-        font-size: 26px;
-    
-        color: $white;
-        background-color: $footer-bottom-color;
-        border-color: green;
-        border-style: inset;
-    
-        height: 50px;
-        width: 50px;
-        display: inline-block;
-        text-align: center;
-        margin: auto;
-        line-height: 1.5;
-    
-
-        &:hover{
-            background-color: red;
-    
-            // TODO: 
-            // Include a mixin here.
-            // Pass the name of the social network to it.
-            // The mixin should set the background colour based on the name.
-        }
-    }
-}
-
-.footer__logo{
-    width: 320px;
-    height: auto;
-    padding-top: 27px;
-}
-
-.footer__license {
-    width: 100%;
-    background-color: $footer-bottom-color;
-    padding: 5px 20px;
-    font-size: 13px;
 }

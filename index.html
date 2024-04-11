@@ -23,12 +23,12 @@
 
 <body>
 
-<div id="page-wrapper" class="reusable-container">
+<div id="page-wrapper">
 
     <!-- Header -->
     <header id="page-header">
 
-        <div id="header-container">
+        <div id="header-container" class="reusable-container">
 
             <!-- Logo -->
             <div id="header-logo">
@@ -59,9 +59,11 @@
             
             <!-- Burger Icon -->
             <a>
-                <span>
-                    
-                </span>
+                <button class="burger">
+                    <div class="top-bread"></div>
+                    <div class="meat"></div>
+                    <div class="bottom-bread"></div>
+                  </button>
             </a>
 
             <!-- Coloured Nav Bar (7 x Links) -->
@@ -82,10 +84,10 @@
     </header>
 
     <!-- Main Section -->
-    <main id="page-main" class="reusable-container">
+    <main id="page-main" class="">
 
         <!-- Carousel Banner Thingy -->
-        <section class="centered" id="banner">
+        <section class="centered reusable-container" id="banner">
             <div>
                 <h1>The East of England's Leading Technology Company</h1>
                 <p>Performance-driven digital and technology services with complete transparency.</p>
@@ -97,7 +99,7 @@
         </section>
 
         <!-- Our Services (Cards) -->
-        <section id="services">
+        <section id="services" class="reusable-container">
             <header>
                 <h2>Our Services</h2>
                 <h3 class="hidden">
@@ -253,7 +255,7 @@
         </section>
 
         <!-- About Us -->
-        <section class="about">
+        <section class="about reusable-container">
             <div class="">
                 <h2>Welcome To Netmatters</h2>
                 <p>
@@ -303,7 +305,7 @@
         </section>
 
         <!-- Latest News -->
-        <section id="news"> 
+        <section id="news" class="news reusable-container"> 
 
             <header>
                 <h2>Latest News</h2>
@@ -451,8 +453,8 @@
         </section>
 
         <!-- Email Newsletter -->
-        <section id="email">
-            <div class="email">
+        <section id="email" class="email reusable-container">
+            <div class="">
                 <form>
                     <!-- Header -->
                     <div>
@@ -509,9 +511,9 @@
     <footer id="page-footer" class="footer">
 
         <!-- Company Info -->
-        <div class="footer__socials">
+        <div class="footer__socials reusable-container">
             <!-- Logo -->
-            <img class="footer__logo" src="images/nm-logo-white-med.webp"></img>
+            <img class="footer__logo" id="footer-logo" src="images/nm-logo-white-med.webp"></img>
 
             <!-- Social Media Icons -->
             
@@ -543,7 +545,7 @@
         </div>
 
         <!-- Various Links -->
-        <div class="footer__links">
+        <div class="footer__links reusable-container">
             
             <div>
                 <ul>
@@ -594,7 +596,7 @@
             </ul>
         </div>
 
-        <div class="footer__license">
+        <div class="footer__license reusable-container">
             <p>© Copyright Netmatters 2024.</p>
             <p>All rights reserved.</p>
             <a>Sitemap</a>

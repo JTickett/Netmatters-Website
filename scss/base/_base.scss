@@ -3,11 +3,19 @@
 // =====================================================
 
 
+.reusable-container {
+  
+  //Anywhere the "container" class is used on the NM Homepage has this
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid yellow;
 
-// Page Wrapper (This is only for laying out the main page contents)
-#page-wrapper {
-    //display: grid;
 }
+
+
+
 
 
 .centered {
@@ -18,24 +26,7 @@
   @include button(green);
 }
 
-.reusable-container {
-  
-  //Don't use a mixin!
-  //@include basicgrid;
 
-    //Moyo
-    //Anywhere the "container" class is used on the NM Homepage has this
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-
-    // mine
-    //margin: 0px 0px; 
-    //display: grid;
-    //text-align: left;
-
-}
 
 body {
     font-family: Poppins, sans-serif;
