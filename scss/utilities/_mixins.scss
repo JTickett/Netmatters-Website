@@ -4,24 +4,36 @@
 
 
 
-@mixin button ($color, $bordercolor:null) {
+@mixin button ($color, $bcolor:null, $lheight:50px, $bradius:3px) {
 
-    // Assign colour passed as parameter
+    //  Assign background colour passed as parameter
     background-color: $color;
 
-    // Optional border style from parameter
-    border-color: $bordercolor;
+    //  Optional border style from parameter
+    border-color: $bcolor;
 
-    // Default styles of buttons (Will adjust later)
+    //  Also pass border radius? Some of these seem to differ
+    border-radius: $bradius;
+
+    //  Pass line height as a param?? Some buttons are thicc
+    line-height: $lheight;
+
+    //  Default styles of buttons (will adjust later)
     color: $white;
     display: inline-block;
     font-weight: 400;
     text-transform: uppercase;
-    border-radius: 3px;
+
+    //  Needed??
     padding: 5px 15px;
     height: auto;
     box-sizing: border-box;
+
+    //  Make sure links don't underline.
     text-decoration: none;
+    :hover {
+        text-decoration: none;
+    }
 }
 
 

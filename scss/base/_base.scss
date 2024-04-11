@@ -3,9 +3,30 @@
 // =====================================================
 
 
+// Elements
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+//Disable default anchor tag behaviour so that it only underlines on hover.
+a {
+  text-decoration: none;
+  :hover {
+    text-decoration: underline;
+  }
+}
+
+
+li {
+  list-style-type: none;
+}
+
+
+// Reused Classes
+
 .reusable-container {
   
-  //Anywhere the "container" class is used on the NM Homepage has this
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -14,10 +35,6 @@
 
 }
 
-
-
-
-
 .centered {
     text-align: center;
 }
@@ -25,17 +42,6 @@
 .button {
   @include button(green);
 }
-
-
-
-body {
-    font-family: Poppins, sans-serif;
-}
-
-li {
-    list-style-type: none;
-}
-
 
 .hidden {
   //  Consider moving this somewhere else...

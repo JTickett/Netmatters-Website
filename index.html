@@ -26,47 +26,63 @@
 <div id="page-wrapper">
 
     <!-- Header -->
-    <header id="page-header">
+    <header id="header-wrapper">
 
-        <div id="header-container" class="reusable-container">
+
+        <div id="header1" class="reusable-container">
 
             <!-- Logo -->
-            <div id="header-logo">
-                <img id="page-header__logo" src="images\f-logo.webp"></img>
+            <div id="header1__logo">
+                <img src="images\f-logo.webp"></img>
             </div>
             
             <!-- Telephone Icon, or Support & Contact Buttons -->
-            <div>
-                <a id="page-header__phone" href="#">
+            <div id="header1__phone">
+                <a href="#">
                     <span class="icon-call"></span>
                 </a>
             </div>
-            <a id="page-header__supportbtn" class="hidden button" href="#">Support</a>
-            <a id="page-header__contactbtn" class="button hidden" href="#">Contact</a>
 
-            <!-- Search Bar (Mobile *and* Desktop version) -->
-            <form id="page-header__searchbox">
+            <!-- Burger Icon -->
+            <a id="header1__burger">
+                <div class="burger-box">
+                    <button class="burger">
+                        <div class="top-bread"></div>
+                        <div class="meat"></div>
+                        <div class="bottom-bread"></div>
+                    </button>
+                </div>
+            </a>
+            
+            <!-- Support Button and Contact Button -->
+            <div id="header1__buttons">
+                <a id="header1__supportbtn" class="button hidden" href="#">Support</a>
+                <a id="header1__contactbtn" class="button hidden" href="#">Contact</a>
+            </div>
+
+            <!-- Search Bar (Only visible on larger screen sizes) -->
+            <form id="header1__searchbox" class="hidden">
                 <input type="text" placeholder="Search..">
                 <a class="button" type="submit" href="#">
                     <span class="icon-search"></span>
                 </a>
             </form>
 
-            <form class="hidden">
-                <input type="text" placeholder="Search..">
-                <a class="button" type="submit" href="#">Search</a>
-            </form>
-            
-            <!-- Burger Icon -->
-            <a>
-                <button class="burger">
-                    <div class="top-bread"></div>
-                    <div class="meat"></div>
-                    <div class="bottom-bread"></div>
-                  </button>
-            </a>
+        </div>
 
-            <!-- Coloured Nav Bar (7 x Links) -->
+        <!-- Second row which contains the Search Bar under the smallest screen sizes -->
+        <div id="header2" class="reusable-container">
+            <form id="header2__searchform">
+                <label for="header2__searchform__input" class="hidden">Search:</label>
+                <input id="header2__searchform__input" type="text" placeholder="Search..">
+                <button id="header2__searchform__button" class="" type="submit" href="#">
+                    <span class="icon-search"></span>
+                </button>
+            </form>
+        </div>
+
+        <!-- Coloured Nav Bar (7 x Links) -->
+        <div id="header3" class="reusable-container">
             <nav class="hidden">
                 <ul>
                     <li>Bespoke Software</li>
@@ -76,9 +92,8 @@
                     <li>Web Design</li>
                     <li>Cyber Security</li>
                     <li>Developer Course</li>
-                </ul>>
+                </ul>
             </nav>
-
         </div>
 
     </header>
@@ -260,13 +275,18 @@
                 <h2>Welcome To Netmatters</h2>
                 <p>
                     Netmatters is a leading 
-                    <a href="#">Bespoke Software</a>, 
-                    <a href="#">IT Support</a>, and 
+                    <a href="#">Bespoke Software</a>
+                    , 
+                    <a href="#">IT Support</a>
+                    , and 
                     <a href="#">Digital Marketing</a>
                     company based in the East of England with offices in 
-                    <a href="#">London</a>, 
-                    <a href="#">Cambridge</a>, 
-                    <a href="#">Wymondham</a>, and 
+                    <a href="#">London</a>
+                    , 
+                    <a href="#">Cambridge</a>
+                    , 
+                    <a href="#">Wymondham</a>
+                    , and 
                     <a href="#">Great Yarmouth</a>.
                 </p>
                     

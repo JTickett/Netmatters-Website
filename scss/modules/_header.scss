@@ -3,52 +3,127 @@
 // =====================================================
 
 
-#page-header{
-    
-    display: grid;
-    grid-auto-flow: column;
-
-    //grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-
+#header-wrapper {
+    // I don't know if anythings even needed lol. It's just 3 rows.
 }
 
-#page-header__logo,
-#page-header__supportbtn,
-#page-header__contactbtn,
-#page-header__searchbox {
 
-    align-self: center;
-    flex-direction: row;
 
-}
+// First Row contains the Logo, Contact Buttons and Burger Menu
+#header1 {
 
-// This is the wrapped for all the header
-// Use Flex to make up the mobile view first.
-#header-container {
+    // Flex Stuff
     display: flex;
+    flex-flow: row nowrap;
     align-items: center;
+    justify-content: flex-end;
+    
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &__logo {
+        order: 1;
+        justify-self: left;
+        flex-grow: 1;
+        flex-shrink: 1;
+        img {
+            height: auto;
+        }
+    }
+
+    &__phone {
+        order: 2;
+        font-weight: 400;
+        line-height: 32px;
+        font-size: 32px;
+        letter-spacing: 0.4px;
+    }
+
+    
+    &__buttons {
+        order: 2;
+    }
+
+    &__burger {
+        order: 3;
+        margin-left: 20px;
+    }
+
+    &__searchbox {
+        order: 4;
+    }
+
+
 }
 
-#header-logo {
-    flex-direction: row;
+//  Second Row is the Mobile Search Bar
+#header2 {
+
+    display: block;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    border: solid rgb(201, 201, 201) 5px;
+    border-radius: 5px;
+
+    //  Form within the container div.
+    &__searchform {
+
+        background-color: #eee;
+        
+        display: flex;
+        position: relative;
+        box-sizing: border-box;
+
+        //  Actual Text Input Box - Needs to overlap the button
+        &__input {
+            flex-direction: row;
+            flex-grow: 1;
+            justify-content: flex-start;
+            width: 100%;
+            height: 47px;
+            padding-right: 40px;
+        }
+
+        &__button {
+            background-color: none;
+            border: none;
+            right: 3px;
+            top: 30px;
+        }
+
+    }
 }
 
 
 .burger {
     display: flex;
     flex-direction: column;
-    width: 2rem;
+    width: 33px;
     border: 0;
     padding: 0;
-    gap: 1rem;
+    gap: 7px;
     background: none;
     cursor: pointer;
-  }
-  
-  .burger :where(.top-bread, .meat, .bottom-bread) {
-    background: rgb(255, 0, 0);
-    height: 5px;
-    width: 100%;
-    border-radius: 4px;
+}
+
+.top-bread, .meat, .bottom-bread {
+    background: $white;
+    height: 4px;
+    width: 33px;
+    border-radius: 0px;
     display: block;
-  }
+}
+
+.burger-box {
+    padding: 15px 15px;
+    background: $footer-background-color;
+    border: solid black 1px;
+    border-radius: 3px;
+}
