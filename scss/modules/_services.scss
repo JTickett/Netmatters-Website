@@ -9,7 +9,7 @@
 
     display: grid;
     text-align: center;
-    padding: 20px;
+    //padding: 20px;
     background-color: $card-background-color;
 
     h2 {
@@ -26,10 +26,6 @@
         }
     }
 
-}
-
-#services-card-wrapper {
-    
 }
 
 .services__card__icon{
@@ -63,8 +59,10 @@
     background-color: $white;
     align-self: center;
     border: 1px solid red;
-    border-radius: 10px;
-    margin: 30px 20px 20px;
+    border-radius: 15px;
+    
+    margin-top: 30px;
+    margin-bottom: 20px;
 
     h3 {
         font-weight: 300;

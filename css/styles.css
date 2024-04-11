@@ -304,7 +304,7 @@ li {
   flex-shrink: 1;
 }
 #header1__logo img {
-  height: auto;
+  max-width: 100%;
 }
 #header1__phone {
   order: 2;
@@ -402,7 +402,6 @@ li {
 #services {
   display: grid;
   text-align: center;
-  padding: 20px;
   background-color: #f0f0f0;
 }
 #services h2 {
@@ -433,8 +432,9 @@ li {
   background-color: #ffffff;
   align-self: center;
   border: 1px solid red;
-  border-radius: 10px;
-  margin: 30px 20px 20px;
+  border-radius: 15px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   top: 10px;
   transition: 0.5s ease;
 }
