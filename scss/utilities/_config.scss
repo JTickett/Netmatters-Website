@@ -3,7 +3,7 @@
 // =====================================================
 
 
-// Colours
+//  Colours
 
 $white              : #ffffff;
 $grey-light         : #f0f0f0;
@@ -14,7 +14,7 @@ $footer-bottom      :   #212330;
 $newsletter-grey    :   #dddddd;
 
 
-// Theme
+//  Theme
 
 $newsletter-background-color        : $newsletter-grey;
 $newsletter-text-color              : #333645;
@@ -33,17 +33,29 @@ $social-linkedin-color              : #0077b5;
 $social-twitter-color               : #00aced;
 $social-instagram-color             : #d93175;
 
+$service-software                   : #67809f;
+$service-software-dark              : #526781;
+$service-it                         : #4183d7;
+$service-it-dark                    : #2a6ec6;
+$service-marketing                  : #2ecc71;
+$service-marketing-dark             : #1a8c5d;
+$service-telecoms                    : #d64541;
+$service-telecoms-dark               : #ae3a35;
+$service-webdesign                  : #926fb1;
+$service-webdesign-dark             : #7e57a0;
+$service-cybersec                   : #f62459;
+$service-cybersec-dark              : #d91e4f;
+$service-training                   : #ce4125;
+$service-training-dark              : #a9321d;
 
-// Image Paths
+
+//  Image Paths
 
 $banner_back_1 : "../images/home-YLei.webp";
 
 
 
-//==========================================//
-//                 VARIABLES
-//==========================================//
-
+//  Misc
 $dark-bg: #323544;
 $vdark-bg: #22242e;
 $light-bg: #ddd;
@@ -69,39 +81,4 @@ $trustpilot-hover: #009b69;
 $btn-contact: #999aa2;
 $btn-contact-hover: #84858f;
 
-//==========================================//
-//            HEADER NAV COLOURS
-//==========================================//
 
-$nav-software: #67809f;
-$nav-software-drk: #526781;
-
-$nav-it: #4183d7;
-$nav-it-drk: #2a6ec6;
-
-$nav-digital: #2ecc71;
-$nav-digital-drk: #1a8c5d;
-
-$nav-telecom: #d64541;
-$nav-telecom-drk: #ae3a35;
-
-$nav-webdesign: #926fb1;
-$nav-webdesign-drk: #7e57a0;
-
-$nav-cyber: #f62459;
-$nav-cyber-drk: #d91e4f;
-
-$nav-developer: #ce4125;
-$nav-developer-drk: #a9321d;
-
-
-//==========================================//
-//         FOOTER SOCIAL ICON COLOURS
-//==========================================//
-
-$footer-drk: #212330;
-
-$soc-fb: #3b5998;
-$soc-ig: #d93175;
-$soc-li: #0077b5;
-$soc-t: #00aced;

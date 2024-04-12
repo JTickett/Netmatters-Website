@@ -4,27 +4,41 @@
 // Note: For now this is just a static background image.
 
 #banner {
-
-    background: url($banner_back_1) repeat 0 0;
     color: $white;
-    height: 650px;
-
-    display:grid;
-
-    h1 {
-        font-weight: 500;
-        font-size: 2.5rem;
-        line-height: 3rem;
-        margin: 0 0 1.25rem;
+    background-color: $black;
+    height: 550px;
+    display: block;
+    img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        //z-index: -1;
+        opacity: 50%;
     }
-
     div {
         align-self: auto;
         margin: auto;
-        
+        position: absolute;
+        top: 35%;
+        //right: 10%;
+        display: block;
+        h1 {
+            font-weight: 600;
+            font-size: 2.5rem;
+            line-height: 3rem;
+            margin-bottom: 1.25rem;
+        }
+        p {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 0.375rem;
+        }
+        a {
+            //line-height: 50px;
+            margin-top: 31px;
+        }
     }
-
-
 }
 
 

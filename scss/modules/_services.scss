@@ -9,7 +9,6 @@
 
     display: grid;
     text-align: center;
-    //padding: 20px;
     background-color: $card-background-color;
 
     h2 {
@@ -18,18 +17,18 @@
         font-weight: 600;
     }
 
-
     #services__viewmore {
         text-decoration: none;
         :hover{
             text-decoration: underline;
         }
     }
-
 }
 
 
 .service-card {
+
+    box-shadow: 0 3px 35px rgba(0,0,0,.1);
 
     // Stop underlining links
     :hover {
@@ -43,16 +42,16 @@
         &:hover{
             top: -20px;
             transition: 1s ease;
-            color:white;
-            background-color: rgb(187, 164, 255);
-            border-radius: 10px;
+            color:red;
+            //background-color: rgb(187, 164, 255);
+            //border-radius: 10px;
         }
     }
 
     display: grid;
     background-color: $white;
     align-self: center;
-    border: 1px solid red;
+    border: 1px solid #ccc;
     border-radius: 15px;
 
     margin-top: 30px;
@@ -69,7 +68,6 @@
             padding: 20px;
             margin: 20px;
             font-size: 30px;
-            background-color: tomato;
             color: $white;
             border-radius: 100%;
         }
@@ -87,7 +85,7 @@
     }
 
     &__button {
-        @include button(blue);
+        @include button(blue, $lheight: 35px);
         margin-bottom: 30px;
     }
 }
@@ -98,3 +96,26 @@
 // Then you target the elements hover state like this:
 // .tab:hover {top: -10px; and transition: .5s ease;}
 
+
+
+.service-color-software {
+    background-color: $service-software;
+}
+.service-color-it {
+    background-color: $service-it;
+}
+.service-color-marketing {
+    background-color: $service-marketing;
+}
+.service-color-telecoms {
+    background-color: $service-telecoms;
+}
+.service-color-webdesign {
+    background-color: $service-webdesign;
+}
+.service-color-cybersec {
+    background-color: $service-cybersec;
+}
+.service-color-training {
+    background-color: $service-training;
+}

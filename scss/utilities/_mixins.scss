@@ -9,32 +9,25 @@
     //  Assign background colour passed as parameter
     background-color: $bkcolor;
 
-    //  Optional border style from parameter
+    //  Optional border style from parameter (default: null)
     border-color: $brcolor;
 
-    //  Also pass border radius? Some of these seem to differ
+    //  Also pass border radius? Some of these seem to differ a tiny amount (default 3px)
     border-radius: $bradius;
 
     //  Pass line height as a param?? Some buttons are thicc
     line-height: $lheight;
 
-    //  Default styles of buttons (will adjust later)
+    //  Default styles of buttons
     color: $white;
     display: inline-block;
     font-weight: 400;
     text-transform: uppercase;
-
-    //  Needed??
     padding: 5px 15px;
-    height: auto;
-    box-sizing: border-box;
 
-    //  Make sure links don't underline.
+    //  Prevent underlining links.
     text-decoration: none;
     :hover {
         text-decoration: none;
     }
 }
-
-
-
