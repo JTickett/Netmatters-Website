@@ -4,13 +4,13 @@
 
 
 
-@mixin button ($color, $bcolor:null, $lheight:50px, $bradius:3px) {
+@mixin button ($bkcolor, $brcolor:null, $lheight:50px, $bradius:3px) {
 
     //  Assign background colour passed as parameter
-    background-color: $color;
+    background-color: $bkcolor;
 
     //  Optional border style from parameter
-    border-color: $bcolor;
+    border-color: $brcolor;
 
     //  Also pass border radius? Some of these seem to differ
     border-radius: $bradius;

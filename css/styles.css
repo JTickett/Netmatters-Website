@@ -416,18 +416,7 @@ li {
   text-decoration: underline;
 }
 
-.services__card__icon span {
-  display: inline-block;
-  padding: 20px;
-  margin: 20px;
-  font-size: 30px;
-  background-color: tomato;
-  color: #ffffff;
-  border-radius: 50%;
-}
-
-.services__card {
-  text-decoration: none;
+.service-card {
   display: grid;
   background-color: #ffffff;
   align-self: center;
@@ -435,38 +424,54 @@ li {
   border-radius: 15px;
   margin-top: 30px;
   margin-bottom: 20px;
-  top: 10px;
-  transition: 0.5s ease;
 }
-.services__card :hover {
+.service-card :hover {
   text-decoration: none;
 }
-.services__card h3 {
-  font-weight: 300;
-  font-size: 1.3rem;
-}
-.services__card p {
-  font-weight: 400;
-  font-size: 0.8125rem;
-  line-height: 1.375rem;
-}
-.services__card .button {
-  margin-bottom: 10px;
-}
-.services__card div {
-  padding: 20px;
-}
-.services__card a {
-  text-decoration: none;
+.service-card a {
   top: 10px;
   border-radius: 10px;
 }
-.services__card a:hover {
+.service-card a:hover {
   top: -20px;
   transition: 1s ease;
   color: white;
   background-color: rgb(187, 164, 255);
   border-radius: 10px;
+}
+.service-card__icon span {
+  display: inline-block;
+  padding: 20px;
+  margin: 20px;
+  font-size: 30px;
+  background-color: tomato;
+  color: #ffffff;
+  border-radius: 100%;
+}
+.service-card__title {
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+.service-card__text {
+  font-weight: 400;
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+}
+.service-card__button {
+  background-color: blue;
+  border-radius: 3px;
+  line-height: 50px;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  height: auto;
+  box-sizing: border-box;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+.service-card__button :hover {
   text-decoration: none;
 }
 
