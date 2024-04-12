@@ -17,7 +17,17 @@
         font-weight: 600;
     }
 
+    h3 {
+        :hover{
+            
+            text-decoration: underline;
+        }
+    }
+
     #services__viewmore {
+        color: $newsletter-text-color;
+        font-weight: 600;
+        font-size: 1.625rem;
         text-decoration: none;
         :hover{
             text-decoration: underline;
@@ -43,6 +53,7 @@
             top: -20px;
             transition: 1s ease;
             color:red;
+
             //background-color: rgb(187, 164, 255);
             //border-radius: 10px;
         }
@@ -100,7 +111,12 @@
 
 .service-color-software {
     background-color: $service-software;
+    :hover {
+        color: pink;
+        background-color: yellow;
+    }
 }
+
 .service-color-it {
     background-color: $service-it;
 }
@@ -119,3 +135,4 @@
 .service-color-training {
     background-color: $service-training;
 }
+

@@ -412,6 +412,7 @@ li {
 }
 #banner div a {
   margin-top: 31px;
+  font-size: 1.25rem;
 }
 
 #services {
@@ -424,7 +425,13 @@ li {
   font-size: 2.7rem;
   font-weight: 600;
 }
+#services h3 :hover {
+  text-decoration: underline;
+}
 #services #services__viewmore {
+  color: #333645;
+  font-weight: 600;
+  font-size: 1.625rem;
   text-decoration: none;
 }
 #services #services__viewmore :hover {
@@ -488,6 +495,10 @@ li {
 
 .service-color-software {
   background-color: #67809f;
+}
+.service-color-software :hover {
+  color: pink;
+  background-color: yellow;
 }
 
 .service-color-it {
