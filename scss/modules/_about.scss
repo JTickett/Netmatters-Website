@@ -18,5 +18,61 @@
         color: $white;
     }
 
+    &__darkbutton {
+        @include button($btn-drk);
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+
+    &__googlebutton{
+        @include button($btn-google, $bradius:6px);
+        font-size: 20px;
+    }
+
+    &__tpbutton {
+        @include button($btn-trustpilot, $bradius:6px);
+        font-size: 20px;
+    }
+
+    &__quote {
+        font-size: 20.8px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 30px;
+        margin-inline: 0px;
+        margin-block-start: 0px;
+        margin-top: 25px;
+
+        footer {
+
+            //display: inline;
+
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 25px;
+            margin-bottom: 25px;
+
+            p {
+                color: #a3a8ac;
+                display: inline;
+
+            }
+            cite {
+                a {
+                    //color: tomato;
+                }
+                
+            }
+        }
+    }
+
+    .icon-star {
+
+        &::before{
+            font-size: 50px;
+            color: orange;
+            margin-bottom: 25px;
+        }
+    }
 
 }

@@ -271,7 +271,7 @@
         </section>
 
         <!-- About Us -->
-        <section class="about reusable-container">
+        <section class="about reusable-container section">
             <div class="">
                 <h2>Welcome To Netmatters</h2>
                 <p>
@@ -293,18 +293,18 @@
                     
                 <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.</p>
                 <p>We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
-                <a class="button" href="#">Why Choose Us?</a>
-                <a class="button" href="#">Our Culture</a>
+                <a class="about__darkbutton" href="#">Why Choose Us?  <span class="icon-arrow-right2"></span></a>
+                <a class="about__darkbutton" href="#">Our Culture  <span class="icon-arrow-right2"></span></a>
             </div>
 
             <div>
                 <h2>What Our Clients Think</h2>
-                <span style="color: orange; margin-bottom: 25px; font-size: 50px;" class="icon-star"></span>
-                <span style="color: orange; margin-bottom: 25px; font-size: 50px;" class="icon-star"></span>
-                <span style="color: orange; margin-bottom: 25px; font-size: 50px;" class="icon-star"></span>
-                <span style="color: orange; margin-bottom: 25px; font-size: 50px;" class="icon-star"></span>
-                <span style="color: orange; margin-bottom: 25px; font-size: 50px;" class="icon-star"></span>
-                <blockquote>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <blockquote class="about__quote">
                     Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!
                     <footer>
                         <p>Eleanor Bishop, Head of Marketing - </p>
@@ -315,11 +315,11 @@
                     </footer>
                 </blockquote> 
             </div>
-            <a class="button" href="#">
+            <a  class="about__googlebutton" href="#">
                 Google Reviews
                 <span class="icon-arrow-right2"></span>
             </a>
-            <a class="button" href="#">
+            <a  class="about__tpbutton" href="#">
                 Trustpilot Reviews
                 <span class="icon-arrow-right2"></span>
             </a>
@@ -336,37 +336,38 @@
             <!-- Container for Cards -->
             <main>
                 <!-- 1st Job Card Container -->
-                <div class="news__card">
-                    <a href="#" id="news__card1">
+                <div class="news-card">
+                    <a href="#" id="news-card1">
 
                         <!-- Image Container -->
-                        <div>
-                            <a href="#">
-                                <img src="images/what-is-digital-dPNq.webp">
-                            </a>>
-                            <a href="#">
+                        <div class="news-card-block1">
+                            <a class="news-card-block1__category" href="#">
                                 Insights
                             </a>
+                            <picture class="news-card-block1__image">
+                                <img src="images/what-is-digital-dPNq.webp">
+                            </picture>
                         </div>
 
                         <!-- Detail Container -->
-                        <div>
-                            <h3>
+                        <div class="news-card-block2">
+                            <h3 class="news-card__title">
                                 What is Digital Marketing and How Can It Help...
+                                <p class="news-card__title-readtime"> - 5 minute read</p>
                             </h3>
-                            <p>
+                            <p class="news-card__description">
                                 If you own a business, it’s likely you either already have an online presence or are considering hav...
                             </p>
-                            <a class="button" href="#">
+                            <a class="button news-card__button" href="#">
                                 Read More
                             </a>
                             <!-- User Container -->
-                            <div>
-                                <img src="images/netmatters-ltd-VXAv.webp">
-                                <h5>
+                            <div class="news-card__author">
+                                <img class="news-card__author-image" src="images/netmatters-ltd-VXAv.webp">
+                                <h5 class="news-card__author-name">
                                     Posted by Netmatters
                                 </h5>
-                                <p>
+                                <p class="news-card__author-date">
                                     5th April 2024
                                 </p>
                             </div>
@@ -375,8 +376,8 @@
                     </a>
                 </div>
 
-                <div class="news__card">
-                    <a href="#" id="news__card2">
+                <div class="news-card">
+                    <a href="#" id="news-card2">
 
                         <!-- Image Container -->
                         <div>
@@ -414,8 +415,8 @@
                     </a>
                 </div>
 
-                <div class="news__card">
-                    <a href="#" id="news__card3">
+                <div class="news-card">
+                    <a href="#" id="news-card3">
 
                         <!-- Image Container -->
                         <div>

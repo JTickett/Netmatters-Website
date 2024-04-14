@@ -295,6 +295,11 @@ body {
   display: none;
 }
 
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 #header1 {
   display: flex;
   flex-flow: row nowrap;
@@ -548,6 +553,76 @@ body {
 .about__text {
   color: #ffffff;
 }
+.about__darkbutton {
+  background-color: #272936;
+  border-radius: 3px;
+  line-height: 50px;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 30px;
+}
+.about__darkbutton :hover {
+  text-decoration: none;
+}
+.about__googlebutton {
+  background-color: #4387f6;
+  border-radius: 6px;
+  line-height: 50px;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.about__googlebutton :hover {
+  text-decoration: none;
+}
+.about__tpbutton {
+  background-color: #00b67b;
+  border-radius: 6px;
+  line-height: 50px;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.about__tpbutton :hover {
+  text-decoration: none;
+}
+.about__quote {
+  font-size: 20.8px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 30px;
+  margin-inline: 0px;
+  margin-block-start: 0px;
+  margin-top: 25px;
+}
+.about__quote footer {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.about__quote footer p {
+  color: #a3a8ac;
+  display: inline;
+}
+.about .icon-star::before {
+  font-size: 50px;
+  color: orange;
+  margin-bottom: 25px;
+}
 
 #news {
   display: grid;
@@ -570,7 +645,7 @@ body {
   text-decoration: underline;
 }
 
-.news__card {
+.news-card {
   display: grid;
   background-color: #ffffff;
   align-self: center;
@@ -578,31 +653,60 @@ body {
   border-radius: 3px;
   margin: 30px 20px 20px;
 }
-.news__card h3 {
+.news-card-block1 {
+  display: block;
+  position: relative;
+}
+.news-card-block1__category {
+  background: red;
+  display: block;
+  background-origin: padding-box;
+  position: absolute;
+  right: 0px;
+  padding: 0 10px;
+  z-index: 1;
+  top: 10px;
+  font-size: 0.75rem;
+  line-height: 1.438rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.news-card-block1__image {
+  box-sizing: border-box;
+}
+.news-card-block1__image img {
+  width: 100%;
+  height: auto;
+}
+.news-card-block2__title {
   font-weight: 300;
   font-size: 1.3rem;
 }
-.news__card p {
+.news-card-block2__title-readtime {
+  color: yellow;
+}
+.news-card-block2__description {
   font-weight: 400;
   font-size: 0.8125rem;
   line-height: 1.375rem;
 }
-.news__card .button {
-  margin-bottom: 10px;
-}
-.news__card div {
-  padding: 20px;
-}
-.news__card a {
+.news-card-block2__button {
+  background-color: red;
+  border-radius: 3px;
+  line-height: 50px;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 5px 15px;
   text-decoration: none;
-  border-radius: 10px;
 }
-.news__card a:hover {
-  color: white;
-  background-color: purple;
-  border-radius: 10px;
+.news-card-block2__button :hover {
+  text-decoration: none;
 }
-
+.news-card-block2__author {
+  border-top: solid 1px purple;
+}
 .email {
   background-color: #dddddd;
   color: #333645;
