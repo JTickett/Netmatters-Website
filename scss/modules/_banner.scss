@@ -4,7 +4,7 @@
 // Note: For now this is just a static background image.
 
 #banner {
-    color: yellow;
+    color: $white;
     background-color: $black;
     height: 550px;
     display: block;
@@ -18,8 +18,8 @@
     div {
         align-self: auto;
         margin: auto;
-        position: absolute;
-        top: 35%;
+        position: relative;
+        top: -450px;
         //right: 10%;
         display: block;
         h1 {
