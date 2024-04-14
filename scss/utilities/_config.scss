@@ -28,19 +28,21 @@ $footer-bottom-color                : $footer-bottom;
 $card-background-color              : $grey-light;
 $card-text-color                    : #464957;
 
+//  Social Media Icons
 $social-facebook-color              : #3b5998;
 $social-linkedin-color              : #0077b5;
 $social-twitter-color               : #00aced;
 $social-instagram-color             : #d93175;
 
+//  Service-specific Colours (These are used in the Nav bar, Service Cards, and the News Cards) 
 $service-software                   : #67809f;
 $service-software-dark              : #526781;
 $service-it                         : #4183d7;
 $service-it-dark                    : #2a6ec6;
 $service-marketing                  : #2ecc71;
 $service-marketing-dark             : #1a8c5d;
-$service-telecoms                    : #d64541;
-$service-telecoms-dark               : #ae3a35;
+$service-telecoms                   : #d64541;
+$service-telecoms-dark              : #ae3a35;
 $service-webdesign                  : #926fb1;
 $service-webdesign-dark             : #7e57a0;
 $service-cybersec                   : #f62459;
@@ -82,3 +84,9 @@ $btn-contact: #999aa2;
 $btn-contact-hover: #84858f;
 
 
+//  Breakpoints
+$break--xs: 1px;
+$break--sml: 460px;
+$break--med: 768px;
+$break--l: 992px;
+$break--xl: 1260px;

@@ -5,28 +5,45 @@
 
 // Elements
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
 body {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #666;
+  font-size: 1rem;
   font-family: Poppins, sans-serif;
+  letter-spacing: 0.4px;
+  background-color: #fff;
 }
 
 //Disable default anchor tag behaviour so that it only underlines on hover.
-a {
-  text-decoration: none;
-  :hover {
-    text-decoration: underline;
-  }
-}
+// a {
+//   text-decoration: none;
+//   :hover {
+//     text-decoration: underline;
+//   }
+// }
 
 
-li {
-  list-style-type: none;
+
+#page-wrapper {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 
 // Reused Classes
 
 .reusable-container {
-  
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
