@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon.eot?dpfmnu");
@@ -447,13 +448,14 @@ a {
 #services h3 :hover {
   text-decoration: underline;
 }
-#services #services__viewmore {
+
+.services__viewmore {
   color: #333645;
   font-weight: 600;
   font-size: 1.625rem;
   text-decoration: none;
 }
-#services #services__viewmore :hover {
+.services__viewmore :hover {
   text-decoration: underline;
 }
 
@@ -752,13 +754,96 @@ a {
 }
 .email__header {
   font-weight: 400;
-  font-size: 32px;
+  font-size: 2rem;
+  margin: 0 0 15px;
 }
-.email__text {
+.email-form {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #dddddd;
+}
+.email-form label {
+  line-height: 32px;
+  font-weight: 600;
+  color: #333645;
+}
+.email-form__input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.email-form__label, .email-form__input {
   font-weight: 600;
 }
-.email__text a:hover, .email__text a:focus, .email__text a:visited {
+.email-form__label a:hover, .email-form__label a:focus, .email-form__label a:visited, .email-form__input a:hover, .email-form__input a:focus, .email-form__input a:visited {
   color: #121419;
+}
+.email-form__input {
+  width: 100%;
+  height: 47px;
+  padding: 5px 15px;
+  border-color: #ccc;
+  border-radius: 2px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+}
+.email-form__input:focus {
+  border-color: #5bc0de;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+.email-form__label::after {
+  content: "*";
+  color: red;
+}
+.email-form__privacy {
+  color: grey;
+}
+.email-form__privacy:hover {
+  color: #22242e;
+}
+.email-form__checkbox {
+  display: none;
+}
+.email-form__checkbox-wrap {
+  display: inline-block;
+}
+.email-form__checkbox-box {
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid #000000;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+.email-form__checkbox-box::after {
+  content: "✔";
+  color: #fff;
+  transform: scale(0);
+}
+:checked + .email-form__checkbox-box {
+  background: #15191f;
+  border-color: #15191f;
+}
+:checked + .email-form__checkbox-box::after {
+  transform: scale(1);
+}
+.email-form__button {
+  background-color: #333645;
+  border-radius: 3px;
+  line-height: 35px;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+.email-form__button :hover {
+  text-decoration: none;
 }
 
 li {

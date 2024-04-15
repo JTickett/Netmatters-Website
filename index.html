@@ -243,7 +243,7 @@
 
                 <!-- "View Our Work" Link that only displays in Mobile View -->
                 <h3>
-                    <a id="services__viewmore" href="#">
+                    <a class="services__viewmore" href="#">
                         View Our Work
                     <span class="icon-arrow-right2"></span>
                     </a>
@@ -484,51 +484,52 @@
 
         <!-- Email Newsletter -->
         <section id="email" class="email reusable-container">
-            <div class="">
-                <form>
+            <div class="email-form__wrap">
+                <form class="email-form">
                     <!-- Header -->
                     <div>
                         <h2 class="email__header">Email Newsletter Sign-Up</h2>
                     </div>
 
                     <!-- Name Input Box -->
-                    <div>
-                        <label class="form__label--hidden email__text" for="newsletter_name">
-                            Your Name *
+                    <div class="email-form__input-group">
+                        <label class="email-form__label" for="newsletter_name">
+                            Your Name
                         </label><br> 
-                        <input class="form__input email__text" type="text" id="newsletter_name">
+                        <input class="email-form__input" type="text" id="newsletter_name">
                     </div>
 
                     <!-- Email Input Box -->
-                    <div>
-                        <label class="form__label--hidden email__text" for="newsletter_email">
-                            Your Email *
+                    <div class="email-form__input-group">
+                        <label class="email-form__label" for="newsletter_email">
+                            Your Email
                         </label><br> 
-                        <input class="form__input email__text" type="email" id="newsletter_email">
+                        <input class="email-form__input" type="email" id="newsletter_email">
                     </div>
 
                     <!-- Checkbox and Privacy Policy -->
-                    <div>
+                    <div class="email-form__checkbox-wrap">
                         <!--
                             TODO: You cannot style the default checkbox with CSS.
                             Instead, display: none; the checkbox and use CSS to create a new one until it looks like the Netmatters one
-                        -->
-                        <input type="checkbox" id="email_checkbox">
-                        <label for="email_checkbox">
-                            <p class="email__text">
+                        --> 
+                        
+                        <label class="email-form__checkbox-label" for="email_checkbox">
+                            <input class="email-form__checkbox" type="checkbox" id="email_checkbox" name="marketing"> 
+                            <div class="email-form__checkbox-box"></div>
+                            <p>
                                 Please tick this box if you wish to receive marketing information from us. Please see our 
-                                <a class="email__text" href="#">
+                                <a class="email-form__privacy" href="#">
                                     Privacy Policy
                                 </a>
                                 for more information on how we keep your data safe
                             </p>
                         </label>
-                        
                     </div>
 
                     <!-- Subscribe Button -->
                     <div>
-                        <input class="button" type="submit" value="Subscribe">
+                        <input class="email-form__button" type="submit" value="Subscribe">
                     </div>
 
                 </form>

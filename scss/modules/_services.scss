@@ -24,14 +24,16 @@
         }
     }
 
-    #services__viewmore {
-        color: $newsletter-text-color;
-        font-weight: 600;
-        font-size: 1.625rem;
-        text-decoration: none;
-        :hover{
-            text-decoration: underline;
-        }
+    
+}
+
+.services__viewmore {
+    color: $newsletter-text-color;
+    font-weight: 600;
+    font-size: 1.625rem;
+    text-decoration: none;
+    :hover{
+        text-decoration: underline;
     }
 }
 

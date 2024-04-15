@@ -9,20 +9,120 @@
     color: $newsletter-text-color;
     display: grid;
     
-    //Header
+    //  Header
     &__header {
-        font-weight: 400;
-        font-size: 32px;
+        font-weight: $font-light;
+        font-size: 2rem;
+        margin: 0 0 15px;
     }
-    
-    //Other text (and links)
-    &__text{
-        font-weight: 600;
 
-        a:hover, a:focus, a:visited {
-            color: $newsletter-link-alt-color;
+    &-form {
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: $newsletter-grey;
+
+        label {
+            line-height: 32px;
+            font-weight: $font-bold;
+            color: $dark-txt;
+        }
+
+        &__input-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+
+        &__label,
+        &__input {
+
+            font-weight: 600;
+
+            a:hover, a:focus, a:visited {
+                color: $newsletter-link-alt-color;
+            }
+        }
+
+        &__input {
+            width: 100%;
+            height: 47px;
+            padding: 5px 15px;
+            border-color: #ccc;
+            border-radius: 2px;
+            background-color: #fff;
+            border: 1px solid #e5e5e5;
+          
+            &:focus {
+              border-color: #5bc0de;
+              outline: 0;
+              box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+                0 0 8px rgba(91, 192, 222, 0.6);
+            }
+        }
+
+        //  Add the red asterisk to show this is a required field
+        &__label::after {
+            content: "*";
+            color: red;
+        }
+
+        &__privacy {
+            color: grey;
+            &:hover {
+              color: $vdark-bg;
+            }
+        }
+
+        &__checkbox {
+
+            &-wrap {
+                display: inline-block;
+            }
+
+            //  Hide the real box
+            display: none;
+            
+            &-box {
+                width: 2rem;
+                height: 2rem;
+                border: 3px solid #000000;
+                border-radius: 3px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 10px;
+                flex-shrink: 0;
+            }
+
+            &-box::after {
+                content: "\2714";
+                color: #fff;
+                transform: scale(0);
+            }
+
+            &-label {
+
+            }
+
+            :checked + &-box {
+                background: #15191f;
+                border-color: #15191f;
+            }
+
+            :checked + &-box::after {
+            transform: scale(1);
+            }
+
+        }
+
+        &__button {
+            @include button($newsletter-text-color, $lheight:35px);
         }
 
     }
+
+    
+    
 }
 
