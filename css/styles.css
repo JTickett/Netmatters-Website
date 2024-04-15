@@ -300,6 +300,10 @@ body {
   padding-bottom: 50px;
 }
 
+a {
+  text-decoration: none;
+}
+
 #header1 {
   display: flex;
   flex-flow: row nowrap;
@@ -635,9 +639,6 @@ body {
   font-weight: 600;
   color: #333645;
 }
-#news h3 {
-  color: #333645;
-}
 #news #services__viewmore {
   text-decoration: none;
 }
@@ -649,16 +650,17 @@ body {
   display: grid;
   background-color: #ffffff;
   align-self: center;
-  border: 1px solid red;
+  border: 1px solid #ccc;
   border-radius: 3px;
   margin: 30px 20px 20px;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
 .news-card-block1 {
   display: block;
   position: relative;
 }
 .news-card-block1__category {
-  background: red;
+  background: #db8c0d;
   display: block;
   background-origin: padding-box;
   position: absolute;
@@ -678,12 +680,22 @@ body {
   width: 100%;
   height: auto;
 }
+.news-card-block2 {
+  text-align: left;
+  padding: 30px;
+}
 .news-card-block2__title {
   font-weight: 300;
-  font-size: 1.3rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: #db8c0d;
 }
 .news-card-block2__title-readtime {
-  color: yellow;
+  font-size: 0.85rem;
+  color: #333645;
+  vertical-align: middle;
+  display: inline;
 }
 .news-card-block2__description {
   font-weight: 400;
@@ -691,22 +703,48 @@ body {
   line-height: 1.375rem;
 }
 .news-card-block2__button {
-  background-color: red;
+  background-color: #db8c0d;
   border-radius: 3px;
-  line-height: 50px;
+  line-height: 35px;
   color: #ffffff;
   display: inline-block;
   font-weight: 400;
   text-transform: uppercase;
   padding: 5px 15px;
   text-decoration: none;
+  padding: 5px 15px;
 }
 .news-card-block2__button :hover {
   text-decoration: none;
 }
 .news-card-block2__author {
-  border-top: solid 1px purple;
+  border-top: 1px solid #ccc;
+  margin-top: 30px;
+  padding-top: 30px;
+  display: table;
+  width: 100%;
+  font-size: 0.875rem;
 }
+.news-card-block2__author-image {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.news-card-block2__author-text {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 20px;
+  line-height: 1.375rem;
+  text-align: left;
+}
+.news-card-block2__author-text-name {
+  display: table-cell;
+  font-weight: 600;
+  color: #333645;
+}
+.news-card-block2__author-text-date {
+  line-height: 1.37rem;
+}
+
 .email {
   background-color: #dddddd;
   color: #333645;

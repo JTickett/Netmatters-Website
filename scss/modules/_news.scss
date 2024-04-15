@@ -15,11 +15,6 @@
         color: $newsletter-text-color;
     }
 
-    h3{
-        color: $newsletter-text-color;
-    }
-
-
     #services__viewmore{
         text-decoration: none;
         :hover{
@@ -33,9 +28,11 @@
     display: grid;
     background-color: $white;
     align-self: center;
-    border: 1px solid red;
+    border: 1px solid #ccc;
     border-radius: 3px;
     margin: 30px 20px 20px;
+    box-shadow: 0 3px 35px rgba(0,0,0,.1);
+
 
     &-block1 {
 
@@ -43,7 +40,7 @@
         position: relative; //  Relative here allows the 'absolute' position below to reference it
 
         &__category {
-            background: red;
+            background: $service-business;
             display: block;
             //background-clip: border-box;
             background-origin: padding-box;
@@ -74,13 +71,27 @@
 
     &-block2 {
 
+        //border: 1px solid #ccc;
+        //border-radius: 3px;
+
+        text-align: left;
+        padding: 30px;
+
         &__title {
 
             font-weight: 300;
-            font-size: 1.3rem;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            font-weight: 600;
+            color: $service-business; // read time
+
+
 
             &-readtime {
-                color: yellow;
+                font-size: .85rem;
+                color: #333645;
+                vertical-align: middle;
+                display: inline;
             }
         }
     
@@ -91,24 +102,46 @@
         }
     
         &__button {
-            @include button(red, $bradius: 3px);
+            @include button($service-business, $bradius: 3px, $lheight: 35px);
+            padding: 5px 15px;
         }
 
 
         &__author {
 
-            border-top: solid 1px purple;
-    
+            border-top: 1px solid #ccc;
+            margin-top: 30px;
+            padding-top: 30px;
+            display: table;
+            width: 100%;
+            font-size: .875rem;
+
             &-image {
-    
+                //width: 1%;
+                border-radius: 50%;
+                overflow: hidden;
             }
-            &-name {
-    
+
+            &-text {
+
+                display: table-cell;
+                vertical-align: middle;
+                padding-left: 20px;
+                line-height: 1.375rem;
+                text-align: left;
+
+
+
+                &-name {
+                    display: table-cell;
+                    font-weight: 600;
+                    color: #333645;
+                }
+
+                &-date {
+                    line-height: 1.37rem;
+                }
             }
-            &-date {
-    
-            }
-    
         }
 
     }
