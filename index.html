@@ -43,6 +43,14 @@
                 </a>
             </div>
 
+            <!-- Search Bar (Only visible on larger screen sizes) -->
+            <form id="header1__searchform">
+                <input id="header1__searchform-input" type="text" placeholder="Search..">
+                <button id="header1__searchform-button" class="" type="submit" href="#">
+                    <span class="icon-search"></span>
+                </button>
+            </form>
+
             <!-- Burger Icon -->
             <a id="header1__burger">
                 <div class="burger__box">
@@ -56,26 +64,19 @@
             
             <!-- Support Button and Contact Button -->
             <div id="header1__buttons">
-                <a id="header1__supportbtn" class="button hidden" href="#">Support</a>
-                <a id="header1__contactbtn" class="button hidden" href="#">Contact</a>
+                <a id="header1__supportbtn" class="button" href="#">Support</a>
+                <a id="header1__contactbtn" class="button" href="#">Contact</a>
             </div>
 
-            <!-- Search Bar (Only visible on larger screen sizes) -->
-            <form id="header1__searchbox" class="hidden">
-                <input type="text" placeholder="Search..">
-                <a class="button" type="submit" href="#">
-                    <span class="icon-search"></span>
-                </a>
-            </form>
 
         </div>
 
         <!-- Second row which contains the Search Bar under the smallest screen sizes -->
         <div id="header2" class="reusable-container">
             <form id="header2__searchform">
-                <label for="header2__searchform__input" class="hidden">Search:</label>
-                <input id="header2__searchform__input" type="text" placeholder="Search..">
-                <button id="header2__searchform__button" class="" type="submit" href="#">
+                <label for="header2__searchform-input" class="hidden">Search:</label>
+                <input id="header2__searchform-input" type="text" placeholder="Search..">
+                <button id="header2__searchform-button" class="" type="submit" href="#">
                     <span class="icon-search"></span>
                 </button>
             </form>

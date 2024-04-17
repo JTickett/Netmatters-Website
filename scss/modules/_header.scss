@@ -26,6 +26,12 @@
     }
 
     &__phone {
+
+        //  Hides the phone icon when screen size reaches medium
+        @include mq(medium) {
+            display: none;
+        }
+
         order: 2;
         font-weight: 400;
         line-height: 32px;
@@ -33,19 +39,68 @@
         letter-spacing: 0.4px;
     }
 
-    
     &__buttons {
+
         order: 2;
+
+        //  Only display these buttons at a larger screen size
+        display: none;
+        @include mq(large) {
+            display: block;
+        }
+
     }
+
+    &__searchform {
+
+        
+
+        //  Hide the search box until screen reaches medium.
+        display: none;
+        @include mq(medium) {
+            display: flex;
+        }
+
+        order: 3;
+
+        background-color: #eee;
+        position: relative;
+        box-sizing: border-box;
+        flex-direction: row;
+
+        //  Actual Text Input Box - Needs to overlap the button
+        &-input {
+
+            display: flex;
+            @include mq(large) {
+                display: none;
+            }
+
+            flex-direction: row;
+            flex-grow: 1;
+            justify-content: flex-start;
+            width: 100%;
+            height: 47px;
+            padding-right: 40px;
+        }
+
+        &-button {
+            background-color: none;
+            border: none;
+            right: 3px;
+            top: 30px;
+        }
+
+    }
+
+    
+
 
     &__burger {
         order: 3;
         margin-left: 20px;
     }
 
-    &__searchbox {
-        order: 4;
-    }
 
 
 }
@@ -54,9 +109,9 @@
 #header2 {
 
     //Hide search bar unless screen size is small enough
-    display: none;
+    display: block;
     @include mq(medium) {
-        display: block;
+        display: none;
     }
 
 
@@ -73,20 +128,13 @@
 
     //  Form within the container div.
     &__searchform {
-
-
-
-
-
-
         background-color: #eee;
-        
         display: flex;
         position: relative;
         box-sizing: border-box;
 
         //  Actual Text Input Box - Needs to overlap the button
-        &__input {
+        &-input {
             flex-direction: row;
             flex-grow: 1;
             justify-content: flex-start;
@@ -95,7 +143,7 @@
             padding-right: 40px;
         }
 
-        &__button {
+        &-button {
             background-color: none;
             border: none;
             right: 3px;
@@ -119,6 +167,7 @@
     }
 
     &-list {
+
         display: flex;
         margin-top: 0px;
         margin-bottom: 0px;
@@ -126,14 +175,16 @@
         font-size: 1.125rem;
         text-transform: uppercase;
         justify-content: center;
-
-
+        width: 970px;
+        margin: auto;
         
 
         &item {
 
             text-align: center;
             font-size: large;
+            flex-grow: 1;
+            flex-shrink: 1;
 
             display: block;
             a {
