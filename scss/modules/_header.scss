@@ -2,13 +2,6 @@
 // Header Style Partial
 // =====================================================
 
-
-#header-wrapper {
-    // I don't know if anythings even needed lol. It's just 3 rows.
-}
-
-
-
 // First Row contains the Logo, Contact Buttons and Burger Menu
 #header1 {
 
@@ -60,7 +53,13 @@
 //  Second Row is the Mobile Search Bar
 #header2 {
 
-    display: block;
+    //Hide search bar unless screen size is small enough
+    display: none;
+    @include mq(medium) {
+        display: block;
+    }
+
+
     box-sizing: border-box;
     justify-content: flex-end;
     
@@ -74,6 +73,11 @@
 
     //  Form within the container div.
     &__searchform {
+
+
+
+
+
 
         background-color: #eee;
         
@@ -101,16 +105,56 @@
     }
 }
 
-//  Third row is the Nav Bar
+//  Third row is the Nav Bar (Although most of the action happens in the 'nav' Class selector!)
 #header3 {
+    background-color: $footer-background-color;
+}
+
+.nav {
+
+    // Hide the Nav Bar until screen width large enough
+    display: none;
+    @include mq(large){
+        display: initial;
+    }
+
+    &-list {
+        display: flex;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+        font-size: 1.125rem;
+        text-transform: uppercase;
+        justify-content: center;
 
 
+        
+
+        &item {
+
+            text-align: center;
+            font-size: large;
+
+            display: block;
+            a {
+                display: block;
+                padding-top: 19px;
+                padding-bottom: 18px;
+                span {
+                    display: block;
+                }
+            }
+
+        }
+
+    }
 
 
 }
 
 
 .burger {
+
     display: flex;
     flex-direction: column;
     width: 33px;
@@ -119,19 +163,19 @@
     gap: 7px;
     background: none;
     cursor: pointer;
-}
 
-.top-bread, .meat, .bottom-bread {
-    background: $white;
-    height: 4px;
-    width: 33px;
-    border-radius: 0px;
-    display: block;
-}
+    &__box {
+        padding: 15px 15px;
+        background: $footer-background-color;
+        border: solid black 1px;
+        border-radius: 3px;
+    }
 
-.burger-box {
-    padding: 15px 15px;
-    background: $footer-background-color;
-    border: solid black 1px;
-    border-radius: 3px;
+    &__top, &__middle, &__bottom {
+        background: $white;
+        height: 4px;
+        width: 33px;
+        border-radius: 0px;
+        display: block;
+    }
 }

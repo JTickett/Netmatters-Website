@@ -35,15 +35,15 @@
 //  Media Queries
 @mixin mq($breakpoint) {
     @if $breakpoint == "x-small" {
-      @media (min-width: $break--xs) and (max-width: $break--sml) {
+      @media (min-width: $break--xs) and (max-width: $break--s) {
         @content;
       }
     } @else if $breakpoint == "small" {
-      @media (min-width: #{$break--sml}) and (max-width: $break--med) {
+      @media (min-width: #{$break--s}) and (max-width: $break--m) {
         @content;
       }
     } @else if $breakpoint == "medium" {
-      @media (min-width: #{$break--med}) {
+      @media (min-width: #{$break--m}) {
         @content;
       }
     } @else if $breakpoint == "large" {

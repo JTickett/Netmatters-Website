@@ -342,7 +342,7 @@ a {
 }
 
 #header2 {
-  display: block;
+  display: none;
   box-sizing: border-box;
   justify-content: flex-end;
   padding-top: 5px;
@@ -351,6 +351,11 @@ a {
   padding-right: 15px;
   border: solid rgb(201, 201, 201) 5px;
   border-radius: 5px;
+}
+@media (min-width: 768px) {
+  #header2 {
+    display: block;
+  }
 }
 #header2__searchform {
   background-color: #eee;
@@ -373,6 +378,40 @@ a {
   top: 30px;
 }
 
+#header3 {
+  background-color: #323544;
+}
+
+.nav {
+  display: none;
+}
+@media (min-width: 992px) {
+  .nav {
+    display: initial;
+  }
+}
+.nav-list {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  justify-content: center;
+}
+.nav-listitem {
+  text-align: center;
+  font-size: large;
+  display: block;
+}
+.nav-listitem a {
+  display: block;
+  padding-top: 19px;
+  padding-bottom: 18px;
+}
+.nav-listitem a span {
+  display: block;
+}
+
 .burger {
   display: flex;
   flex-direction: column;
@@ -383,20 +422,18 @@ a {
   background: none;
   cursor: pointer;
 }
-
-.top-bread, .meat, .bottom-bread {
+.burger__box {
+  padding: 15px 15px;
+  background: #323544;
+  border: solid black 1px;
+  border-radius: 3px;
+}
+.burger__top, .burger__middle, .burger__bottom {
   background: #ffffff;
   height: 4px;
   width: 33px;
   border-radius: 0px;
   display: block;
-}
-
-.burger-box {
-  padding: 15px 15px;
-  background: #323544;
-  border: solid black 1px;
-  border-radius: 3px;
 }
 
 #banner {
