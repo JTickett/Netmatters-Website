@@ -51,6 +51,14 @@
 
     }
 
+    &__supportbtn {
+        background-color: $service-it;
+    }
+
+    &__contactbtn {
+        background-color: $btn-contact;
+    }
+
     &__searchform {
 
         
@@ -191,8 +199,18 @@
                 display: block;
                 padding-top: 19px;
                 padding-bottom: 18px;
+
+                //font-size: 10px;
+                //line-height: 10px;
+                //letter-spacing: 0.4px;
+
                 span {
                     display: block;
+                }
+                small {
+                    font-size: 10px;
+                    line-height: 10px;
+                    letter-spacing: 0.4px;
                 }
             }
 
@@ -202,6 +220,14 @@
 
 
 }
+
+#nav-software {color: $service-software}
+#nav-it {color: $service-it}
+#nav-marketing {color: $service-marketing}
+#nav-telecoms {color: $service-telecoms}
+#nav-web {color: $service-webdesign}
+#nav-security {color: $service-cybersec}
+#nav-developer {color: $service-training}
 
 
 .burger {

@@ -344,6 +344,12 @@ a {
     display: block;
   }
 }
+#header1__supportbtn {
+  background-color: #4183d7;
+}
+#header1__contactbtn {
+  background-color: #999aa2;
+}
 #header1__searchform {
   display: none;
   order: 3;
@@ -455,6 +461,39 @@ a {
 }
 .nav-listitem a span {
   display: block;
+}
+.nav-listitem a small {
+  font-size: 10px;
+  line-height: 10px;
+  letter-spacing: 0.4px;
+}
+
+#nav-software {
+  color: #67809f;
+}
+
+#nav-it {
+  color: #4183d7;
+}
+
+#nav-marketing {
+  color: #2ecc71;
+}
+
+#nav-telecoms {
+  color: #d64541;
+}
+
+#nav-web {
+  color: #926fb1;
+}
+
+#nav-security {
+  color: #f62459;
+}
+
+#nav-developer {
+  color: #ce4125;
 }
 
 .burger {
