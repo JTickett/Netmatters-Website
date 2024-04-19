@@ -25,6 +25,19 @@
         }
     }
 
+    
+    //  This is a wrapped for the all UI buttons on the top row e.g. 
+    &__actions {
+
+        order: 2;
+        padding-bottom: 7px;
+        padding-top: 7px;
+
+        display: flex;
+        align-items: center;
+
+    }
+
     &__phone {
 
         //  Hides the phone icon when screen size reaches medium
@@ -52,11 +65,15 @@
     }
 
     &__supportbtn {
-        background-color: $service-it;
+        @include button($service-it);
+        margin-left: 20px;
+        font-size: 18px;
     }
 
     &__contactbtn {
-        background-color: $btn-contact;
+        @include button($btn-contact);
+        margin-left: 20px;
+        font-size: 18px;
     }
 
     &__searchform {
@@ -70,33 +87,81 @@
         }
 
         order: 3;
+        margin-left: 20px;
 
         background-color: #eee;
         position: relative;
-        box-sizing: border-box;
+        //box-sizing: border-box;
         flex-direction: row;
+        align-items: center;
 
         //  Actual Text Input Box - Needs to overlap the button
         &-input {
 
             display: flex;
+
+            //  This is the standard size for when it's larger, but it's hidden by default
+            width: 268px;
+
+
+            @include mq(medium) {
+                width: 142px;
+            }
             @include mq(large) {
                 display: none;
+
+                //  This is the padding for the larger size??)
+                padding-right: 40px;
             }
+
+            box-sizing: content-box;
 
             flex-direction: row;
             flex-grow: 1;
             justify-content: flex-start;
-            width: 100%;
-            height: 47px;
-            padding-right: 40px;
+            
+            height: 44px;
+            border: 1px;
+            
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            
+
+
+            border-color: #ccc;
+            border-radius: 2px;
+            background-color: #fff;
+            border: 1px solid #e5e5e5;
+          
+            &:focus {
+              border-color: #5bc0de;
+              outline: 0;
+              box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+                0 0 8px rgba(91, 192, 222, 0.6);
+            }
+
         }
 
         &-button {
-            background-color: none;
-            border: none;
-            right: 3px;
-            top: 30px;
+
+            @include button($btn-contact);
+
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 3px;
+            padding-top: 7px;
+
+            font-size: 23px;
+            border-style: none;
+
+            height: 56px;
+
+            //background-color: none;
+            //border: none;
+            //right: 3px;
+            //top: 30px;
         }
 
     }
@@ -188,21 +253,23 @@
         
 
         &item {
+            :hover {
+                text-decoration: none;
 
+                //  TODO: Show the Submenus
+
+            }
+
+            display: block;
             text-align: center;
             font-size: large;
             flex-grow: 1;
-            flex-shrink: 1;
+            flex-shrink: 1;      
 
-            display: block;
             a {
                 display: block;
                 padding-top: 19px;
                 padding-bottom: 18px;
-
-                //font-size: 10px;
-                //line-height: 10px;
-                //letter-spacing: 0.4px;
 
                 span {
                     display: block;

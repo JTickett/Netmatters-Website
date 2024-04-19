@@ -28,52 +28,54 @@
     <!-- Header -->
     <header id="header-wrapper">
 
-
         <div id="header1" class="reusable-container">
 
             <!-- Logo -->
             <div id="header1__logo">
-                <img src="images\f-logo.webp" alt="Netmatters Logo"></img>
-            </div>
-            
-            <!-- Telephone Icon, or Support & Contact Buttons -->
-            <div id="header1__phone">
                 <a href="#">
-                    <span class="icon-phone_in_talk"></span>
+                    <img src="images\f-logo.webp" alt="Netmatters Logo"></img>
                 </a>
             </div>
 
-            <!-- Search Bar (Only visible on larger screen sizes) -->
-            <form id="header1__searchform">
-                <input id="header1__searchform-input" type="text" placeholder="Search..">
-                <button id="header1__searchform-button" class="" type="submit" href="#">
-                    <span class="icon-search"></span>
-                </button>
-            </form>
-
-            <!-- Burger Icon -->
-            <a id="header1__burger">
-                <div class="burger__box">
-                    <button class="burger">
-                        <div class="burger__top"></div>
-                        <div class="burger__middle"></div>
-                        <div class="burger__bottom"></div>
+            <div id="header1__actions">
+                <!-- Search Bar (Only visible on larger screen sizes) -->
+                <form id="header1__searchform">
+                    <input id="header1__searchform-input" type="text" placeholder="Search..">
+                    <button id="header1__searchform-button" class="" type="submit" href="#">
+                        <span class="icon-search"></span>
                     </button>
+                </form>
+
+                <!-- Telephone Icon -->
+                <div id="header1__phone">
+                    <a href="#">
+                        <span class="icon-phone_in_talk"></span>
+                    </a>
                 </div>
-            </a>
-            
-            <!-- Support Button and Contact Button -->
-            <div id="header1__buttons">
-                <a id="header1__supportbtn" class="button" href="#">
-                    <span class="icon-mouse"></span>
-                    Support
-                </a>
-                <a id="header1__contactbtn" class="button" href="#">
-                    <span class="icon-email"></span>
-                    Contact
+        
+                <!-- Support Button and Contact Button -->
+                <div id="header1__buttons">
+                    <a id="header1__supportbtn" class="" href="#">
+                        <span class="icon-mouse"></span>
+                        Support
+                    </a>
+                    <a id="header1__contactbtn" class="" href="#">
+                        <span class="icon-email"></span>
+                        Contact
+                    </a>
+                </div>
+
+                <!-- Burger Icon -->
+                <a id="header1__burger">
+                    <div class="burger__box">
+                        <button class="burger">
+                            <div class="burger__top"></div>
+                            <div class="burger__middle"></div>
+                            <div class="burger__bottom"></div>
+                        </button>
+                    </div>
                 </a>
             </div>
-
 
         </div>
 
@@ -93,7 +95,7 @@
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-listitem">
-                        <a>
+                        <a href="#">
                             <span id="nav-software" class="nav__listitem-icon icon-laptop"></span>
                             <small>Bespoke</small><br>
                             Software
