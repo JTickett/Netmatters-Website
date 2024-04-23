@@ -38,7 +38,52 @@
 }
 
 
+
 .service-card {
+
+    &__wrapper {
+
+        display: grid;
+        grid-gap: 30px;
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 25px;
+        grid-template-areas:
+        "software"
+        "support"
+        "digital"
+        "telecoms"
+        "design"
+        "cyber"
+        "developer";
+
+        @include mq(medium){
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:
+            "software software"
+            "support support"
+            "digital digital"
+            "telecoms design"
+            "cyber developer";
+        }
+
+        @include mq(large) {
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-areas:
+            "software software support support digital digital"
+            "telecoms telecoms telecoms design design design"
+            "cyber cyber cyber developer developer developer";
+        }
+
+        @include mq(x-large) {
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-areas:
+            "software software software software support support support support digital digital digital digital"
+            "telecoms telecoms telecoms design design design cyber cyber cyber developer developer developer";
+        }
+
+    }
+
 
     box-shadow: 0 3px 35px rgba(0,0,0,.1);
 
@@ -52,9 +97,10 @@
         top: 10px;
         border-radius: 10px;
         &:hover{
-            top: -20px;
-            transition: 1s ease;
-            color:red;
+            //top: -20px;
+            //transition: 1s ease;
+            //color:red;
+            color: $white;
 
             //background-color: rgb(187, 164, 255);
             //border-radius: 10px;
@@ -136,5 +182,74 @@
 }
 .service-color-training {
     background-color: $service-training;
+}
+
+#card1 {
+    grid-area: software;
+    :hover {
+        background-color: $service-software ;
+        border-color: $service-software ;
+        top: -10px;
+        transition: 0.5s ease;
+    }
+}
+
+#card2 {
+    grid-area: support;
+    :hover {
+        background-color: $service-it ;
+        border-color: $service-it ;
+        top: -10px;
+        transition: 0.5s ease;
+    }
+}
+
+#card3 {
+    grid-area: digital;
+    :hover {
+        background-color: $service-marketing;
+        border-color: $service-marketing;
+        top: -10px;
+        transition: 0.5s ease;
+    }
+}
+#card4 {
+    grid-area: telecoms;
+    :hover {
+        background-color: $service-telecoms;
+        border-color: $service-telecoms;
+        top: -10px;
+        transition: 0.5s ease;
+    }
+}
+#card5 {
+    grid-area: design;
+    :hover {
+        background-color: $service-webdesign;
+        border-color: $service-webdesign;
+        top: -10px;
+        transition: 0.5s ease;
+    }
+}
+#card6 {
+    grid-area: cyber;
+    :hover {
+        background-color: $service-cybersec;
+        border-color: $service-cybersec;
+        top: -10px;
+        transition: 0.5s ease;
+    }
+}
+#card7 {
+    grid-area: developer;
+    :hover {
+        background-color: $service-training;
+        border-color: $service-training;
+        top: -10px;
+        transition: 0.5s ease;
+    }
+    a:hover{
+        color: $white;
+    }
 }
 

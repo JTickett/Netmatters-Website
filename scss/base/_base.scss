@@ -59,13 +59,6 @@ body {
   @include button(green);
 }
 
-.hidden {
-  //  Consider moving this somewhere else...
-  //  It can be overridden by another display property coming later (Cascade)
-  display: none;
-}
-
-
 .section {
   padding-top: 50px;
   padding-bottom: 50px;

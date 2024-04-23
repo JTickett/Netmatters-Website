@@ -1,0 +1,91 @@
+// =====================================================
+// Carousel Styles Partial
+// =====================================================
+
+//  This is a wrapper for the top carousel that has certificates and awards in it
+.certcarousel {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+//  These are items in the certificate and award carousel.
+//  The logos just turn grey on hover, there is no popup :)
+.cert {
+
+    position: relative;
+    flex-grow: 1;
+    padding: 0 40px;
+    overflow-x: hidden;
+
+    :hover {
+        filter: grayscale(1);
+    }
+
+
+}
+
+.clientcarousel {
+    display: block;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.logowrapper {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+//  These are the clients in the carousel
+//  They do turn grey on hover, but there is also a popup-bubble with further info.
+.client {
+
+    position: relative;
+    flex-grow: 1;
+    padding: 0 40px;
+    overflow-x: hidden;
+
+    &__bubble {
+        
+        background-color: $dark-txt;
+        color: $white;
+        margin: auto;
+        padding: 20px;
+        min-width: 280px;
+        max-width: 280px;
+
+        //  This is the wrapper around the bubble (I know... it's weird having the parent nested in child but it's for a reason!)
+        //  Reason: I just like appending the word "box" on the end :)
+        &box {
+            display: none;
+            position: absolute;
+            bottom: 100px;
+            right: -32px;
+        }
+
+        &-link{
+            @include button(pink);
+        }
+    }
+
+    :hover {
+        filter: grayscale(1);
+        //&__bubblebox { display: block; }
+    }
+
+
+
+    :hover + &__bubblebox {
+
+        display: block;
+
+    }
+
+}

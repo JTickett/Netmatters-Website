@@ -292,10 +292,6 @@ body {
   text-decoration: none;
 }
 
-.hidden {
-  display: none;
-}
-
 .section {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -498,6 +494,10 @@ a {
   background-color: #323544;
 }
 
+#submenu-software {
+  display: none;
+}
+
 .nav {
   display: none;
 }
@@ -525,6 +525,10 @@ a {
 }
 .nav-listitem :hover {
   text-decoration: none;
+}
+.nav-listitem :hover + #submenu-software {
+  text-decoration: none;
+  display: block;
 }
 .nav-listitem a {
   display: block;
@@ -662,6 +666,32 @@ a {
   margin-top: 30px;
   margin-bottom: 20px;
 }
+.service-card__wrapper {
+  display: grid;
+  grid-gap: 30px;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  grid-template-areas: "software" "support" "digital" "telecoms" "design" "cyber" "developer";
+}
+@media (min-width: 768px) {
+  .service-card__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "software software" "support support" "digital digital" "telecoms design" "cyber developer";
+  }
+}
+@media (min-width: 992px) {
+  .service-card__wrapper {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "software software support support digital digital" "telecoms telecoms telecoms design design design" "cyber cyber cyber developer developer developer";
+  }
+}
+@media (min-width: 1260px) {
+  .service-card__wrapper {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "software software software software support support support support digital digital digital digital" "telecoms telecoms telecoms design design design cyber cyber cyber developer developer developer";
+  }
+}
 .service-card :hover {
   text-decoration: none;
 }
@@ -670,9 +700,7 @@ a {
   border-radius: 10px;
 }
 .service-card a:hover {
-  top: -20px;
-  transition: 1s ease;
-  color: red;
+  color: #ffffff;
 }
 .service-card__icon span {
   display: inline-block;
@@ -737,6 +765,154 @@ a {
 
 .service-color-training {
   background-color: #ce4125;
+}
+
+#card1 {
+  grid-area: software;
+}
+#card1 :hover {
+  background-color: #67809f;
+  border-color: #67809f;
+  top: -10px;
+  transition: 0.5s ease;
+}
+
+#card2 {
+  grid-area: support;
+}
+#card2 :hover {
+  background-color: #4183d7;
+  border-color: #4183d7;
+  top: -10px;
+  transition: 0.5s ease;
+}
+
+#card3 {
+  grid-area: digital;
+}
+#card3 :hover {
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+  top: -10px;
+  transition: 0.5s ease;
+}
+
+#card4 {
+  grid-area: telecoms;
+}
+#card4 :hover {
+  background-color: #d64541;
+  border-color: #d64541;
+  top: -10px;
+  transition: 0.5s ease;
+}
+
+#card5 {
+  grid-area: design;
+}
+#card5 :hover {
+  background-color: #926fb1;
+  border-color: #926fb1;
+  top: -10px;
+  transition: 0.5s ease;
+}
+
+#card6 {
+  grid-area: cyber;
+}
+#card6 :hover {
+  background-color: #f62459;
+  border-color: #f62459;
+  top: -10px;
+  transition: 0.5s ease;
+}
+
+#card7 {
+  grid-area: developer;
+}
+#card7 :hover {
+  background-color: #ce4125;
+  border-color: #ce4125;
+  top: -10px;
+  transition: 0.5s ease;
+}
+#card7 a:hover {
+  color: #ffffff;
+}
+
+.certcarousel {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.cert {
+  position: relative;
+  flex-grow: 1;
+  padding: 0 40px;
+  overflow-x: hidden;
+}
+.cert :hover {
+  filter: grayscale(1);
+}
+
+.clientcarousel {
+  display: block;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.logowrapper {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.client {
+  position: relative;
+  flex-grow: 1;
+  padding: 0 40px;
+  overflow-x: hidden;
+}
+.client__bubble {
+  background-color: #333645;
+  color: #ffffff;
+  margin: auto;
+  padding: 20px;
+  min-width: 280px;
+  max-width: 280px;
+}
+.client__bubblebox {
+  display: none;
+  position: absolute;
+  bottom: 100px;
+  right: -32px;
+}
+.client__bubble-link {
+  background-color: pink;
+  border-radius: 3px;
+  line-height: 50px;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+.client__bubble-link :hover {
+  text-decoration: none;
+}
+.client :hover {
+  filter: grayscale(1);
+}
+:hover + .client__bubblebox {
+  display: block;
 }
 
 .about {
@@ -842,13 +1018,28 @@ a {
 }
 
 .news-card {
-  display: grid;
   background-color: #ffffff;
   align-self: center;
   border: 1px solid #ccc;
   border-radius: 3px;
   margin: 30px 20px 20px;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+.news-card__container {
+  display: grid;
+  grid-template-areas: "one" "two" "three";
+}
+@media (min-width: 768px) {
+  .news-card__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "one two";
+  }
+}
+@media (min-width: 1260px) {
+  .news-card__container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "one two three";
+  }
 }
 .news-card-block1 {
   display: block;
@@ -938,6 +1129,29 @@ a {
 }
 .news-card-block2__author-text-date {
   line-height: 1.37rem;
+}
+
+@media (min-width: 768px) {
+  #news-hide {
+    display: none;
+  }
+}
+@media (min-width: 1260px) {
+  #news-hide {
+    display: initial;
+  }
+}
+
+#news-card1 {
+  grid-area: one;
+}
+
+#news-card2 {
+  grid-area: two;
+}
+
+#news-card3 {
+  grid-area: three;
 }
 
 .email {
@@ -1103,6 +1317,10 @@ li a {
 
 li a:hover {
   text-decoration: underline;
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -128,8 +128,7 @@
             padding-top: 5px;
             padding-bottom: 5px;
             
-
-
+            
             border-color: #ccc;
             border-radius: 2px;
             background-color: #fff;
@@ -231,6 +230,10 @@
     background-color: $footer-background-color;
 }
 
+#submenu-software {
+    display: none;
+}
+
 .nav {
 
     // Hide the Nav Bar until screen width large enough
@@ -255,9 +258,11 @@
         &item {
             :hover {
                 text-decoration: none;
-
+            }
+            :hover + #submenu-software {
+                text-decoration: none;
                 //  TODO: Show the Submenus
-
+                display: block;
             }
 
             display: block;

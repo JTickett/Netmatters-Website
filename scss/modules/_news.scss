@@ -25,7 +25,27 @@
 
 .news-card {
     
-    display: grid;
+
+    &__container {
+        display: grid;
+        grid-template-areas:
+        "one"
+        "two"
+        "three";
+
+        @include mq(medium) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:
+            "one two";
+        }
+        
+        @include mq(x-large) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas:
+            "one two three";
+        }
+    }
+
     background-color: $white;
     align-self: center;
     border: 1px solid #ccc;
@@ -146,8 +166,17 @@
 
     }
 
-
-
-
-
 }
+
+#news-hide {
+    @include mq(medium) {
+        display: none;
+    }
+    @include mq(x-large) {
+        display: initial;
+    }
+}
+
+#news-card1 {grid-area: one;}
+#news-card2 {grid-area: two;}
+#news-card3 {grid-area: three;}
