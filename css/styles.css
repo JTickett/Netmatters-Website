@@ -635,7 +635,6 @@ a {
 #services {
   display: grid;
   text-align: center;
-  background-color: #f0f0f0;
 }
 #services h2 {
   text-align: left;
@@ -890,7 +889,6 @@ a {
   position: relative;
   flex-grow: 1;
   padding: 0 40px;
-  overflow-x: hidden;
 }
 .cert :hover {
   filter: grayscale(1);
@@ -915,7 +913,6 @@ a {
   position: relative;
   flex-grow: 1;
   padding: 0 40px;
-  overflow-x: hidden;
 }
 .client__bubble {
   background-color: #333645;
@@ -1042,7 +1039,6 @@ a {
 #news {
   display: grid;
   text-align: center;
-  background-color: #f0f0f0;
 }
 #news h2 {
   text-align: left;
