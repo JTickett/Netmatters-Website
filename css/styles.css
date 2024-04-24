@@ -815,7 +815,6 @@ a {
   grid-area: software;
 }
 #card1 :hover {
-  background-color: #67809f;
   border-color: #67809f;
   top: -10px;
   transition: 0.5s ease;
@@ -825,7 +824,6 @@ a {
   grid-area: support;
 }
 #card2 :hover {
-  background-color: #4183d7;
   border-color: #4183d7;
   top: -10px;
   transition: 0.5s ease;
@@ -835,7 +833,6 @@ a {
   grid-area: digital;
 }
 #card3 :hover {
-  background-color: #2ecc71;
   border-color: #2ecc71;
   top: -10px;
   transition: 0.5s ease;
@@ -845,7 +842,6 @@ a {
   grid-area: telecoms;
 }
 #card4 :hover {
-  background-color: #d64541;
   border-color: #d64541;
   top: -10px;
   transition: 0.5s ease;
@@ -855,7 +851,6 @@ a {
   grid-area: design;
 }
 #card5 :hover {
-  background-color: #926fb1;
   border-color: #926fb1;
   top: -10px;
   transition: 0.5s ease;
@@ -865,7 +860,6 @@ a {
   grid-area: cyber;
 }
 #card6 :hover {
-  background-color: #f62459;
   border-color: #f62459;
   top: -10px;
   transition: 0.5s ease;
@@ -875,7 +869,6 @@ a {
   grid-area: developer;
 }
 #card7 :hover {
-  background-color: #ce4125;
   border-color: #ce4125;
   top: -10px;
   transition: 0.5s ease;
@@ -954,6 +947,9 @@ a {
 }
 .client :hover {
   filter: grayscale(1);
+}
+.client :hover__bubblebox {
+  display: block;
 }
 :hover + .client__bubblebox {
   display: block;
