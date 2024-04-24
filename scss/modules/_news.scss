@@ -25,7 +25,6 @@
 
 .news-card {
     
-
     &__container {
         display: grid;
         grid-template-areas:
@@ -38,7 +37,7 @@
             grid-template-areas:
             "one two";
         }
-        
+
         @include mq(x-large) {
             grid-template-columns: repeat(3, 1fr);
             grid-template-areas:
@@ -74,10 +73,8 @@
             line-height: 1.438rem;
             color: $white;
             text-transform: uppercase;
-
-
-
         }
+
         &__image {
             box-sizing: border-box;
             img {
@@ -85,7 +82,6 @@
                 width: 100%;
                 height: auto;
             }
-
         }
     }
 
@@ -132,7 +128,7 @@
             border-top: 1px solid #ccc;
             margin-top: 30px;
             padding-top: 30px;
-            display: table;
+            display: flex;
             width: 100%;
             font-size: .875rem;
 
@@ -140,6 +136,8 @@
                 //width: 1%;
                 border-radius: 50%;
                 overflow: hidden;
+                height: 47px;
+                width: 47px;
             }
 
             &-text {
@@ -147,10 +145,8 @@
                 display: table-cell;
                 vertical-align: middle;
                 padding-left: 20px;
-                line-height: 1.375rem;
+                line-height: 1.35rem;
                 text-align: left;
-
-
 
                 &-name {
                     display: table-cell;

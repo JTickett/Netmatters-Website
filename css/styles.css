@@ -1151,19 +1151,21 @@ a {
   border-top: 1px solid #ccc;
   margin-top: 30px;
   padding-top: 30px;
-  display: table;
+  display: flex;
   width: 100%;
   font-size: 0.875rem;
 }
 .news-card-block2__author-image {
   border-radius: 50%;
   overflow: hidden;
+  height: 47px;
+  width: 47px;
 }
 .news-card-block2__author-text {
   display: table-cell;
   vertical-align: middle;
   padding-left: 20px;
-  line-height: 1.375rem;
+  line-height: 1.35rem;
   text-align: left;
 }
 .news-card-block2__author-text-name {
