@@ -58,3 +58,11 @@
       @error "#{$breakpoint} isn't a valid media query size!";
     }
   }
+
+  //  For the service cards hover effect.
+  @mixin cardhover($colour) { 
+    background-color:$colour; 
+    border-color:$colour;
+    transition: .5s ease;
+    top: -10px;
+}

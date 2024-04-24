@@ -107,19 +107,27 @@
         }
     }
 
-    display: grid;
-    background-color: $white;
-    align-self: center;
-    border: 1px solid #ccc;
-    border-radius: 15px;
 
-    margin-top: 30px;
-    margin-bottom: 20px;
 
-    // top: 10px;
-    // transition: 0.5s ease;
+    &1:hover {@include cardhover($service-software);} 
+    &2:hover {@include cardhover($service-it);} 
+    &3:hover {@include cardhover($service-marketing);} 
+    &4:hover {@include cardhover($service-telecoms);} 
+    &5:hover {@include cardhover($service-webdesign);} 
+    &6:hover {@include cardhover($service-cybersec);}
+    &7:hover {@include cardhover($service-training);} 
 
-    &__icon{
+    &1, &2, &3, &4, &5, &6, &7 {
+        border: 1px solid #ccc;
+        box-shadow: 0 3px 35px rgba(0,0,0,.1);
+        position: relative; 
+        border-radius: 15px;
+        background-color: #fff;
+        top: 0; 
+        transition: .5s ease;
+    }
+
+    &__icon {
 
         //For the Icon
         span {

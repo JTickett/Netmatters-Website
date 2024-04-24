@@ -658,13 +658,6 @@ a {
 
 .service-card {
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
-  display: grid;
-  background-color: #ffffff;
-  align-self: center;
-  border: 1px solid #ccc;
-  border-radius: 15px;
-  margin-top: 30px;
-  margin-bottom: 20px;
 }
 .service-card__wrapper {
   display: grid;
@@ -701,6 +694,57 @@ a {
 }
 .service-card a:hover {
   color: #ffffff;
+}
+.service-card1:hover {
+  background-color: #67809f;
+  border-color: #67809f;
+  transition: 0.5s ease;
+  top: -10px;
+}
+.service-card2:hover {
+  background-color: #4183d7;
+  border-color: #4183d7;
+  transition: 0.5s ease;
+  top: -10px;
+}
+.service-card3:hover {
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+  transition: 0.5s ease;
+  top: -10px;
+}
+.service-card4:hover {
+  background-color: #d64541;
+  border-color: #d64541;
+  transition: 0.5s ease;
+  top: -10px;
+}
+.service-card5:hover {
+  background-color: #926fb1;
+  border-color: #926fb1;
+  transition: 0.5s ease;
+  top: -10px;
+}
+.service-card6:hover {
+  background-color: #f62459;
+  border-color: #f62459;
+  transition: 0.5s ease;
+  top: -10px;
+}
+.service-card7:hover {
+  background-color: #ce4125;
+  border-color: #ce4125;
+  transition: 0.5s ease;
+  top: -10px;
+}
+.service-card1, .service-card2, .service-card3, .service-card4, .service-card5, .service-card6, .service-card7 {
+  border: 1px solid #ccc;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  position: relative;
+  border-radius: 15px;
+  background-color: #fff;
+  top: 0;
+  transition: 0.5s ease;
 }
 .service-card__icon span {
   display: inline-block;
@@ -1178,12 +1222,6 @@ a {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
-}
-.email-form__label, .email-form__input {
-  font-weight: 600;
-}
-.email-form__label a:hover, .email-form__label a:focus, .email-form__label a:visited, .email-form__input a:hover, .email-form__input a:focus, .email-form__input a:visited {
-  color: #121419;
 }
 .email-form__input {
   width: 100%;
