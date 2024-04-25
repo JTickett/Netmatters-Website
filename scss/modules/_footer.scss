@@ -10,11 +10,9 @@ li {
 
 .footer {
 
-    //socials, links, license. These 3 are the main parts
-
-    //display: grid;
-    justify-content: left;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: $footer-background-color;
     color: $white;
     letter-spacing: 0.4px;
@@ -28,7 +26,6 @@ li {
 
     &__socials {
 
-        //Nothing here yet
         background-color: $footer-background-color;
 
         &__icon {
@@ -39,45 +36,97 @@ li {
             align-items: center;
         
             font-size: 26px;
+            line-height: 26px;
         
             color: $white;
             background-color: $footer-bottom-color;
-            border-color: green;
-            border-style: inset;
         
-            height: 50px;
-            width: 50px;
             display: inline-block;
             text-align: center;
-            margin: auto;
-            line-height: 1.5;
-        
-            &:hover{
-                background-color: red;
-        
-                // TODO: 
-                // Include a mixin here.
-                // Pass the name of the social network to it.
-                // The mixin should set the background colour based on the name.
+            margin-right: 10px;
+            margin-bottom: 10px;
+
+            padding: 12px 22px 16px;
+
+            & > span {
+                position: relative;
+                top: 4px;
             }
+
         }
     }
 
     &__links {
-
         background-color: $footer-background-color;
+        
+        
+        display: flex;
+        flex-wrap: wrap;
+        flex: 0 0 auto;
+        flex-grow: 1;
+
+        @include mq(large) {
+        }
+
+
+        margin-right: -15px;
+        margin-left: -15px;
+
+        //  Strip out default <ul> stuff
+        & > div > ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    &__link-row {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-bottom: 30px;
+        max-width: 100%;
+        width: 100%;
+        
+        @include mq(medium) {
+            flex-grow: 1;
+            width: 50%;
+            float: left;
+        }
+        
+        @include mq(large) {
+            flex-grow: 1;
+            width: 25%;
+            float: left;
+        }
+
+        & > ul > h4 {
+            font-weight: 400;
+            margin: 0 0 15px;
+        }
     }
 
     &__license {
-        //width: 100%;
         background-color: $footer-bottom-color;
-        //padding: 5px 20px;
         font-size: 13px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        padding-top: 5px;
+        padding-bottom: 10px;;
+
+        display: flex;
+        flex-direction: column;
+
+        //  TODO: The spacing is not quite correct but it's mostly there.
+        @media (min-width: #{$break--s}) {
+            flex-direction: row;
+        }
+
+        & > * {
+            margin: 0;
+            color: $white;
+        }
     }
-
-
-
-
 }
 
 
@@ -109,3 +158,18 @@ li a {
 li a:hover {
     text-decoration: underline; 
 }
+
+
+
+#footer__social__fb:hover {
+    background-color: $social-facebook-color;
+}
+#footer__social__li:hover {
+    background-color: $social-linkedin-color;
+}
+#footer__social__x:hover {
+    background-color: $social-twitter-color;
+}
+#footer__social__ig:hover {
+    background-color: $social-instagram-color;
+}   

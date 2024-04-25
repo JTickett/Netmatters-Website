@@ -301,6 +301,10 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: inherit;
+}
+
 #header1 {
   display: flex;
   flex-flow: row nowrap;
@@ -687,18 +691,18 @@ a {
 .service-card :hover {
   text-decoration: none;
 }
-.service-card a {
-  top: 10px;
-  border-radius: 10px;
-}
-.service-card a:hover {
-  color: #ffffff;
-}
 .service-card1:hover {
   background-color: #67809f;
   border-color: #67809f;
   transition: 0.5s ease;
   top: -10px;
+}
+.service-card1:hover a > .service-card__button {
+  color: #67809f;
+}
+.service-card1:hover a > span > span {
+  color: #67809f;
+  background-color: #ffffff;
 }
 .service-card2:hover {
   background-color: #4183d7;
@@ -706,11 +710,25 @@ a {
   transition: 0.5s ease;
   top: -10px;
 }
+.service-card2:hover a > .service-card__button {
+  color: #4183d7;
+}
+.service-card2:hover a > span > span {
+  color: #4183d7;
+  background-color: #ffffff;
+}
 .service-card3:hover {
   background-color: #2ecc71;
   border-color: #2ecc71;
   transition: 0.5s ease;
   top: -10px;
+}
+.service-card3:hover a > .service-card__button {
+  color: #2ecc71;
+}
+.service-card3:hover a > span > span {
+  color: #2ecc71;
+  background-color: #ffffff;
 }
 .service-card4:hover {
   background-color: #d64541;
@@ -718,11 +736,25 @@ a {
   transition: 0.5s ease;
   top: -10px;
 }
+.service-card4:hover a > .service-card__button {
+  color: #d64541;
+}
+.service-card4:hover a > span > span {
+  color: #d64541;
+  background-color: #ffffff;
+}
 .service-card5:hover {
   background-color: #926fb1;
   border-color: #926fb1;
   transition: 0.5s ease;
   top: -10px;
+}
+.service-card5:hover a > .service-card__button {
+  color: #926fb1;
+}
+.service-card5:hover a > span > span {
+  color: #926fb1;
+  background-color: #ffffff;
 }
 .service-card6:hover {
   background-color: #f62459;
@@ -730,11 +762,25 @@ a {
   transition: 0.5s ease;
   top: -10px;
 }
+.service-card6:hover a > .service-card__button {
+  color: #f62459;
+}
+.service-card6:hover a > span > span {
+  color: #f62459;
+  background-color: #ffffff;
+}
 .service-card7:hover {
   background-color: #ce4125;
   border-color: #ce4125;
   transition: 0.5s ease;
   top: -10px;
+}
+.service-card7:hover a > .service-card__button {
+  color: #ce4125;
+}
+.service-card7:hover a > span > span {
+  color: #ce4125;
+  background-color: #ffffff;
 }
 .service-card1, .service-card2, .service-card3, .service-card4, .service-card5, .service-card6, .service-card7 {
   border: 1px solid #ccc;
@@ -744,6 +790,12 @@ a {
   background-color: #fff;
   top: 0;
   transition: 0.5s ease;
+}
+.service-card1:hover > a > h3, .service-card1:hover > a > p, .service-card2:hover > a > h3, .service-card2:hover > a > p, .service-card3:hover > a > h3, .service-card3:hover > a > p, .service-card4:hover > a > h3, .service-card4:hover > a > p, .service-card5:hover > a > h3, .service-card5:hover > a > p, .service-card6:hover > a > h3, .service-card6:hover > a > p, .service-card7:hover > a > h3, .service-card7:hover > a > p {
+  color: #ffffff;
+}
+.service-card1:hover > a > .service-card__button, .service-card2:hover > a > .service-card__button, .service-card3:hover > a > .service-card__button, .service-card4:hover > a > .service-card__button, .service-card5:hover > a > .service-card__button, .service-card6:hover > a > .service-card__button, .service-card7:hover > a > .service-card__button {
+  background-color: #ffffff;
 }
 .service-card__icon span {
   display: inline-block;
@@ -756,11 +808,15 @@ a {
 .service-card__title {
   font-weight: 300;
   font-size: 1.3rem;
+  color: #333645;
 }
 .service-card__text {
   font-weight: 400;
   font-size: 0.8125rem;
   line-height: 1.375rem;
+  color: #333645;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .service-card__button {
   background-color: blue;
@@ -780,10 +836,6 @@ a {
 
 .service-color-software {
   background-color: #67809f;
-}
-.service-color-software :hover {
-  color: pink;
-  background-color: yellow;
 }
 
 .service-color-it {
@@ -874,6 +926,11 @@ a {
 }
 #card7 a:hover {
   color: #ffffff;
+}
+
+.service-card__anchor {
+  padding: 30px;
+  box-sizing: content-box;
 }
 
 .certcarousel {
@@ -1290,7 +1347,9 @@ li {
 }
 
 .footer {
-  justify-content: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   background-color: #323544;
   color: #ffffff;
   letter-spacing: 0.4px;
@@ -1307,26 +1366,76 @@ li {
   justify-content: center;
   align-items: center;
   font-size: 26px;
+  line-height: 26px;
   color: #ffffff;
   background-color: #212330;
-  border-color: green;
-  border-style: inset;
-  height: 50px;
-  width: 50px;
   display: inline-block;
   text-align: center;
-  margin: auto;
-  line-height: 1.5;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 12px 22px 16px;
 }
-.footer__socials__icon:hover {
-  background-color: red;
+.footer__socials__icon > span {
+  position: relative;
+  top: 4px;
 }
 .footer__links {
   background-color: #323544;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 auto;
+  flex-grow: 1;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.footer__links > div > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer__link-row {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 30px;
+  max-width: 100%;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .footer__link-row {
+    flex-grow: 1;
+    width: 50%;
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  .footer__link-row {
+    flex-grow: 1;
+    width: 25%;
+    float: left;
+  }
+}
+.footer__link-row > ul > h4 {
+  font-weight: 400;
+  margin: 0 0 15px;
 }
 .footer__license {
   background-color: #212330;
   font-size: 13px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 460px) {
+  .footer__license {
+    flex-direction: row;
+  }
+}
+.footer__license > * {
+  margin: 0;
+  color: #ffffff;
 }
 
 ul {
@@ -1349,6 +1458,22 @@ li a {
 
 li a:hover {
   text-decoration: underline;
+}
+
+#footer__social__fb:hover {
+  background-color: #3b5998;
+}
+
+#footer__social__li:hover {
+  background-color: #0077b5;
+}
+
+#footer__social__x:hover {
+  background-color: #00aced;
+}
+
+#footer__social__ig:hover {
+  background-color: #d93175;
 }
 
 .hidden {

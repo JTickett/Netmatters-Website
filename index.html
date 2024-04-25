@@ -318,7 +318,7 @@
             <main id="services-card-wrapper" class="service-card__wrapper">
 
                 <div class="service-card1" id="card1">
-                    <a href="#">
+                    <a href="#" class="service-card__anchor">
                             
                         <span class="service-card__icon">
                             <span class="icon-laptop service-color-software"></span>
@@ -943,16 +943,16 @@
     </main>
 
     <!-- Footer -->
-    <footer id="page-footer" class="footer">
+    <footer id="page-footer" class="footer reusable-container">
 
         <!-- Company Info -->
-        <div class="footer__socials reusable-container">
+        <div class="footer__socials">
             <!-- Logo -->
             <img class="footer__logo" id="footer-logo" src="images/nm-logo-white-med.webp"></img>
 
             <!-- Social Media Icons -->
             
-            <div>
+            <div >
                 <h4>FOLLOW US ON:</h4>
                 
                 <!-- TODO: These obviously need to be Icons rather than placeholder text -->
@@ -980,9 +980,9 @@
         </div>
 
         <!-- Various Links -->
-        <div class="footer__links reusable-container">
+        <div class="footer__links">
             
-            <div>
+            <div id="links1" class="footer__link-row">
                 <ul>
                     <h4>ABOUT NETMATTERS</h4>
                     <li><a href="#">News</a></li>
@@ -998,47 +998,55 @@
                 </ul>
             </div>
 
+            <div id="links2" class="footer__link-row">
+                <ul >
+                    <h4>OUR SERVICES</h4>
+                    <li><a href="#">Bespoke Software</a></li>
+                    <li><a href="#">IT Support</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                    <li><a href="#">Telecoms Services</a></li>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Cyber Security</a></li>
+                    <li><a href="#">Developer Training</a></li>
+                </ul>
+            </div>
 
-            <ul>
-                <h4>OUR SERVICES</h4>
-                <li><a href="#">Bespoke Software</a></li>
-                <li><a href="#">IT Support</a></li>
-                <li><a href="#">Digital Marketing</a></li>
-                <li><a href="#">Telecoms Services</a></li>
-                <li><a href="#">Web Design</a></li>
-                <li><a href="#">Cyber Security</a></li>
-                <li><a href="#">Developer Training</a></li>
-            </ul>
+            <div id="links3" class="footer__link-row">
+                <ul>
+                    <h4>OUR INDUSTRIES</h4>
+                    <li><a href="#">Financial Services</a></li>
+                    <li><a href="#">Construction</a></li>
+                    <li><a href="#">Retail & E-Commerce</a></li>
+                    <li><a href="#">Non-Profits</a></li>
+                    <li><a href="#">SME's</a></li>
+                    <li><a href="#">Healthcare</a></li>
+                    <li><a href="#">Education & Training</a></li>
+                    <li><a href="#">Travel & Leisure</a></li>
+                </ul>
+            </div>
 
-            <ul>
-                <h4>OUR INDUSTRIES</h4>
-                <li><a href="#">Financial Services</a></li>
-                <li><a href="#">Construction</a></li>
-                <li><a href="#">Retail & E-Commerce</a></li>
-                <li><a href="#">Non-Profits</a></li>
-                <li><a href="#">SME's</a></li>
-                <li><a href="#">Healthcare</a></li>
-                <li><a href="#">Education & Training</a></li>
-                <li><a href="#">Travel & Leisure</a></li>
-            </ul>
+            <div id="links4" class="footer__link-row">
+                <ul>
+                    <h4>LOCATIONS</h4>
+                    <li><a href="#">London Office</a></li>
+                    <li><a href="#">Cambridge Office</a></li>
+                    <li><a href="#">Wymondham Office</a></li>
+                    <li><a href="#">Great Yarmouth Office</a></li>
+                </ul>
+            </div>
 
-            <ul>
-                <h4>LOCATIONS</h4>
-                <li><a href="#">London Office</a></li>
-                <li><a href="#">Cambridge Office</a></li>
-                <li><a href="#">Wymondham Office</a></li>
-                <li><a href="#">Great Yarmouth Office</a></li>
-            </ul>
         </div>
 
-        <div class="footer__license reusable-container">
-            <p>© Copyright Netmatters 2024.</p>
-            <p>All rights reserved.</p>
-            <a>Sitemap</a>
-        </div>
-        
 
     </footer>
+
+    
+    <div class="footer__license">
+        <p>© Copyright Netmatters 2024.</p>
+        <p>All rights reserved.</p>
+        <a>Sitemap</a>
+    </div>
+    
 
 </div>
 

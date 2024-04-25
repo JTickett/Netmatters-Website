@@ -9,7 +9,6 @@
 
     display: grid;
     text-align: center;
-    //background-color: $card-background-color;
 
     h2 {
         text-align: left;
@@ -92,30 +91,90 @@
         text-decoration: none;
     }
 
-    //This anchor tag wraps everything but is inside the containing div
-    a {
-        top: 10px;
-        border-radius: 10px;
-        &:hover{
-            //top: -20px;
-            //transition: 1s ease;
-            //color:red;
-            color: $white;
 
-            //background-color: rgb(187, 164, 255);
-            //border-radius: 10px;
+    // //This anchor tag wraps everything but is inside the containing div
+    // a {
+    //     padding: 30px;
+    //     top: 10px;
+    //     border-radius: 10px;
+    //     &:hover{
+    //         color: $white;
+    //     }
+    // }
+    
+
+
+
+    &1:hover {
+        @include cardhover($service-software);
+        a > .service-card__button {
+            color:$service-software;
+        }
+        a > span > span {
+            color:$service-software;
+            background-color: $white;
+        }
+    } 
+    &2:hover {
+        @include cardhover($service-it);
+        a > .service-card__button {
+            color:$service-it;
+        }
+        a > span > span {
+            color:$service-it;
+            background-color: $white;
+        }
+    } 
+    &3:hover {
+        @include cardhover($service-marketing);
+        a > .service-card__button {
+            color:$service-marketing;
+        }
+        a > span > span {
+            color:$service-marketing;
+            background-color: $white;
+        }
+    } 
+    &4:hover {
+        @include cardhover($service-telecoms);
+        a > .service-card__button {
+            color:$service-telecoms;
+        }
+        a > span > span {
+            color:$service-telecoms;
+            background-color: $white;
+        }
+    } 
+    &5:hover {
+        @include cardhover($service-webdesign);
+        a > .service-card__button {
+            color:$service-webdesign;
+        }
+        a > span > span {
+            color:$service-webdesign;
+            background-color: $white;
+        }
+    } 
+    &6:hover {
+        @include cardhover($service-cybersec);
+        a > .service-card__button {
+            color:$service-cybersec;
+        }
+        a > span > span {
+            color:$service-cybersec;
+            background-color: $white;
         }
     }
-
-
-
-    &1:hover {@include cardhover($service-software);} 
-    &2:hover {@include cardhover($service-it);} 
-    &3:hover {@include cardhover($service-marketing);} 
-    &4:hover {@include cardhover($service-telecoms);} 
-    &5:hover {@include cardhover($service-webdesign);} 
-    &6:hover {@include cardhover($service-cybersec);}
-    &7:hover {@include cardhover($service-training);} 
+    &7:hover {
+        @include cardhover($service-training);
+        a > .service-card__button {
+            color:$service-training;
+        }
+        a > span > span {
+            color:$service-training;
+            background-color: $white;
+        }
+    } 
 
     &1, &2, &3, &4, &5, &6, &7 {
         border: 1px solid #ccc;
@@ -125,6 +184,14 @@
         background-color: #fff;
         top: 0; 
         transition: .5s ease;
+
+        &:hover > a > h3, &:hover > a > p {
+            color:$white;
+        }
+        &:hover > a > .service-card__button {
+            background-color: $white;
+            //color: inherit;
+        }
     }
 
     &__icon {
@@ -143,12 +210,19 @@
     &__title {
         font-weight: 300;
         font-size: 1.3rem;
+        color: $dark-txt;
     }
 
     &__text {
         font-weight: 400;
         font-size: .8125rem;
         line-height: 1.375rem;
+        color: $dark-txt;
+        
+        //  This is temp fix lol. Ideally padding should be on the container so the whole card uses it.
+        //  TODO: Clean this up.
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     &__button {
@@ -167,10 +241,6 @@
 
 .service-color-software {
     background-color: $service-software;
-    :hover {
-        color: pink;
-        background-color: yellow;
-    }
 }
 
 .service-color-it {
@@ -254,3 +324,8 @@
     }
 }
 
+// TODO: This isn't working for some reason.
+.service-card__anchor {
+    padding: 30px;
+    box-sizing: content-box;
+}
