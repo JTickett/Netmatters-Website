@@ -34,6 +34,9 @@
     background-color: $service-it ;
     color: $white;
 }
+#card1tit{color:$service-marketing;}
+#card2tit{color:$service-business;}
+#card3tit{color:$service-it;}
 
 
 .news-card {
@@ -112,13 +115,13 @@
             font-size: 1rem;
             line-height: 1.5rem;
             font-weight: 600;
-            color: $service-business; // read time
+            //color: $service-business;
 
 
 
             &-readtime {
                 font-size: .85rem;
-                color: #333645;
+                color: $dark-txt;
                 vertical-align: middle;
                 display: inline;
             }

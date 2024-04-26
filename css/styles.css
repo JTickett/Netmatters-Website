@@ -1283,6 +1283,18 @@ a:visited {
   color: #ffffff;
 }
 
+#card1tit {
+  color: #2ecc71;
+}
+
+#card2tit {
+  color: #db8c0d;
+}
+
+#card3tit {
+  color: #4183d7;
+}
+
 .news-card {
   background-color: #ffffff;
   align-self: center;
@@ -1341,7 +1353,6 @@ a:visited {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 600;
-  color: #db8c0d;
 }
 .news-card-block2__title-readtime {
   font-size: 0.85rem;
