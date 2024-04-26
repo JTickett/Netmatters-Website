@@ -22,6 +22,20 @@
     }
 }
 
+#card1cat, #card1but{
+    background-color: $service-marketing;
+    color: $white;
+}
+#card2cat, #card2but{
+    background-color: $service-business;
+    color: $white;
+}
+#card3cat, #card3but{
+    background-color: $service-it ;
+    color: $white;
+}
+
+
 .news-card {
     
     &__container {

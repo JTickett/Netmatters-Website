@@ -1268,6 +1268,21 @@ a:visited {
   text-decoration: underline;
 }
 
+#card1cat, #card1but {
+  background-color: #2ecc71;
+  color: #ffffff;
+}
+
+#card2cat, #card2but {
+  background-color: #db8c0d;
+  color: #ffffff;
+}
+
+#card3cat, #card3but {
+  background-color: #4183d7;
+  color: #ffffff;
+}
+
 .news-card {
   background-color: #ffffff;
   align-self: center;
