@@ -26,13 +26,7 @@
 
     //  View Our Work
     h3 {
-        justify-self: right;
-        color: $dark-txt;
-        font-weight: $font-bold;
-        font-size: 1.625rem;
-        :hover{
-            text-decoration: underline;
-        }
+
     }
 
 }
@@ -60,6 +54,15 @@
         float: right;
         @include mq(small) {display: none;}
         @include mq(x-small) {display: none;}
+
+        justify-self: right;
+        color: $dark-txt;
+        font-weight: $font-bold;
+        font-size: 1.625rem;
+        :hover{
+            text-decoration: underline;
+        }
+
     }
 
 
@@ -254,6 +257,10 @@
         //  TODO: Clean this up.
         padding-left: 30px;
         padding-right: 30px;
+    }
+
+    &__title {
+        font-weight: $font-light;
     }
 
     &__button {

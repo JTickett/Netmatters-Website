@@ -727,16 +727,6 @@ a:visited {
   justify-self: left;
   color: #333645;
 }
-#services h3 {
-  justify-self: right;
-  color: #333645;
-  font-weight: 600;
-  font-size: 1.625rem;
-}
-#services h3 :hover {
-  text-decoration: underline;
-}
-
 .services__viewmore {
   color: #333645;
   font-weight: 600;
@@ -762,6 +752,10 @@ a:visited {
 .services__viewmore-top {
   display: inline;
   float: right;
+  justify-self: right;
+  color: #333645;
+  font-weight: 600;
+  font-size: 1.625rem;
 }
 @media (min-width: 460px) and (max-width: 768px) {
   .services__viewmore-top {
@@ -772,6 +766,9 @@ a:visited {
   .services__viewmore-top {
     display: none;
   }
+}
+.services__viewmore-top :hover {
+  text-decoration: underline;
 }
 
 .service-card {
@@ -932,6 +929,9 @@ a:visited {
   color: #333645;
   padding-left: 30px;
   padding-right: 30px;
+}
+.service-card__title {
+  font-weight: 400;
 }
 .service-card__button {
   background-color: blue;
