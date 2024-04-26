@@ -19,10 +19,14 @@
     position: relative;
     flex-grow: 1;
     padding: 0 40px;
-    //overflow-x: hidden;
 
-    :hover {
+
+    &__logo {
+        
         filter: grayscale(1);
+        &:hover {
+            filter: grayscale(0);
+        }
     }
 
 
@@ -41,6 +45,8 @@
     align-items: center;
     overflow-x: hidden;
     width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 //  These are the clients in the carousel
@@ -75,17 +81,16 @@
         }
     }
 
-    :hover {
-        filter: grayscale(1);
-        &__bubblebox { display: block; }
+    :hover + &__bubblebox {
+        display: block;
     }
 
-
-
-    :hover + &__bubblebox {
-
-        display: block;
-
+    &__logo {
+        
+        filter: grayscale(1);
+        &:hover {
+            filter: grayscale(0);
+        }
     }
 
 }

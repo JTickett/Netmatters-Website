@@ -94,7 +94,7 @@
         <div id="header3" class="reusable-container">
             <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-listitem">
+                    <li class="nav-listitem" id="navmenu-software">
                         <a href="#">
                             <span id="nav-software" class="nav__listitem-icon icon-laptop"></span>
                             <small>Bespoke</small><br>
@@ -202,7 +202,7 @@
                         </div>
                     </li>
 
-                    <li class="nav-listitem">
+                    <li class="nav-listitem" id="navmenu-it">
                         <a href="#">
                             <span id="nav-it" class="nav__listitem-icon icon-display"></span>
                             <small>IT</small><br>
@@ -214,7 +214,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-listitem">
+                    <li class="nav-listitem" id="navmenu-marketing">
                         <a href="#">
                             <span id="nav-marketing" class="nav__listitem-icon icon-bar-graph"></span>
                             <small>Digital</small><br>
@@ -226,7 +226,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-listitem">
+                    <li class="nav-listitem" id="navmenu-telecoms">
                         <a href="#">
                             <span id="nav-telecoms" class="nav__listitem-icon icon-phone_in_talk"></span>
                             <small>Telecoms</small><br>
@@ -238,7 +238,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-listitem">
+                    <li class="nav-listitem" id="navmenu-web">
                         <a href="#">
                             <span id="nav-web" class="nav__listitem-icon icon-embed2"></span>
                             <small>Web</small><br>
@@ -250,7 +250,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-listitem">
+                    <li class="nav-listitem" id="navmenu-security">
                         <a href="#">
                             <span id="nav-security" class="nav__listitem-icon icon-security"></span>
                             <small>Cyber</small><br>
@@ -262,7 +262,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-listitem">
+                    <li class="nav-listitem" id="navmenu-developer">
                         <a href="#">
                             <span id="nav-developer" class="nav__listitem-icon icon-graduation-cap"></span>
                             <small>Developer</small><br>
@@ -304,11 +304,13 @@
         </section>
 
         <!-- Our Services (Cards) -->
-        <section id="services" class="reusable-container">
+        <section id="services" class="reusable-container section">
+            
             <header>
                 <h2>Our Services</h2>
-                <h3 class="hidden">
-                    <a href="#">
+                
+                <h3>
+                    <a href="#" class="services__viewmore-top">
                         View Our Work
                     <span class="icon-arrow-right2"></span>                </a>
                 </h3>
@@ -431,15 +433,17 @@
                     </a>
                 </div>
 
+            </main>
+
+            <footer>
                 <!-- "View Our Work" Link that only displays in Mobile View -->
                 <h3>
-                    <a class="services__viewmore" href="#">
+                    <a class="services__viewmore-bottom" href="#">
                         View Our Work
                     <span class="icon-arrow-right2"></span>
                     </a>
                 </h3>
-
-            </main>
+            </footer>
 
 
 
@@ -490,62 +494,64 @@
 
 
         <!-- About Us -->
-        <section class="about reusable-container section">
-            <div class="">
-                <h2>Welcome To Netmatters</h2>
-                <p>
-                    Netmatters is a leading 
-                    <a href="#">Bespoke Software</a>
-                    , 
-                    <a href="#">IT Support</a>
-                    , and 
-                    <a href="#">Digital Marketing</a>
-                    company based in the East of England with offices in 
-                    <a href="#">London</a>
-                    , 
-                    <a href="#">Cambridge</a>
-                    , 
-                    <a href="#">Wymondham</a>
-                    , and 
-                    <a href="#">Great Yarmouth</a>.
-                </p>
-                    
-                <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.</p>
-                <p>We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
-                <a class="about__darkbutton" href="#">Why Choose Us?  <span class="icon-arrow-right2"></span></a>
-                <a class="about__darkbutton" href="#">Our Culture  <span class="icon-arrow-right2"></span></a>
-            </div>
+        <div id="about-section-background">
+            <section class="about reusable-container section">
+                <div class="">
+                    <h2>Welcome To Netmatters</h2>
+                    <p>
+                        Netmatters is a leading 
+                        <a href="#">Bespoke Software</a>
+                        , 
+                        <a href="#">IT Support</a>
+                        , and 
+                        <a href="#">Digital Marketing</a>
+                        company based in the East of England with offices in 
+                        <a href="#">London</a>
+                        , 
+                        <a href="#">Cambridge</a>
+                        , 
+                        <a href="#">Wymondham</a>
+                        , and 
+                        <a href="#">Great Yarmouth</a>.
+                    </p>
+                        
+                    <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.</p>
+                    <p>We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
+                    <a class="about__darkbutton" href="#">Why Choose Us?  <span class="icon-arrow-right2"></span></a>
+                    <a class="about__darkbutton" href="#">Our Culture  <span class="icon-arrow-right2"></span></a>
+                </div>
 
-            <div>
-                <h2>What Our Clients Think</h2>
-                <span class="icon-star"></span>
-                <span class="icon-star"></span>
-                <span class="icon-star"></span>
-                <span class="icon-star"></span>
-                <span class="icon-star"></span>
-                <blockquote class="about__quote">
-                    Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!
-                    <footer>
-                        <p>Eleanor Bishop, Head of Marketing - </p>
-                        <cite>
-                            <a href="#">
-                            Ashcroft Partnership LLP</a>
-                        </cite>
-                    </footer>
-                </blockquote> 
-            </div>
-            <a  class="about__googlebutton" href="#">
-                Google Reviews
-                <span class="icon-arrow-right2"></span>
-            </a>
-            <a  class="about__tpbutton" href="#">
-                Trustpilot Reviews
-                <span class="icon-arrow-right2"></span>
-            </a>
-        </section>
+                <div>
+                    <h2>What Our Clients Think</h2>
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                    <span class="icon-star"></span>
+                    <blockquote class="about__quote">
+                        Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!
+                        <footer>
+                            <p>Eleanor Bishop, Head of Marketing - </p>
+                            <cite>
+                                <a href="#">
+                                Ashcroft Partnership LLP</a>
+                            </cite>
+                        </footer>
+                    </blockquote> 
+                </div>
+                <a  class="about__googlebutton" href="#">
+                    Google Reviews
+                    <span class="icon-arrow-right2"></span>
+                </a>
+                <a  class="about__tpbutton" href="#">
+                    Trustpilot Reviews
+                    <span class="icon-arrow-right2"></span>
+                </a>
+            </section>
+        </div>
 
         <!-- Latest News -->
-        <section id="news" class="news reusable-container"> 
+        <section id="news" class="news reusable-container section"> 
 
             <header>
                 <h2>Latest News</h2>
@@ -887,159 +893,162 @@
         </section>                
 
         <!-- Email Newsletter -->
-        <section id="email" class="email reusable-container">
-            <div class="email-form__wrap">
-                <form class="email-form">
-                    <!-- Header -->
-                    <div>
-                        <h2 class="email__header">Email Newsletter Sign-Up</h2>
-                    </div>
+        <div id="email-section-background">
+            <section id="email" class="email reusable-container section">
+                <div class="email-form__wrap">
+                    <form class="email-form">
+                        <!-- Header -->
+                        <div>
+                            <h2 class="email__header">Email Newsletter Sign-Up</h2>
+                        </div>
 
-                    <!-- Name Input Box -->
-                    <div class="email-form__input-group">
-                        <label class="email-form__label" for="newsletter_name">
-                            Your Name
-                        </label><br> 
-                        <input class="email-form__input" type="text" id="newsletter_name">
-                    </div>
+                        <!-- Name Input Box -->
+                        <div class="email-form__input-group">
+                            <label class="email-form__label" for="newsletter_name">
+                                Your Name
+                            </label><br> 
+                            <input class="email-form__input" type="text" id="newsletter_name">
+                        </div>
 
-                    <!-- Email Input Box -->
-                    <div class="email-form__input-group">
-                        <label class="email-form__label" for="newsletter_email">
-                            Your Email
-                        </label><br> 
-                        <input class="email-form__input" type="email" id="newsletter_email">
-                    </div>
+                        <!-- Email Input Box -->
+                        <div class="email-form__input-group">
+                            <label class="email-form__label" for="newsletter_email">
+                                Your Email
+                            </label><br> 
+                            <input class="email-form__input" type="email" id="newsletter_email">
+                        </div>
 
-                    <!-- Checkbox and Privacy Policy -->
-                    <div class="email-form__checkbox-wrap">
-                        <!--
-                            TODO: You cannot style the default checkbox with CSS.
-                            Instead, display: none; the checkbox and use CSS to create a new one until it looks like the Netmatters one
-                        --> 
-                        
-                        <label class="email-form__checkbox-label" for="email_checkbox">
-                            <input class="email-form__checkbox" type="checkbox" id="email_checkbox" name="marketing"> 
-                            <div class="email-form__checkbox-box"></div>
-                            <p>
-                                Please tick this box if you wish to receive marketing information from us. Please see our 
-                                <a class="email-form__privacy" href="#">
-                                    Privacy Policy
-                                </a>
-                                for more information on how we keep your data safe
-                            </p>
-                        </label>
-                    </div>
+                        <!-- Checkbox and Privacy Policy -->
+                        <div class="email-form__checkbox-wrap">
+                            <!--
+                                TODO: You cannot style the default checkbox with CSS.
+                                Instead, display: none; the checkbox and use CSS to create a new one until it looks like the Netmatters one
+                            --> 
+                            
+                            <label class="email-form__checkbox-label" for="email_checkbox">
+                                <input class="email-form__checkbox" type="checkbox" id="email_checkbox" name="marketing"> 
+                                <div class="email-form__checkbox-box"></div>
+                                <p>
+                                    Please tick this box if you wish to receive marketing information from us. Please see our 
+                                    <a class="email-form__privacy" href="#">
+                                        Privacy Policy
+                                    </a>
+                                    for more information on how we keep your data safe
+                                </p>
+                            </label>
+                        </div>
 
-                    <!-- Subscribe Button -->
-                    <div>
-                        <input class="email-form__button" type="submit" value="Subscribe">
-                    </div>
+                        <!-- Subscribe Button -->
+                        <div>
+                            <input class="email-form__button" type="submit" value="Subscribe">
+                        </div>
 
-                </form>
-            </div>
-        </section>
+                    </form>
+                </div>
+            </section>
+        </div>
 
     </main>
 
     <!-- Footer -->
-    <footer id="page-footer" class="footer reusable-container">
+    <div id="page-footer-background">
+        <footer id="page-footer" class="footer reusable-container section">
 
-        <!-- Company Info -->
-        <div class="footer__socials">
-            <!-- Logo -->
-            <img class="footer__logo" id="footer-logo" src="images/nm-logo-white-med.webp"></img>
+            <!-- Company Info -->
+            <div class="footer__socials">
+                <!-- Logo -->
+                <img class="footer__logo" id="footer-logo" src="images/nm-logo-white-med.webp"></img>
 
-            <!-- Social Media Icons -->
-            
-            <div >
-                <h4>FOLLOW US ON:</h4>
+                <!-- Social Media Icons -->
                 
-                <!-- TODO: These obviously need to be Icons rather than placeholder text -->
-                <a href="#">
-                    <div class="footer__socials__icon" id="footer__social__fb">
-                        <span class="icon-facebook"></span>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="footer__socials__icon" id="footer__social__li">
-                        <span class="icon-linkedin2"></span>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="footer__socials__icon" id="footer__social__x">
-                        <span class="icon-twitter"></span>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="footer__socials__icon" id="footer__social__ig">
-                        <span class="icon-instagram"></span>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <!-- Various Links -->
-        <div class="footer__links">
-            
-            <div id="links1" class="footer__link-row">
-                <ul>
-                    <h4>ABOUT NETMATTERS</h4>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Our Careers</a></li>
-                    <li><a href="#">Our Team</a></li> 
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Cookie Policy</a></li>
-                    <li><a href="#">Data Retention & Disposal Policy</a></li>
-                    <li><a href="#">CCTV Policy</a></li>
-                    <li><a href="#">Environmental Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                </ul>
+                <div >
+                    <h4>FOLLOW US ON:</h4>
+                    
+                    <!-- TODO: These obviously need to be Icons rather than placeholder text -->
+                    <a href="#">
+                        <div class="footer__socials__icon" id="footer__social__fb">
+                            <span class="icon-facebook"></span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="footer__socials__icon" id="footer__social__li">
+                            <span class="icon-linkedin2"></span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="footer__socials__icon" id="footer__social__x">
+                            <span class="icon-twitter"></span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="footer__socials__icon" id="footer__social__ig">
+                            <span class="icon-instagram"></span>
+                        </div>
+                    </a>
+                </div>
             </div>
 
-            <div id="links2" class="footer__link-row">
-                <ul >
-                    <h4>OUR SERVICES</h4>
-                    <li><a href="#">Bespoke Software</a></li>
-                    <li><a href="#">IT Support</a></li>
-                    <li><a href="#">Digital Marketing</a></li>
-                    <li><a href="#">Telecoms Services</a></li>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Cyber Security</a></li>
-                    <li><a href="#">Developer Training</a></li>
-                </ul>
+            <!-- Various Links -->
+            <div class="footer__links">
+                
+                <div id="links1" class="footer__link-row">
+                    <ul>
+                        <h4>ABOUT NETMATTERS</h4>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Our Careers</a></li>
+                        <li><a href="#">Our Team</a></li> 
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Data Retention & Disposal Policy</a></li>
+                        <li><a href="#">CCTV Policy</a></li>
+                        <li><a href="#">Environmental Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div id="links2" class="footer__link-row">
+                    <ul >
+                        <h4>OUR SERVICES</h4>
+                        <li><a href="#">Bespoke Software</a></li>
+                        <li><a href="#">IT Support</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Telecoms Services</a></li>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Cyber Security</a></li>
+                        <li><a href="#">Developer Training</a></li>
+                    </ul>
+                </div>
+
+                <div id="links3" class="footer__link-row">
+                    <ul>
+                        <h4>OUR INDUSTRIES</h4>
+                        <li><a href="#">Financial Services</a></li>
+                        <li><a href="#">Construction</a></li>
+                        <li><a href="#">Retail & E-Commerce</a></li>
+                        <li><a href="#">Non-Profits</a></li>
+                        <li><a href="#">SME's</a></li>
+                        <li><a href="#">Healthcare</a></li>
+                        <li><a href="#">Education & Training</a></li>
+                        <li><a href="#">Travel & Leisure</a></li>
+                    </ul>
+                </div>
+
+                <div id="links4" class="footer__link-row">
+                    <ul>
+                        <h4>LOCATIONS</h4>
+                        <li><a href="#">London Office</a></li>
+                        <li><a href="#">Cambridge Office</a></li>
+                        <li><a href="#">Wymondham Office</a></li>
+                        <li><a href="#">Great Yarmouth Office</a></li>
+                    </ul>
+                </div>
+
             </div>
 
-            <div id="links3" class="footer__link-row">
-                <ul>
-                    <h4>OUR INDUSTRIES</h4>
-                    <li><a href="#">Financial Services</a></li>
-                    <li><a href="#">Construction</a></li>
-                    <li><a href="#">Retail & E-Commerce</a></li>
-                    <li><a href="#">Non-Profits</a></li>
-                    <li><a href="#">SME's</a></li>
-                    <li><a href="#">Healthcare</a></li>
-                    <li><a href="#">Education & Training</a></li>
-                    <li><a href="#">Travel & Leisure</a></li>
-                </ul>
-            </div>
 
-            <div id="links4" class="footer__link-row">
-                <ul>
-                    <h4>LOCATIONS</h4>
-                    <li><a href="#">London Office</a></li>
-                    <li><a href="#">Cambridge Office</a></li>
-                    <li><a href="#">Wymondham Office</a></li>
-                    <li><a href="#">Great Yarmouth Office</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-
-    </footer>
-
+        </footer>
+    </div>
     
     <div class="footer__license">
         <p>© Copyright Netmatters 2024.</p>

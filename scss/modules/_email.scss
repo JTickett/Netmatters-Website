@@ -2,10 +2,11 @@
 // Newsletter Email Styles Partial
 // =====================================================
 
+#email-section-background {
+    background-color: $newsletter-background-color;
+}
 
 .email {
-
-    background-color: $newsletter-background-color;
     color: $newsletter-text-color;
     display: grid;
     

@@ -10,30 +10,61 @@
     display: grid;
     text-align: center;
 
+    > header {
+        display: flex;
+        justify-content: space-between;
+    }
+        
+    //  Our Services
     h2 {
         text-align: left;
         font-size: 2.7rem;
-        font-weight: 600;
+        font-weight: $font-bold;
+        justify-self: left;
+        color: $dark-txt;
     }
 
+    //  View Our Work
     h3 {
+        justify-self: right;
+        color: $dark-txt;
+        font-weight: $font-bold;
+        font-size: 1.625rem;
         :hover{
-            
             text-decoration: underline;
         }
     }
 
-    
 }
 
 .services__viewmore {
     color: $newsletter-text-color;
-    font-weight: 600;
+    font-weight: $font-bold;
     font-size: 1.625rem;
     text-decoration: none;
     :hover{
         text-decoration: underline;
     }
+
+    &-bottom {
+        //  Only display this on x-small and small screen sizes
+        display: none;
+        @include mq(small) {display: inline;}
+        @include mq(x-small) {display: inline;}
+
+    }
+
+    &-top {
+        //  Display this only on x-small and small screen sizes
+        display: inline;
+        float: right;
+        @include mq(small) {display: none;}
+        @include mq(x-small) {display: none;}
+    }
+
+
+
+
 }
 
 

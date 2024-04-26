@@ -4,8 +4,19 @@
 
 // Classes
 
+#page-footer-background {
+    background-color: $footer-background-color;
+}
+
 li {
     list-style-type: none;
+}
+
+#page-footer {
+    padding-top: 27px;
+    @include mq(x-large){
+        padding-top: 47px;
+    }
 }
 
 .footer {
@@ -13,14 +24,12 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: $footer-background-color;
     color: $white;
     letter-spacing: 0.4px;
 
     #footer-logo{
         width: 320px;
         height: auto;
-        padding-top: 27px;
     }
     
 

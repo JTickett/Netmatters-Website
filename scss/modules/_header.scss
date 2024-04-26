@@ -256,13 +256,16 @@
         
 
         &item {
+
+            color: $white;
             :hover {
                 text-decoration: none;
             }
             :hover + #submenu-software {
                 text-decoration: none;
                 //  TODO: Show the Submenus
-                display: block;
+                //  TODO: This is currently hiding it
+                display: none;
             }
 
             display: block;
@@ -286,10 +289,15 @@
                 }
             }
 
+
+
         }
 
     }
 
+    &__listitem-submenu {
+        display: none;
+    }
 
 }
 
@@ -300,6 +308,52 @@
 #nav-web {color: $service-webdesign}
 #nav-security {color: $service-cybersec}
 #nav-developer {color: $service-training}
+
+#navmenu-software:hover {
+    background-color: $service-software;
+    color: $white;
+    & > a > span {
+        color: $white;
+    }
+}
+#navmenu-it:hover {
+    background-color: $service-it;
+}
+#navmenu-marketing:hover {
+    background-color: $service-marketing;
+    color: $white;
+    & > a > span {
+        color: $white;
+    }
+}
+#navmenu-telecoms:hover {
+    background-color: $service-telecoms;
+    color: $white;
+    & > a > span {
+        color: $white;
+    }
+}
+#navmenu-web:hover {
+    background-color: $service-webdesign;
+    color: $white;
+    & > a > span {
+        color: $white;
+    }
+}
+#navmenu-security:hover {
+    background-color: $service-cybersec;
+    color: $white;
+    & > a > span {
+        color: $white;
+    }
+}
+#navmenu-developer:hover {
+    background-color: $service-training;
+    color: $white;
+    & > a > span {
+        color: $white;
+    }
+}
 
 
 .burger {

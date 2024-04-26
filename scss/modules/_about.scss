@@ -2,8 +2,12 @@
 // About Us (Welcome & Clients) Styles Partial
 // =====================================================
 
-.about {
+#about-section-background {
     background-color: $footer-background-color;
+}
+
+.about {
+
     
     p, a, h2, h3, h5, blockquote {
         color: $white;

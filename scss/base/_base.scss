@@ -24,31 +24,34 @@ body {
   background-color: #fff;
 }
 
-//Disable default anchor tag behaviour so that it only underlines on hover.
-// a {
-//   text-decoration: none;
-//   :hover {
-//     text-decoration: underline;
-//   }
-// }
-
-
-
 #page-wrapper {
-  height: 100%;
-  position: relative;
-  overflow: hidden;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 
-// Reused Classes
-
+//  Reused Classes
 .reusable-container {
-  margin-right: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    //border: 1px solid yellow; // (Just for debug)
+}
+
+.section {
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  //border: 1px solid yellow; // (Just for debug)
+  margin-right: auto;
+  @include mq(medium) {
+      width: 750px;
+  }
+  @include mq(large) {
+      width: 970px;
+  }
+  @include mq(x-large) {
+      width: 1200px;
+  }
 }
 
 .centered {
