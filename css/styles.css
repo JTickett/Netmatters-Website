@@ -1375,7 +1375,6 @@ a:visited {
   padding-top: 30px;
   display: flex;
   width: 100%;
-  font-size: 0.875rem;
 }
 .news-card-block2__author-image {
   border-radius: 50%;
@@ -1384,11 +1383,15 @@ a:visited {
   width: 47px;
 }
 .news-card-block2__author-text {
-  display: table-cell;
-  vertical-align: middle;
   padding-left: 20px;
   line-height: 1.35rem;
   text-align: left;
+}
+.news-card-block2__author-text h5, .news-card-block2__author-text p {
+  margin: 0;
+}
+.news-card-block2__author-text h5 br, .news-card-block2__author-text p br {
+  display: none;
 }
 .news-card-block2__author-text-name {
   display: table-cell;

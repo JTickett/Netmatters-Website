@@ -143,7 +143,7 @@
             padding-top: 30px;
             display: flex;
             width: 100%;
-            font-size: .875rem;
+            //font-size: .875rem;
 
             &-image {
                 //width: 1%;
@@ -155,15 +155,21 @@
 
             &-text {
 
-                display: table-cell;
-                vertical-align: middle;
+                //display: table-cell;
+                //vertical-align: middle;
                 padding-left: 20px;
                 line-height: 1.35rem;
                 text-align: left;
 
+                h5, p {
+                    margin:0;
+                    br {
+                        display: none;
+                    }
+                }
                 &-name {
                     display: table-cell;
-                    font-weight: 600;
+                    font-weight: $font-bold;
                     color: #333645;
                 }
 
