@@ -6,8 +6,49 @@
     background-color: $footer-background-color;
 }
 
+
+//  These are the wrappers for the two main parts of this section.
+#about1 {
+    
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    width: 100%;
+
+    @include mq(large) {
+        width: 50%;
+    }
+
+    p {
+        line-height: 1.875rem;
+        margin-bottom: 10px;
+    }
+
+    #about-bold {
+        font-weight: $font-bold;
+    }
+
+}
+#about2 {
+    
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    width: 100%;
+
+    @include mq(large) {
+        width: 50%;
+    }
+}
+
 .about {
 
+    display: flex;
+    flex-wrap: wrap;
     
     p, a, h2, h3, h5, blockquote {
         color: $white;

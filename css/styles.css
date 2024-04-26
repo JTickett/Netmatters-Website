@@ -1133,6 +1133,43 @@ a:visited {
   background-color: #323544;
 }
 
+#about1 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  #about1 {
+    width: 50%;
+  }
+}
+#about1 p {
+  line-height: 1.875rem;
+  margin-bottom: 10px;
+}
+#about1 #about-bold {
+  font-weight: 600;
+}
+
+#about2 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  #about2 {
+    width: 50%;
+  }
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+}
 .about p, .about a, .about h2, .about h3, .about h5, .about blockquote {
   color: #ffffff;
 }
