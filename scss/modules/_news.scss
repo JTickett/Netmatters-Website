@@ -14,23 +14,50 @@
         color: $newsletter-text-color;
     }
 
-    #services__viewmore{
+    &__viewmore {
         text-decoration: none;
         :hover{
             text-decoration: underline;
         }
+
+        &-top {
+            //  Display this only on x-small and small screen sizes
+            display: inline;
+            float: right;
+            @include mq(small) {display: none;}
+            @include mq(x-small) {display: none;}
+
+            justify-self: right;
+            color: $dark-txt;
+            font-weight: $font-bold;
+            font-size: 1.625rem;
+            color: $dark-txt;
+            :hover{
+                text-decoration: underline;
+            }
+        }
+        &-bottom {
+            //  Only display this on x-small and small screen sizes
+            display: none;
+            @include mq(small) {display: inline;}
+            @include mq(x-small) {display: inline;}
+
+            font-size: 1.625rem;
+            color: $dark-txt;
+
+        }
     }
 }
 
-#card1cat, #card1but{
+#card1cat, #card1but {
     background-color: $service-marketing;
     color: $white;
 }
-#card2cat, #card2but{
+#card2cat, #card2but {
     background-color: $service-business;
     color: $white;
 }
-#card3cat, #card3but{
+#card3cat, #card3but {
     background-color: $service-it ;
     color: $white;
 }
@@ -103,9 +130,6 @@
 
     &-block2 {
 
-        //border: 1px solid #ccc;
-        //border-radius: 3px;
-
         text-align: left;
         padding: 30px;
 
@@ -115,15 +139,14 @@
             font-size: 1rem;
             line-height: 1.5rem;
             font-weight: 600;
-            //color: $service-business;
-
-
 
             &-readtime {
                 font-size: .85rem;
-                color: $dark-txt;
+                color: rgb(51 54 69 / 50%);
                 vertical-align: middle;
                 display: inline;
+                text-transform: uppercase;
+                font-weight: $font-light;
             }
         }
     

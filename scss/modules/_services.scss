@@ -24,11 +24,6 @@
         color: $dark-txt;
     }
 
-    //  View Our Work
-    h3 {
-
-    }
-
 }
 
 .services__viewmore {
@@ -38,14 +33,6 @@
     text-decoration: none;
     :hover{
         text-decoration: underline;
-    }
-
-    &-bottom {
-        //  Only display this on x-small and small screen sizes
-        display: none;
-        @include mq(small) {display: inline;}
-        @include mq(x-small) {display: inline;}
-
     }
 
     &-top {
@@ -62,12 +49,19 @@
         :hover{
             text-decoration: underline;
         }
-
+        color: $dark-txt;
     }
 
+    &-bottom {
+        //  Only display this on x-small and small screen sizes
+        display: none;
+        @include mq(small) {display: inline;}
+        @include mq(x-small) {display: inline;}
 
+        font-size: 1.625rem;
+        color: $dark-txt;
 
-
+    }
 }
 
 
