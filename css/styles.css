@@ -1043,11 +1043,6 @@ a {
   color: #ffffff;
 }
 
-.service-card__anchor {
-  padding: 30px;
-  box-sizing: content-box;
-}
-
 .certcarousel {
   display: flex;
   flex-direction: row;
