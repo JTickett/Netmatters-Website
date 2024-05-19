@@ -9,10 +9,12 @@
 
     display: grid;
     text-align: center;
+    padding-bottom: 0px;
 
     > header {
         display: flex;
         justify-content: space-between;
+        align-content: center;
     }
         
     //  Our Services
@@ -22,21 +24,26 @@
         font-weight: $font-bold;
         justify-self: left;
         color: $dark-txt;
+        
+    }
+
+    h3 {
+        margin-top: auto;
+        margin-bottom: auto;
+
     }
 
 }
 
 .services__viewmore {
     color: $newsletter-text-color;
-    font-weight: $font-bold;
-    font-size: 1.625rem;
     text-decoration: none;
     :hover{
         text-decoration: underline;
     }
 
     &-top {
-        //  Display this only on x-small and small screen sizes
+        //  Don't display this on x-small and small screen sizes
         display: inline;
         float: right;
         @include mq(small) {display: none;}
@@ -59,57 +66,59 @@
         @include mq(x-small) {display: inline;}
 
         font-size: 1.625rem;
+        font-weight: $font-bold;
         color: $dark-txt;
 
     }
 }
 
+#services-card-wrapper {
+
+    display: grid;
+    grid-gap: 30px;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    grid-template-areas:
+    "software"
+    "support"
+    "digital"
+    "telecoms"
+    "design"
+    "cyber"
+    "developer";
+
+    @include mq(medium){
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "software software"
+        "support support"
+        "digital digital"
+        "telecoms design"
+        "cyber developer";
+    }
+
+    @include mq(large) {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+        "software software support support digital digital"
+        "telecoms telecoms telecoms design design design"
+        "cyber cyber cyber developer developer developer";
+    }
+
+    @include mq(x-large) {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas:
+        "software software software software support support support support digital digital digital digital"
+        "telecoms telecoms telecoms design design design cyber cyber cyber developer developer developer";
+    }
+
+}
 
 
 .service-card {
 
-    &__wrapper {
 
-        display: grid;
-        grid-gap: 30px;
-        position: relative;
-        margin-top: 30px;
-        margin-bottom: 25px;
-        grid-template-areas:
-        "software"
-        "support"
-        "digital"
-        "telecoms"
-        "design"
-        "cyber"
-        "developer";
-
-        @include mq(medium){
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-areas:
-            "software software"
-            "support support"
-            "digital digital"
-            "telecoms design"
-            "cyber developer";
-        }
-
-        @include mq(large) {
-            grid-template-columns: repeat(6, 1fr);
-            grid-template-areas:
-            "software software support support digital digital"
-            "telecoms telecoms telecoms design design design"
-            "cyber cyber cyber developer developer developer";
-        }
-
-        @include mq(x-large) {
-            grid-template-columns: repeat(12, 1fr);
-            grid-template-areas:
-            "software software software software support support support support digital digital digital digital"
-            "telecoms telecoms telecoms design design design cyber cyber cyber developer developer developer";
-        }
-
-    }
 
 
     box-shadow: 0 3px 35px rgba(0,0,0,.1);
@@ -118,20 +127,6 @@
     :hover {
         text-decoration: none;
     }
-
-
-    // //This anchor tag wraps everything but is inside the containing div
-    // a {
-    //     padding: 30px;
-    //     top: 10px;
-    //     border-radius: 10px;
-    //     &:hover{
-    //         color: $white;
-    //     }
-    // }
-    
-
-
 
     &1:hover {
         @include cardhover($service-software);
@@ -220,6 +215,13 @@
             background-color: $white;
             //color: inherit;
         }
+
+        a {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__icon {
@@ -227,8 +229,8 @@
         //For the Icon
         span {
             display: inline-block;
-            padding: 20px;
-            margin: 20px;
+            padding: 17.5px;
+            margin-bottom: 17px;
             font-size: 30px;
             color: $white;
             border-radius: 100%;
@@ -239,6 +241,11 @@
         font-weight: 300;
         font-size: 1.3rem;
         color: $dark-txt;
+        font-weight: $font-light;
+
+        padding-bottom: 10px;
+        margin-bottom: 11px;
+        margin-top: 0px;
     }
 
     &__text {
@@ -246,20 +253,14 @@
         font-size: .8125rem;
         line-height: 1.375rem;
         color: $dark-txt;
-        
-        //  This is temp fix lol. Ideally padding should be on the container so the whole card uses it.
-        //  TODO: Clean this up.
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    &__title {
-        font-weight: $font-light;
+        margin-top: 0px;
     }
 
     &__button {
         @include button(blue, $lheight: 35px);
         margin-bottom: 30px;
+        font-size: 17.008px;
+        width: auto;
     }
 }
 

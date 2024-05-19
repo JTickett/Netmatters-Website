@@ -711,10 +711,12 @@ a {
 #services {
   display: grid;
   text-align: center;
+  padding-bottom: 0px;
 }
 #services > header {
   display: flex;
   justify-content: space-between;
+  align-content: center;
 }
 #services h2 {
   text-align: left;
@@ -723,11 +725,13 @@ a {
   justify-self: left;
   color: #333645;
 }
+#services h3 {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 
 .services__viewmore {
   color: #333645;
-  font-weight: 600;
-  font-size: 1.625rem;
   text-decoration: none;
 }
 .services__viewmore :hover {
@@ -758,6 +762,7 @@ a {
 .services__viewmore-bottom {
   display: none;
   font-size: 1.625rem;
+  font-weight: 600;
   color: #333645;
 }
 @media (min-width: 460px) and (max-width: 768px) {
@@ -771,10 +776,7 @@ a {
   }
 }
 
-.service-card {
-  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
-}
-.service-card__wrapper {
+#services-card-wrapper {
   display: grid;
   grid-gap: 30px;
   position: relative;
@@ -783,22 +785,26 @@ a {
   grid-template-areas: "software" "support" "digital" "telecoms" "design" "cyber" "developer";
 }
 @media (min-width: 768px) {
-  .service-card__wrapper {
+  #services-card-wrapper {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "software software" "support support" "digital digital" "telecoms design" "cyber developer";
   }
 }
 @media (min-width: 992px) {
-  .service-card__wrapper {
+  #services-card-wrapper {
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas: "software software support support digital digital" "telecoms telecoms telecoms design design design" "cyber cyber cyber developer developer developer";
   }
 }
 @media (min-width: 1260px) {
-  .service-card__wrapper {
+  #services-card-wrapper {
     grid-template-columns: repeat(12, 1fr);
     grid-template-areas: "software software software software support support support support digital digital digital digital" "telecoms telecoms telecoms design design design cyber cyber cyber developer developer developer";
   }
+}
+
+.service-card {
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
 .service-card :hover {
   text-decoration: none;
@@ -909,10 +915,16 @@ a {
 .service-card1:hover > a > .service-card__button, .service-card2:hover > a > .service-card__button, .service-card3:hover > a > .service-card__button, .service-card4:hover > a > .service-card__button, .service-card5:hover > a > .service-card__button, .service-card6:hover > a > .service-card__button, .service-card7:hover > a > .service-card__button {
   background-color: #ffffff;
 }
+.service-card1 a, .service-card2 a, .service-card3 a, .service-card4 a, .service-card5 a, .service-card6 a, .service-card7 a {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .service-card__icon span {
   display: inline-block;
-  padding: 20px;
-  margin: 20px;
+  padding: 17.5px;
+  margin-bottom: 17px;
   font-size: 30px;
   color: #ffffff;
   border-radius: 100%;
@@ -921,17 +933,17 @@ a {
   font-weight: 300;
   font-size: 1.3rem;
   color: #333645;
+  font-weight: 400;
+  padding-bottom: 10px;
+  margin-bottom: 11px;
+  margin-top: 0px;
 }
 .service-card__text {
   font-weight: 400;
   font-size: 0.8125rem;
   line-height: 1.375rem;
   color: #333645;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-.service-card__title {
-  font-weight: 400;
+  margin-top: 0px;
 }
 .service-card__button {
   background-color: blue;
@@ -944,6 +956,8 @@ a {
   padding: 5px 15px;
   text-decoration: none;
   margin-bottom: 30px;
+  font-size: 17.008px;
+  width: auto;
 }
 .service-card__button :hover {
   text-decoration: none;
