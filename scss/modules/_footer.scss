@@ -13,6 +13,7 @@ li {
 }
 
 #page-footer {
+    width: 100%;
     padding-top: 27px;
     @include mq(x-large){
         padding-top: 47px;
@@ -30,14 +31,28 @@ li {
     #footer-logo{
         width: 320px;
         height: auto;
+
+        @include mq(x-small) {
+            width: 250px;
+        }
     }
     
 
     &__socials {
 
+        padding-right: 80px;
         background-color: $footer-background-color;
 
         &__icon {
+
+            &-container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-bottom: 30px;
+
+                // width: auto;
+            }
 
             $social_name : "";
             
@@ -55,11 +70,18 @@ li {
             margin-right: 10px;
             margin-bottom: 10px;
 
+            
+            @include mq(x-small) {
+                width: 107px;
+            }
+
             padding: 12px 22px 16px;
 
             & > span {
                 position: relative;
                 top: 4px;
+                
+                // padding: 12px 22px 16px;
             }
 
         }
@@ -86,6 +108,10 @@ li {
             list-style: none;
             padding: 0;
             margin: 0;
+
+            h4 {
+                margin-bottom: 26px;
+            }
         }
     }
 
@@ -117,8 +143,12 @@ li {
     &__license {
         background-color: $footer-bottom-color;
         font-size: 13px;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: auto;
+        padding-right: auto;
+
+
+        margin-right: 0px;
+        margin-left: 0px;
 
         padding-top: 5px;
         padding-bottom: 10px;;
@@ -134,6 +164,10 @@ li {
         & > * {
             margin: 0;
             color: $white;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     }
 }

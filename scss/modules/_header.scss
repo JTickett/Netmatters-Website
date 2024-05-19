@@ -78,7 +78,7 @@
 
     &__searchform {
 
-        
+
 
         //  Hide the search box until screen reaches medium.
         display: none;
@@ -146,6 +146,7 @@
         &-button {
 
             @include button($btn-contact);
+            cursor: pointer;
 
             padding-left: 20px;
             padding-right: 20px;

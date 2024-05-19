@@ -94,7 +94,7 @@
             }
 
             &-label {
-
+                cursor: pointer;
             }
 
             :checked + &-box {
@@ -110,6 +110,7 @@
 
         &__button {
             @include button($newsletter-text-color, $lheight:35px);
+            cursor: pointer;
         }
 
     }

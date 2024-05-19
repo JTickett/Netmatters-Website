@@ -457,6 +457,7 @@ a {
   text-transform: uppercase;
   padding: 5px 15px;
   text-decoration: none;
+  cursor: pointer;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 3px;
@@ -1558,6 +1559,9 @@ a {
   color: #fff;
   transform: scale(0);
 }
+.email-form__checkbox-label {
+  cursor: pointer;
+}
 :checked + .email-form__checkbox-box {
   background: #15191f;
   border-color: #15191f;
@@ -1575,6 +1579,7 @@ a {
   text-transform: uppercase;
   padding: 5px 15px;
   text-decoration: none;
+  cursor: pointer;
 }
 .email-form__button :hover {
   text-decoration: none;
@@ -1589,6 +1594,7 @@ li {
 }
 
 #page-footer {
+  width: 100%;
   padding-top: 27px;
 }
 @media (min-width: 1260px) {
@@ -1608,7 +1614,13 @@ li {
   width: 320px;
   height: auto;
 }
+@media (min-width: 1px) and (max-width: 460px) {
+  .footer #footer-logo {
+    width: 250px;
+  }
+}
 .footer__socials {
+  padding-right: 80px;
   background-color: #323544;
 }
 .footer__socials__icon {
@@ -1623,6 +1635,17 @@ li {
   margin-right: 10px;
   margin-bottom: 10px;
   padding: 12px 22px 16px;
+}
+.footer__socials__icon-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+@media (min-width: 1px) and (max-width: 460px) {
+  .footer__socials__icon {
+    width: 107px;
+  }
 }
 .footer__socials__icon > span {
   position: relative;
@@ -1641,6 +1664,9 @@ li {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+.footer__links > div > ul h4 {
+  margin-bottom: 26px;
 }
 .footer__link-row {
   padding-right: 15px;
@@ -1670,8 +1696,10 @@ li {
 .footer__license {
   background-color: #212330;
   font-size: 13px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: auto;
+  padding-right: auto;
+  margin-right: 0px;
+  margin-left: 0px;
   padding-top: 5px;
   padding-bottom: 10px;
   display: flex;
@@ -1685,6 +1713,9 @@ li {
 .footer__license > * {
   margin: 0;
   color: #ffffff;
+}
+.footer__license a:hover {
+  text-decoration: underline;
 }
 
 ul {
