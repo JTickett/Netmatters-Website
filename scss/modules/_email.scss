@@ -19,30 +19,47 @@
 
     &-form {
 
-        padding-top: 50px;
-        padding-bottom: 50px;
+
         background-color: $newsletter-grey;
 
         label {
             line-height: 32px;
             font-weight: $font-bold;
             color: $dark-txt;
+            margin-bottom: 5px;
+        }
+
+        &__input-wrapper {
+            display: flex;
+            flex-direction: column;
+            margin-left: -15px;
+            margin-right: -15px;
+
+            @include mq(large) {
+                flex-direction: row;
+                justify-content: space-between;
+            }
         }
 
         &__input-group {
             display: flex;
             flex-direction: column;
             margin-bottom: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            @include mq(large) {
+                width: 50%;
+            }
         }
 
         &__input {
             width: 100%;
             height: 47px;
             padding: 5px 15px;
-            border-color: #ccc;
             border-radius: 2px;
             background-color: #fff;
-            border: 1px solid #e5e5e5;
+            border: 1px solid $border-grey;
             
           
             &:focus {
@@ -70,6 +87,7 @@
 
             &-wrap {
                 display: inline-block;
+                
             }
 
             //  Hide the real box
@@ -95,6 +113,11 @@
 
             &-label {
                 cursor: pointer;
+                display: flex;
+                align-items: flex-start;
+                & > p {
+                    margin-top: 0px;
+                }
             }
 
             :checked + &-box {

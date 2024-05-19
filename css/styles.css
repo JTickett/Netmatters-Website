@@ -1499,28 +1499,45 @@ a {
   margin: 0 0 15px;
 }
 .email-form {
-  padding-top: 50px;
-  padding-bottom: 50px;
   background-color: #dddddd;
 }
 .email-form label {
   line-height: 32px;
   font-weight: 600;
   color: #333645;
+  margin-bottom: 5px;
+}
+.email-form__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+@media (min-width: 992px) {
+  .email-form__input-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .email-form__input-group {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .email-form__input-group {
+    width: 50%;
+  }
 }
 .email-form__input {
   width: 100%;
   height: 47px;
   padding: 5px 15px;
-  border-color: #ccc;
   border-radius: 2px;
   background-color: #fff;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #ccc;
 }
 .email-form__input:focus {
   border-color: #5bc0de;
@@ -1561,6 +1578,11 @@ a {
 }
 .email-form__checkbox-label {
   cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+}
+.email-form__checkbox-label > p {
+  margin-top: 0px;
 }
 :checked + .email-form__checkbox-box {
   background: #15191f;

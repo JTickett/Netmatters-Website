@@ -911,29 +911,29 @@
                             <h2 class="email__header">Email Newsletter Sign-Up</h2>
                         </div>
 
-                        <!-- Name Input Box -->
-                        <div class="email-form__input-group">
-                            <label class="email-form__label" for="newsletter_name">
-                                Your Name
-                            </label><br> 
-                            <input class="email-form__input" type="text" id="newsletter_name">
-                        </div>
+                        <div class="email-form__input-wrapper">
 
-                        <!-- Email Input Box -->
-                        <div class="email-form__input-group">
-                            <label class="email-form__label" for="newsletter_email">
-                                Your Email
-                            </label><br> 
-                            <input class="email-form__input" type="email" id="newsletter_email">
+                            <!-- Name Input Box -->
+                            <div class="email-form__input-group">
+                                <label class="email-form__label" for="newsletter_name">
+                                    Your Name
+                                </label>
+                                <input class="email-form__input" name="name" type="text" id="newsletter_name">
+                            </div>
+
+                            <!-- Email Input Box -->
+                            <div class="email-form__input-group">
+                                <label class="email-form__label" for="newsletter_email">
+                                    Your Email
+                                </label> 
+                                <input class="email-form__input" name="email" type="email" id="newsletter_email">
+                            </div>
+
                         </div>
 
                         <!-- Checkbox and Privacy Policy -->
                         <div class="email-form__checkbox-wrap">
-                            <!--
-                                TODO: You cannot style the default checkbox with CSS.
-                                Instead, display: none; the checkbox and use CSS to create a new one until it looks like the Netmatters one
-                            --> 
-                            
+
                             <label class="email-form__checkbox-label" for="email_checkbox">
                                 <input class="email-form__checkbox" type="checkbox" id="email_checkbox" name="marketing"> 
                                 <div class="email-form__checkbox-box"></div>
