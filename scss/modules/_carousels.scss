@@ -77,21 +77,39 @@
         }
 
         &-link{
-            //@include button(pink);
+           
 
             &--webdesign {
                 @include button($service-webdesign,$lheight:35px);
+                margin-top: 11px;
             }
             &--marketing {
                 @include button($service-marketing,$lheight:35px);
+                margin-top: 11px;
             }
             &--software {
                 @include button($service-software,$lheight:35px);
+                margin-top: 11px;
             }
             &--it {
                 @include button($service-it,$lheight:35px);
+                margin-top: 11px;
             }
             
+        }
+
+        &-header {
+            font-size: 1.125rem;
+            font-weight: 400;
+            padding: 0;
+            padding-bottom: 17px;
+            margin: 0;
+        }
+
+        &-text {
+            font-size: .8125rem;
+            line-height: 1.375rem;
+            margin: 0;
         }
 
         &-triangle {
@@ -110,7 +128,7 @@
         }
     }
 
-    :hover + &__bubblebox {
+    &__bubblebox:hover, :hover + &__bubblebox {
         display: block;
         
     }
@@ -121,6 +139,7 @@
         &:hover {
             filter: grayscale(0);
         }
-    }
+    }    
+    
 
 }
