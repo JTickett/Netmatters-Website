@@ -72,8 +72,10 @@
         &box {
             display: none;
             position: absolute;
-            bottom: 100px;
-            right: -32px;
+            bottom: 150%;
+            right: -200px;
+            left: -200px;
+
         }
 
         &-link{
