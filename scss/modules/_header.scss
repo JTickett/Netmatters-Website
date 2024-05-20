@@ -319,6 +319,10 @@
 }
 #navmenu-it:hover {
     background-color: $service-it;
+    color: $white;
+    & > a > span {
+        color: $white;
+    }
 }
 #navmenu-marketing:hover {
     background-color: $service-marketing;

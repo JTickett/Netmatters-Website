@@ -30,6 +30,11 @@
         font-weight: $font-bold;
     }
 
+    h2 {
+        margin-top: -6px;
+        margin-bottom: 40px;
+    }
+
 }
 #about2 {
     
@@ -43,6 +48,24 @@
     @include mq(large) {
         width: 50%;
     }
+
+    h2 {
+        margin-top: -6px;
+        margin-bottom: 40px;
+    }
+}
+
+#about__darkbutton2 {
+    margin-bottom: 50px;
+    @include mq(large) {
+        margin-bottom: 0px;
+    }
+
+}
+
+#about-section{
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .about {
@@ -64,24 +87,50 @@
     }
 
     &__darkbutton {
-        @include button($btn-drk);
+        @include button($btn-drk, $bradius:6px, $lheight:35px);
         font-size: 20px;
         padding: 10px 30px;
+        margin-top: 20px;
+
+        &:hover {
+            background-color: $btn-drk-hover;
+        }
     }
 
     &__googlebutton{
-        @include button($btn-google, $bradius:6px);
+        @include button($btn-google, $bradius:6px, $lheight:35px);
         font-size: 20px;
+        padding: 10px 27px;
+        margin-top: 20px;
+
+        @include mq(x-large) {
+            margin-top: 25px;
+            float: left;
+        }
+
+        &:hover {
+            background-color: $google-hover;
+        }
     }
 
     &__tpbutton {
-        @include button($btn-trustpilot, $bradius:6px);
+        @include button($btn-trustpilot, $bradius:6px, $lheight:35px);
         font-size: 20px;
+        padding: 10px 27px;
+        margin-top: 20px;
+
+        &:hover {
+            background-color: $trustpilot-hover;
+        }
+        
+        @include mq(x-large) {
+            margin-top: 25px;
+            float: right;
+        }
     }
 
     &__quote {
         font-size: 20.8px;
-        font-style: italic;
         font-weight: 600;
         line-height: 30px;
         margin-inline: 0px;
@@ -97,13 +146,20 @@
             margin-top: 25px;
             margin-bottom: 25px;
 
-            p {
-                color: #a3a8ac;
-                display: inline;
 
-            }
             cite {
+                
+                font-style: normal;
+                p {
+                    color: #a3a8ac;
+                    display: inline;
+                    // font-style: none;
+                }
                 a {
+                    // font-style: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
                     //color: tomato;
                 }
                 

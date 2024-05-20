@@ -607,6 +607,10 @@ a {
 
 #navmenu-it:hover {
   background-color: #4183d7;
+  color: #ffffff;
+}
+#navmenu-it:hover > a > span {
+  color: #ffffff;
 }
 
 #navmenu-marketing:hover {
@@ -1162,6 +1166,10 @@ a {
 #about1 #about-bold {
   font-weight: 600;
 }
+#about1 h2 {
+  margin-top: -6px;
+  margin-bottom: 40px;
+}
 
 #about2 {
   position: relative;
@@ -1174,6 +1182,24 @@ a {
   #about2 {
     width: 50%;
   }
+}
+#about2 h2 {
+  margin-top: -6px;
+  margin-bottom: 40px;
+}
+
+#about__darkbutton2 {
+  margin-bottom: 50px;
+}
+@media (min-width: 992px) {
+  #about__darkbutton2 {
+    margin-bottom: 0px;
+  }
+}
+
+#about-section {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .about {
@@ -1192,8 +1218,8 @@ a {
 }
 .about__darkbutton {
   background-color: #272936;
-  border-radius: 3px;
-  line-height: 50px;
+  border-radius: 6px;
+  line-height: 35px;
   color: #ffffff;
   display: inline-block;
   font-weight: 400;
@@ -1202,14 +1228,18 @@ a {
   text-decoration: none;
   font-size: 20px;
   padding: 10px 30px;
+  margin-top: 20px;
 }
 .about__darkbutton :hover {
   text-decoration: none;
 }
+.about__darkbutton:hover {
+  background-color: #121318;
+}
 .about__googlebutton {
   background-color: #4387f6;
   border-radius: 6px;
-  line-height: 50px;
+  line-height: 35px;
   color: #ffffff;
   display: inline-block;
   font-weight: 400;
@@ -1217,14 +1247,25 @@ a {
   padding: 5px 15px;
   text-decoration: none;
   font-size: 20px;
+  padding: 10px 27px;
+  margin-top: 20px;
 }
 .about__googlebutton :hover {
   text-decoration: none;
 }
+@media (min-width: 1260px) {
+  .about__googlebutton {
+    margin-top: 25px;
+    float: left;
+  }
+}
+.about__googlebutton:hover {
+  background-color: #166af4;
+}
 .about__tpbutton {
   background-color: #00b67b;
   border-radius: 6px;
-  line-height: 50px;
+  line-height: 35px;
   color: #ffffff;
   display: inline-block;
   font-weight: 400;
@@ -1232,13 +1273,23 @@ a {
   padding: 5px 15px;
   text-decoration: none;
   font-size: 20px;
+  padding: 10px 27px;
+  margin-top: 20px;
 }
 .about__tpbutton :hover {
   text-decoration: none;
 }
+.about__tpbutton:hover {
+  background-color: #009b69;
+}
+@media (min-width: 1260px) {
+  .about__tpbutton {
+    margin-top: 25px;
+    float: right;
+  }
+}
 .about__quote {
   font-size: 20.8px;
-  font-style: italic;
   font-weight: 600;
   line-height: 30px;
   margin-inline: 0px;
@@ -1251,9 +1302,15 @@ a {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-.about__quote footer p {
+.about__quote footer cite {
+  font-style: normal;
+}
+.about__quote footer cite p {
   color: #a3a8ac;
   display: inline;
+}
+.about__quote footer cite a:hover {
+  text-decoration: underline;
 }
 .about .icon-star::before {
   font-size: 50px;
