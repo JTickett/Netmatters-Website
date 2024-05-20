@@ -57,6 +57,7 @@
     flex-grow: 1;
     padding: 0 40px;
     //overflow-x: hidden;
+    height: 100px;
 
     &__bubble {
         z-index: -1;
@@ -72,7 +73,7 @@
         &box {
             display: none;
             position: absolute;
-            bottom: 150%;
+            bottom: 133px;
             right: -200px;
             left: -200px;
 
@@ -137,6 +138,7 @@
 
     &__logo {
         
+        max-height: 100px;
         filter: grayscale(1);
         &:hover {
             filter: grayscale(0);
