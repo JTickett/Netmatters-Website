@@ -49,15 +49,28 @@
     padding-bottom: 50px;
 }
 
-//  These are the clients in the carousel
-//  They do turn grey on hover, but there is also a popup-bubble with further info.
+
 .client {
 
     position: relative;
     flex-grow: 1;
     padding: 0 40px;
-    //overflow-x: hidden;
     height: 100px;
+    display: flex;
+    align-items: center;
+
+    &__bubblebox:hover, &__bubble:hover, :hover + &__bubblebox {
+        display: block;
+    }
+
+    &__logo {
+        max-height: 100px;
+        max-width: 200px;
+        filter: grayscale(1);
+        &:hover {
+            filter: grayscale(0);
+        }
+    }    
 
     &__bubble {
         z-index: -1;
@@ -73,10 +86,10 @@
         &box {
             display: none;
             position: absolute;
-            bottom: 133px;
+            bottom: 100px;
             right: -200px;
             left: -200px;
-
+            margin: 0 auto 32px;
         }
 
         &-link{
@@ -131,19 +144,7 @@
         }
     }
 
-    &__bubblebox:hover, :hover + &__bubblebox {
-        display: block;
-        
-    }
 
-    &__logo {
-        
-        max-height: 100px;
-        filter: grayscale(1);
-        &:hover {
-            filter: grayscale(0);
-        }
-    }    
     
 
 }

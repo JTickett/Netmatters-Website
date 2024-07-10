@@ -1102,6 +1102,19 @@ a {
   flex-grow: 1;
   padding: 0 40px;
   height: 100px;
+  display: flex;
+  align-items: center;
+}
+.client__bubblebox:hover, .client__bubble:hover, :hover + .client__bubblebox {
+  display: block;
+}
+.client__logo {
+  max-height: 100px;
+  max-width: 200px;
+  filter: grayscale(1);
+}
+.client__logo:hover {
+  filter: grayscale(0);
 }
 .client__bubble {
   z-index: -1;
@@ -1115,9 +1128,10 @@ a {
 .client__bubblebox {
   display: none;
   position: absolute;
-  bottom: 133px;
+  bottom: 100px;
   right: -200px;
   left: -200px;
+  margin: 0 auto 32px;
 }
 .client__bubble-link--webdesign {
   background-color: #926fb1;
@@ -1204,16 +1218,6 @@ a {
   border-color: #333645 transparent transparent;
   border-style: solid;
   border-width: 35px 36px 0;
-}
-.client__bubblebox:hover, :hover + .client__bubblebox {
-  display: block;
-}
-.client__logo {
-  max-height: 100px;
-  filter: grayscale(1);
-}
-.client__logo:hover {
-  filter: grayscale(0);
 }
 
 #about-section-background {
