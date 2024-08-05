@@ -515,10 +515,6 @@ a {
   background-color: #323544;
 }
 
-#submenu-software {
-  display: none;
-}
-
 .nav {
   display: none;
 }
@@ -595,6 +591,10 @@ a {
 
 #nav-developer {
   color: #ce4125;
+}
+
+#navmenu-software:hover + #submenu-software {
+  display: block;
 }
 
 #navmenu-software:hover {
@@ -684,7 +684,8 @@ a {
   display: block;
 }
 #banner img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100%;
   width: 100%;
   opacity: 50%;
@@ -1853,6 +1854,7 @@ li {
   font-size: 13px;
   padding-left: auto;
   padding-right: auto;
+  width: 100%;
   margin-right: 0px;
   margin-left: 0px;
   padding-top: 5px;
@@ -1913,6 +1915,4 @@ li a:hover {
 
 .hidden {
   display: none;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

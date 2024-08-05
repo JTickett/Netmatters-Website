@@ -25,6 +25,10 @@
         }
     }
 
+    //  TODO:
+    // Width should be 1200px on larger screensizes
+    //  Not sure breakpoints or smaller sizes.
+
     
     //  This is a wrapped for the all UI buttons on the top row e.g. 
     &__actions {
@@ -232,7 +236,7 @@
 }
 
 #submenu-software {
-    display: none;
+    //display: none;
 }
 
 .nav {
@@ -289,11 +293,7 @@
                     letter-spacing: 0.4px;
                 }
             }
-
-
-
         }
-
     }
 
     &__listitem-submenu {
@@ -309,6 +309,11 @@
 #nav-web {color: $service-webdesign}
 #nav-security {color: $service-cybersec}
 #nav-developer {color: $service-training}
+
+#navmenu-software:hover + #submenu-software {
+    display: block;
+
+}
 
 #navmenu-software:hover {
     background-color: $service-software;
