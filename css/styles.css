@@ -1206,6 +1206,13 @@ a {
   line-height: 1.375rem;
   margin: 0;
 }
+.client__bubble-text a {
+  color: #ffffff;
+  font-weight: 600;
+}
+.client__bubble-text a:hover {
+  text-decoration: underline;
+}
 .client__bubble-triangle {
   position: absolute;
   bottom: -38px;
