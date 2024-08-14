@@ -49,6 +49,8 @@
             display: none;
         }
 
+        a {color: $footer-blue;}
+
         order: 2;
         font-weight: 400;
         line-height: 32px;
@@ -236,7 +238,14 @@
 }
 
 #submenu-software {
-    //display: none;
+    display: none;
+}
+
+.submenu-container {
+    display: flex;
+    background-color: green;
+    flex-wrap: wrap;
+    
 }
 
 .nav {
@@ -252,13 +261,16 @@
         display: flex;
         margin-top: 0px;
         margin-bottom: 0px;
-
+        
         font-size: 1.125rem;
         text-transform: uppercase;
         justify-content: center;
-        width: 970px;
+        width: 940px;
         margin: auto;
         
+        @include mq(x-large){
+            width: 1170px;
+        }
 
         &item {
 
@@ -268,16 +280,18 @@
             }
             :hover + #submenu-software {
                 text-decoration: none;
-                //  TODO: Show the Submenus
-                //  TODO: This is currently hiding it
-                display: none;
+                display: block;
+                position: absolute;
+                background-color: red;
+                min-width: 100%;
+                z-index: 10;
+                left: 0px;
             }
 
             display: block;
             text-align: center;
             font-size: large;
-            flex-grow: 1;
-            flex-shrink: 1;      
+            flex: 1;      
 
             a {
                 display: block;
@@ -298,6 +312,8 @@
 
     &__listitem-submenu {
         display: none;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
 }
@@ -311,7 +327,7 @@
 #nav-developer {color: $service-training}
 
 #navmenu-software:hover + #submenu-software {
-    display: block;
+    display: none;
 
 }
 

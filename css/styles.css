@@ -276,6 +276,8 @@ body {
 .section {
   margin-left: auto;
   margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 @media (min-width: 768px) {
   .section {
@@ -310,11 +312,6 @@ body {
 }
 .button :hover {
   text-decoration: none;
-}
-
-.section {
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 a {
@@ -357,6 +354,9 @@ a {
   #header1__phone {
     display: none;
   }
+}
+#header1__phone a {
+  color: #323544;
 }
 #header1__buttons {
   order: 2;
@@ -515,6 +515,16 @@ a {
   background-color: #323544;
 }
 
+#submenu-software {
+  display: none;
+}
+
+.submenu-container {
+  display: flex;
+  background-color: green;
+  flex-wrap: wrap;
+}
+
 .nav {
   display: none;
 }
@@ -530,23 +540,32 @@ a {
   font-size: 1.125rem;
   text-transform: uppercase;
   justify-content: center;
-  width: 970px;
+  width: 940px;
   margin: auto;
+}
+@media (min-width: 1260px) {
+  .nav-list {
+    width: 1170px;
+  }
 }
 .nav-listitem {
   color: #ffffff;
   display: block;
   text-align: center;
   font-size: large;
-  flex-grow: 1;
-  flex-shrink: 1;
+  flex: 1;
 }
 .nav-listitem :hover {
   text-decoration: none;
 }
 .nav-listitem :hover + #submenu-software {
   text-decoration: none;
-  display: none;
+  display: block;
+  position: absolute;
+  background-color: red;
+  min-width: 100%;
+  z-index: 10;
+  left: 0px;
 }
 .nav-listitem a {
   display: block;
@@ -563,6 +582,8 @@ a {
 }
 .nav__listitem-submenu {
   display: none;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #nav-software {
@@ -594,7 +615,7 @@ a {
 }
 
 #navmenu-software:hover + #submenu-software {
-  display: block;
+  display: none;
 }
 
 #navmenu-software:hover {
@@ -682,19 +703,36 @@ a {
   background-color: #000000;
   height: 550px;
   display: block;
+  background: linear-gradient(270deg, transparent 25%, #000);
 }
-#banner img {
+#banner .banner-image-container {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+#banner .banner-image-container img {
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100%;
-  width: 100%;
-  opacity: 50%;
+  z-index: -1;
+}
+#banner .banner-image-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  pointer-events: none;
 }
 #banner div {
   align-self: auto;
   margin: auto;
   position: relative;
-  top: -450px;
+  top: -526px;
   display: block;
 }
 #banner div h1 {

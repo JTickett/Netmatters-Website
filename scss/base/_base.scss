@@ -43,6 +43,8 @@ body {
 .section {
   margin-left: auto;
   margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
   @include mq(medium) {
       width: 750px;
   }
@@ -60,11 +62,6 @@ body {
 
 .button {
   @include button(green);
-}
-
-.section {
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 a {
