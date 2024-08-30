@@ -243,9 +243,24 @@
 
 .submenu-container {
     display: flex;
-    background-color: green;
+    //background-color: green;
     flex-wrap: wrap;
-    
+
+    width: 970px;
+    @include mq(x-large){
+        width: 1200px;
+    }
+}
+
+.submenu-title {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 500;
+    width: 970px;
+    @include mq(x-large){
+        width: 1200px;
+    }
+    color: $white;
 }
 
 .nav {
@@ -263,7 +278,7 @@
         margin-bottom: 0px;
         
         font-size: 1.125rem;
-        text-transform: uppercase;
+        
         justify-content: center;
         width: 940px;
         margin: auto;
@@ -275,14 +290,69 @@
         &item {
 
             color: $white;
+            text-transform: uppercase;
             :hover {
                 text-decoration: none;
             }
-            :hover + #submenu-software {
+            :hover + #submenu-software, #submenu-software:hover {
                 text-decoration: none;
                 display: block;
                 position: absolute;
-                background-color: red;
+                background-color: $service-software;
+                min-width: 100%;
+                z-index: 10;
+                left: 0px;
+            }
+            :hover + #submenu-it, #submenu-it:hover {
+                text-decoration: none;
+                display: block;
+                position: absolute;
+                background-color: $service-it;
+                min-width: 100%;
+                z-index: 10;
+                left: 0px;
+            }
+            :hover + #submenu-marketing, #submenu-marketing:hover {
+                text-decoration: none;
+                display: block;
+                position: absolute;
+                background-color: $service-marketing;
+                min-width: 100%;
+                z-index: 10;
+                left: 0px;
+            }
+            :hover + #submenu-telecoms, #submenu-telecoms:hover {
+                text-decoration: none;
+                display: block;
+                position: absolute;
+                background-color: $service-telecoms;
+                min-width: 100%;
+                z-index: 10;
+                left: 0px;
+            }
+            :hover + #submenu-web, #submenu-web:hover {
+                text-decoration: none;
+                display: block;
+                position: absolute;
+                background-color: $service-webdesign;
+                min-width: 100%;
+                z-index: 10;
+                left: 0px;
+            }
+            :hover + #submenu-security, #submenu-security:hover {
+                text-decoration: none;
+                display: block;
+                position: absolute;
+                background-color: $service-cybersec;
+                min-width: 100%;
+                z-index: 10;
+                left: 0px;
+            }
+            :hover + #submenu-developer, #submenu-developer:hover {
+                text-decoration: none;
+                display: block;
+                position: absolute;
+                background-color: $service-training;
                 min-width: 100%;
                 z-index: 10;
                 left: 0px;
@@ -314,6 +384,7 @@
         display: none;
         padding-top: 50px;
         padding-bottom: 50px;
+        text-transform: none;
     }
 
 }
@@ -326,10 +397,6 @@
 #nav-security {color: $service-cybersec}
 #nav-developer {color: $service-training}
 
-#navmenu-software:hover + #submenu-software {
-    display: none;
-
-}
 
 #navmenu-software:hover {
     background-color: $service-software;

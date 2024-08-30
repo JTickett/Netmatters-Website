@@ -521,8 +521,26 @@ a {
 
 .submenu-container {
   display: flex;
-  background-color: green;
   flex-wrap: wrap;
+  width: 970px;
+}
+@media (min-width: 1260px) {
+  .submenu-container {
+    width: 1200px;
+  }
+}
+
+.submenu-title {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 500;
+  width: 970px;
+  color: #ffffff;
+}
+@media (min-width: 1260px) {
+  .submenu-title {
+    width: 1200px;
+  }
 }
 
 .nav {
@@ -538,7 +556,6 @@ a {
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 1.125rem;
-  text-transform: uppercase;
   justify-content: center;
   width: 940px;
   margin: auto;
@@ -550,6 +567,7 @@ a {
 }
 .nav-listitem {
   color: #ffffff;
+  text-transform: uppercase;
   display: block;
   text-align: center;
   font-size: large;
@@ -558,11 +576,65 @@ a {
 .nav-listitem :hover {
   text-decoration: none;
 }
-.nav-listitem :hover + #submenu-software {
+.nav-listitem :hover + #submenu-software, .nav-listitem #submenu-software:hover {
   text-decoration: none;
   display: block;
   position: absolute;
-  background-color: red;
+  background-color: #67809f;
+  min-width: 100%;
+  z-index: 10;
+  left: 0px;
+}
+.nav-listitem :hover + #submenu-it, .nav-listitem #submenu-it:hover {
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  background-color: #4183d7;
+  min-width: 100%;
+  z-index: 10;
+  left: 0px;
+}
+.nav-listitem :hover + #submenu-marketing, .nav-listitem #submenu-marketing:hover {
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  background-color: #2ecc71;
+  min-width: 100%;
+  z-index: 10;
+  left: 0px;
+}
+.nav-listitem :hover + #submenu-telecoms, .nav-listitem #submenu-telecoms:hover {
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  background-color: #d64541;
+  min-width: 100%;
+  z-index: 10;
+  left: 0px;
+}
+.nav-listitem :hover + #submenu-web, .nav-listitem #submenu-web:hover {
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  background-color: #926fb1;
+  min-width: 100%;
+  z-index: 10;
+  left: 0px;
+}
+.nav-listitem :hover + #submenu-security, .nav-listitem #submenu-security:hover {
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  background-color: #f62459;
+  min-width: 100%;
+  z-index: 10;
+  left: 0px;
+}
+.nav-listitem :hover + #submenu-developer, .nav-listitem #submenu-developer:hover {
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  background-color: #ce4125;
   min-width: 100%;
   z-index: 10;
   left: 0px;
@@ -584,6 +656,7 @@ a {
   display: none;
   padding-top: 50px;
   padding-bottom: 50px;
+  text-transform: none;
 }
 
 #nav-software {
@@ -612,10 +685,6 @@ a {
 
 #nav-developer {
   color: #ce4125;
-}
-
-#navmenu-software:hover + #submenu-software {
-  display: none;
 }
 
 #navmenu-software:hover {
