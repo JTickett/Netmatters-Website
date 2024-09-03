@@ -1,5 +1,10 @@
 $(document).ready(function(){
-    $('.your-class').slick({
-      setting-name: setting-value
+    $('.banner-carousel').slick({
+        //autoplay: true,
+        //autoplaySpeed: 4000,
+        arrows: false,
+        dots: true,
+        adaptiveHeight: true,
     });
   });
+
