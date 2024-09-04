@@ -1,42 +1,39 @@
 // =====================================================
 // Banner Styles Partial
 // =====================================================
-// Note: For now this is just a static background image.
 
-.carousel-slider{
+
+section .banner-carousel {
+    position: relative;
+}
+
+
+.banner {
+    // color: $white;
+    // background-color: $black;
+    // height: 550px;
+    // min-height: 550px;
+    // display:  flex !important;
+    // position: relative;
+    // align-items: center;
+    // overflow: hidden;
+    // justify-content: center;
+    // background: $black;
+
     display: flex !important;
     overflow: hidden;
     min-height: 550px;
     position: relative;
     align-items: center;
     justify-content: center;
-    background-color: #000; 
-}
-
-.banner-carousel {
-    color: $white;
-    background-color: $black;
-    height: 550px;
-    min-height: 550px;
-}
-
-.banner {
-    color: $white;
-    background-color: $black;
-    height: 550px;
-    min-height: 550px;
-    display:  flex !important;
-    position: relative;
-    align-items: center;
-    overflow: hidden;
-    justify-content: center;
-    background: linear-gradient(270deg, transparent 25%, #000);
+    background-color: #000;
 
     .banner-image-container {
-        position: absolute;
-        top: 0px;
+        top: 0;
+        bottom: 0;
         width: 100% !important;
-        height: 100%;
+        opacity: 0.5;
+        position: absolute;
 
         @include mq(large){opacity: 1;}
 

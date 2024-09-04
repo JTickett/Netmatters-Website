@@ -767,7 +767,11 @@ a {
   display: block;
 }
 
-.carousel-slider {
+section .banner-carousel {
+  position: relative;
+}
+
+.banner {
   display: flex !important;
   overflow: hidden;
   min-height: 550px;
@@ -776,31 +780,12 @@ a {
   justify-content: center;
   background-color: #000;
 }
-
-.banner-carousel {
-  color: #ffffff;
-  background-color: #000000;
-  height: 550px;
-  min-height: 550px;
-}
-
-.banner {
-  color: #ffffff;
-  background-color: #000000;
-  height: 550px;
-  min-height: 550px;
-  display: flex !important;
-  position: relative;
-  align-items: center;
-  overflow: hidden;
-  justify-content: center;
-  background: linear-gradient(270deg, transparent 25%, #000);
-}
 .banner .banner-image-container {
-  position: absolute;
-  top: 0px;
+  top: 0;
+  bottom: 0;
   width: 100% !important;
-  height: 100%;
+  opacity: 0.5;
+  position: absolute;
 }
 @media (min-width: 992px) {
   .banner .banner-image-container {
