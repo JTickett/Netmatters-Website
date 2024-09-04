@@ -7,12 +7,17 @@
     color: $white;
     background-color: $black;
     height: 550px;
-    display: block;
+    min-height: 550px;
+    display:  flex !important;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
     background: linear-gradient(270deg, transparent 25%, #000);
     .banner-image-container {
         position: relative;
         top: 0px;
-        width: 100%;
+        width: 100% !important;
         height: 100%;
 
         img {
