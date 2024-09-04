@@ -38,22 +38,31 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     //border: 1px solid yellow; // (Just for debug)
+
+    @include mq(medium) {
+      width: 750px;
+    }
+    @include mq(large) {
+        width: 970px;
+    }
+    @include mq(x-large) {
+        width: 1200px;
+    }
+
 }
 
 .section {
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 50px;
   padding-bottom: 50px;
-  @include mq(medium) {
-      width: 750px;
-  }
-  @include mq(large) {
-      width: 970px;
-  }
-  @include mq(x-large) {
-      width: 1200px;
-  }
+  // @include mq(medium) {
+  //     width: 750px;
+  // }
+  // @include mq(large) {
+  //     width: 970px;
+  // }
+  // @include mq(x-large) {
+  //     width: 1200px;
+  // }
 }
 
 .centered {

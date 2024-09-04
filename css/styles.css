@@ -272,27 +272,25 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-
-.section {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
 @media (min-width: 768px) {
-  .section {
+  .reusable-container {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  .section {
+  .reusable-container {
     width: 970px;
   }
 }
 @media (min-width: 1260px) {
-  .section {
+  .reusable-container {
     width: 1200px;
   }
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .centered {
@@ -816,6 +814,8 @@ section .banner-carousel {
   position: relative;
   padding-top: 3.75rem;
   padding-bottom: 3.75rem;
+  text-align: center;
+  width: 100%;
 }
 .banner-text-wrapper h1 {
   font-weight: 600;
