@@ -3,6 +3,23 @@
 // =====================================================
 // Note: For now this is just a static background image.
 
+.carousel-slider{
+    display: flex !important;
+    overflow: hidden;
+    min-height: 550px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: #000; 
+}
+
+.banner-carousel {
+    color: $white;
+    background-color: $black;
+    height: 550px;
+    min-height: 550px;
+}
+
 .banner {
     color: $white;
     background-color: $black;
@@ -14,11 +31,14 @@
     overflow: hidden;
     justify-content: center;
     background: linear-gradient(270deg, transparent 25%, #000);
+
     .banner-image-container {
-        position: relative;
+        position: absolute;
         top: 0px;
         width: 100% !important;
         height: 100%;
+
+        @include mq(large){opacity: 1;}
 
         img {
             width: 100%;
@@ -27,7 +47,7 @@
             z-index: -1;
         }
 
-        &::after {
+        &::before {
             content: '';
             position: absolute;
             top: 0;
