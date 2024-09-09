@@ -466,6 +466,27 @@ a {
   }
 }
 
+.burger {
+  display: flex;
+  flex-direction: column;
+  width: 64px;
+  gap: 7px;
+  cursor: pointer;
+  order: 3;
+  margin-left: 20px;
+  padding: 15px 15px;
+  background: #323544;
+  border: solid black 1px;
+  border-radius: 3px;
+}
+.burger__top, .burger__middle, .burger__bottom {
+  background: #ffffff;
+  height: 4px;
+  width: 33px;
+  border-radius: 0px;
+  display: block;
+}
+
 #header1 {
   display: flex;
   flex-flow: row nowrap;
@@ -885,27 +906,6 @@ a {
 }
 #navmenu-developer:hover > a > span {
   color: #ffffff;
-}
-
-.burger {
-  display: flex;
-  flex-direction: column;
-  width: 64px;
-  gap: 7px;
-  cursor: pointer;
-  order: 3;
-  margin-left: 20px;
-  padding: 15px 15px;
-  background: #323544;
-  border: solid black 1px;
-  border-radius: 3px;
-}
-.burger__top, .burger__middle, .burger__bottom {
-  background: #ffffff;
-  height: 4px;
-  width: 33px;
-  border-radius: 0px;
-  display: block;
 }
 
 section .banner-carousel {

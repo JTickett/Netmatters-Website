@@ -438,27 +438,3 @@
     }
 }
 
-
-.burger {
-
-    display: flex;
-    flex-direction: column;
-    width: 64px;
-    gap: 7px;
-    cursor: pointer;
-    order: 3;
-    margin-left: 20px;
-    padding: 15px 15px;
-    background: $footer-background-color;
-    border: solid black 1px;
-    border-radius: 3px;
-
-
-    &__top, &__middle, &__bottom {
-        background: $white;
-        height: 4px;
-        width: 33px;
-        border-radius: 0px;
-        display: block;
-    }
-}

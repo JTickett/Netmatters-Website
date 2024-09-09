@@ -1,4 +1,9 @@
+
+// Stuff to do once the DOM is ready.
 $(document).ready(function(){
+
+
+
     $('.carousel-slider').slick({
         //autoplay: true,
         //autoplaySpeed: 4000,
@@ -6,5 +11,10 @@ $(document).ready(function(){
         dots: true,
         adaptiveHeight: true,
     });
+
+
+
+
+
   });
 
