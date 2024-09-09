@@ -22,18 +22,21 @@
         width: 33px;
         border-radius: 0px;
         display: absolute;
-        transition: transform 10s, opacity 8s, top 0.6s;
+        transition: transform 5s, opacity 1s, top 0.6s;
     }
 }
 
 .burger.active .burger__top {
+    transition-delay: 1s;
     transform: translate(-50%, -50%) rotate(-3150deg);
     top: 50%;
 }
 
 
 .burger.active .burger__middle {
-    opacity: 0%;;
+    transition-delay: 5s;
+    opacity: 0%;
+    top: 100%
 }
 
 
