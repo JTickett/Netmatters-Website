@@ -21,13 +21,24 @@
         height: 4px;
         width: 33px;
         border-radius: 0px;
-        display: block;
-        transition: transform 0.6s, opacity 0.8s, top 0.6s;
+        display: absolute;
+        transition: transform 10s, opacity 8s, top 0.6s;
     }
 }
 
 .burger.active .burger__top {
-    transform: translate(-50%, -50%) rotate(-315deg);
+    transform: translate(-50%, -50%) rotate(-3150deg);
+    top: 50%;
+}
+
+
+.burger.active .burger__middle {
+    opacity: 0%;;
+}
+
+
+.burger.active .burger__bottom {
+    transform: translate(50%, -50%) rotate(31500deg);
     top: 50%;
 }
 
