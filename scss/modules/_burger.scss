@@ -4,44 +4,61 @@
 .burger {
 
     display: flex;
+    justify-content: flex-end;
+    position: relative;
     flex-direction: column;
     width: 64px;
+    height: 60px;
     gap: 7px;
     cursor: pointer;
     order: 3;
     margin-left: 20px;
-    padding: 15px 15px;
+    padding: 0px 15px;
     background: $footer-background-color;
     border: solid black 1px;
     border-radius: 3px;
 
+    &__bar {
 
-    &__top, &__middle, &__bottom {
-        background: $white;
-        height: 4px;
-        width: 33px;
-        border-radius: 0px;
-        display: absolute;
-        transition: transform 5s, opacity 1s, top 0.6s;
+        // Apply to all bars
+        &-top, &-middle, &-bottom {
+            background: $white;
+            height: 4px;
+            width: 33px;
+            border-radius: 0px;
+            position: absolute;
+            transition: transform 2s, opacity 2s, top 2s;
+        }
+
+
+        &-top{
+            top: 25%;
+        } 
+        &-middle{
+            top: 50%;
+        }
+        &-bottom {
+            top: 75%;
+        }
     }
+
+
 }
 
-.burger.active .burger__top {
-    transition-delay: 1s;
-    transform: translate(-50%, -50%) rotate(-3150deg);
+.burger.active .burger__bar-top {
+    transform: translate(-50%, -50%) rotate(-315deg);
     top: 50%;
 }
 
 
-.burger.active .burger__middle {
-    transition-delay: 5s;
+.burger.active .burger__bar-middle {
+    //transition-delay: 5s;
     opacity: 0%;
-    top: 100%
 }
 
 
-.burger.active .burger__bottom {
-    transform: translate(50%, -50%) rotate(31500deg);
+.burger.active .burger__bar-bottom {
+    transform: translate(50%, -50%) rotate(-315deg);
     top: 50%;
 }
 
