@@ -501,7 +501,7 @@ a {
 }
 
 .burger.active .burger__bar-top {
-  transform: translate(-50%, -50%) rotate(-315deg);
+  transform: rotate(-315deg);
   top: 50%;
 }
 
@@ -510,7 +510,7 @@ a {
 }
 
 .burger.active .burger__bar-bottom {
-  transform: translate(50%, -50%) rotate(-315deg);
+  transform: rotate(-225deg);
   top: 50%;
 }
 
