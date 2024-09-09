@@ -7,12 +7,12 @@
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 9;
+    z-index: -10;
     float: right;
     width: 275px;
     height: 100vh;
     overflow: auto;
-    // display: none;
+    display: block;
     background-color: $dark-txt;
     @include mq(large){width: 350px;}
 
