@@ -267,6 +267,7 @@ body {
   transition: left 0.5s;
   left: 0px;
   background-color: #ffffff;
+  z-index: 5;
 }
 
 #page-wrapper:after {
@@ -276,7 +277,7 @@ body {
   width: 0;
   height: 0;
   background: rgba(0, 0, 0, 0.4);
-  z-index: 10;
+  z-index: 4;
   content: "";
   opacity: 0;
   transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
@@ -813,7 +814,7 @@ a {
   position: absolute;
   background-color: #67809f;
   min-width: 100%;
-  z-index: 10;
+  z-index: 3;
   left: 0px;
 }
 .nav-listitem :hover + #submenu-it, .nav-listitem #submenu-it:hover {
@@ -822,7 +823,7 @@ a {
   position: absolute;
   background-color: #4183d7;
   min-width: 100%;
-  z-index: 10;
+  z-index: 3;
   left: 0px;
 }
 .nav-listitem :hover + #submenu-marketing, .nav-listitem #submenu-marketing:hover {
@@ -831,7 +832,7 @@ a {
   position: absolute;
   background-color: #2ecc71;
   min-width: 100%;
-  z-index: 10;
+  z-index: 3;
   left: 0px;
 }
 .nav-listitem :hover + #submenu-telecoms, .nav-listitem #submenu-telecoms:hover {
@@ -840,7 +841,7 @@ a {
   position: absolute;
   background-color: #d64541;
   min-width: 100%;
-  z-index: 10;
+  z-index: 3;
   left: 0px;
 }
 .nav-listitem :hover + #submenu-web, .nav-listitem #submenu-web:hover {
@@ -849,7 +850,7 @@ a {
   position: absolute;
   background-color: #926fb1;
   min-width: 100%;
-  z-index: 10;
+  z-index: 3;
   left: 0px;
 }
 .nav-listitem :hover + #submenu-security, .nav-listitem #submenu-security:hover {
@@ -858,7 +859,7 @@ a {
   position: absolute;
   background-color: #f62459;
   min-width: 100%;
-  z-index: 10;
+  z-index: 3;
   left: 0px;
 }
 .nav-listitem :hover + #submenu-developer, .nav-listitem #submenu-developer:hover {
@@ -867,7 +868,7 @@ a {
   position: absolute;
   background-color: #ce4125;
   min-width: 100%;
-  z-index: 10;
+  z-index: 3;
   left: 0px;
 }
 .nav-listitem a {
@@ -976,20 +977,18 @@ a {
 
 .sticky-head-down {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  z-index: 11;
+  z-index: 2;
   transform: translateY(-100%);
 }
 
 .sticky-head-up {
   position: fixed;
-  left: 0;
   width: 100%;
-  z-index: 11;
+  z-index: 2;
   transform: translateY(0);
 }
+
 section .banner-carousel {
   position: relative;
 }
@@ -1020,7 +1019,6 @@ section .banner-carousel {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: -1;
 }
 .banner .banner-image-container::before {
   content: "";
@@ -1034,7 +1032,6 @@ section .banner-carousel {
 }
 
 .banner-text-wrapper {
-  z-index: 4;
   color: #fff;
   position: relative;
   padding-top: 3.75rem;
@@ -1463,7 +1460,6 @@ section .banner-carousel {
   filter: grayscale(0);
 }
 .client__bubble {
-  z-index: -1;
   background-color: #333645;
   color: #ffffff;
   margin: auto;
@@ -1864,7 +1860,6 @@ section .banner-carousel {
   position: absolute;
   right: 0px;
   padding: 0 10px;
-  z-index: 1;
   top: 10px;
   font-size: 0.75rem;
   line-height: 1.438rem;

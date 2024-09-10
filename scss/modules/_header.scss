@@ -295,7 +295,7 @@
                 position: absolute;
                 background-color: $service-software;
                 min-width: 100%;
-                z-index: 10;
+                z-index: $z-submenus;
                 left: 0px;
             }
             :hover + #submenu-it, #submenu-it:hover {
@@ -304,7 +304,7 @@
                 position: absolute;
                 background-color: $service-it;
                 min-width: 100%;
-                z-index: 10;
+                z-index: $z-submenus;
                 left: 0px;
             }
             :hover + #submenu-marketing, #submenu-marketing:hover {
@@ -313,7 +313,7 @@
                 position: absolute;
                 background-color: $service-marketing;
                 min-width: 100%;
-                z-index: 10;
+                z-index: $z-submenus;
                 left: 0px;
             }
             :hover + #submenu-telecoms, #submenu-telecoms:hover {
@@ -322,7 +322,7 @@
                 position: absolute;
                 background-color: $service-telecoms;
                 min-width: 100%;
-                z-index: 10;
+                z-index: $z-submenus;
                 left: 0px;
             }
             :hover + #submenu-web, #submenu-web:hover {
@@ -331,7 +331,7 @@
                 position: absolute;
                 background-color: $service-webdesign;
                 min-width: 100%;
-                z-index: 10;
+                z-index: $z-submenus;
                 left: 0px;
             }
             :hover + #submenu-security, #submenu-security:hover {
@@ -340,7 +340,7 @@
                 position: absolute;
                 background-color: $service-cybersec;
                 min-width: 100%;
-                z-index: 10;
+                z-index: $z-submenus;
                 left: 0px;
             }
             :hover + #submenu-developer, #submenu-developer:hover {
@@ -349,7 +349,7 @@
                 position: absolute;
                 background-color: $service-training;
                 min-width: 100%;
-                z-index: 10;
+                z-index: $z-submenus;
                 left: 0px;
             }
 
@@ -446,23 +446,14 @@
 
 .sticky-head-down{
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    z-index: 11;
+    z-index: $z-header;
     transform: translateY(-100%);
 }
 
 .sticky-head-up{
     position: fixed;
-    left: 0;
     width: 100%;
-    z-index: 11;
+    z-index: $z-header;
     transform: translateY(0);
-    @include mq(large){
-        //top: 84px;
-    }
-    @include mq(x-large){
-        //top: 115px;
-    }
 }

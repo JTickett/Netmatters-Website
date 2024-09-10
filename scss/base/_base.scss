@@ -31,6 +31,7 @@ body {
   transition: left 0.5s;
   left: 0px;
   background-color: $white;
+  z-index: $z-pagewrapper;
 }
 
 #page-wrapper:after {
@@ -40,7 +41,7 @@ body {
     width: 0;
     height: 0;
     background: rgba(0,0,0,.4);
-    z-index: 10;
+    z-index: $z-pagewrapper-dim;
     content: "";
     opacity: 0;
     transition: opacity .5s,width .1s .5s,height .1s .5s;
