@@ -2,6 +2,11 @@
 // Header Style Partial
 // =====================================================
 
+#header-wrapper {
+    background-color: $white;
+    transition: 0.8s ease-in-out;
+}
+
 // First Row contains the Logo, Contact Buttons and Burger Menu
 #header1 {
 
@@ -438,3 +443,26 @@
     }
 }
 
+
+.sticky-head-down{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 11;
+    transform: translateY(-100%);
+}
+
+.sticky-head-up{
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 11;
+    transform: translateY(0);
+    @include mq(large){
+        //top: 84px;
+    }
+    @include mq(x-large){
+        //top: 115px;
+    }
+}

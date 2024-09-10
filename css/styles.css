@@ -548,6 +548,11 @@ a {
   top: 50%;
 }
 
+#header-wrapper {
+  background-color: #ffffff;
+  transition: 0.8s ease-in-out;
+}
+
 #header1 {
   display: flex;
   flex-flow: row nowrap;
@@ -969,6 +974,22 @@ a {
   color: #ffffff;
 }
 
+.sticky-head-down {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 11;
+  transform: translateY(-100%);
+}
+
+.sticky-head-up {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 11;
+  transform: translateY(0);
+}
 section .banner-carousel {
   position: relative;
 }

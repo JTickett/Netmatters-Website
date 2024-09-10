@@ -2,7 +2,7 @@
 // Stuff to do once the DOM is ready.
 $(document).ready(function(){
 
-    let menuOpen = false;
+    
 
     // $('.carousel-slider').slick({
     //     //autoplay: true,
@@ -11,6 +11,9 @@ $(document).ready(function(){
     //     dots: true,
     //     adaptiveHeight: true,
     // });
+
+    // Variable to track if the menu is open or not. Default is false. 
+    let menuOpen = false;
 
     //$(".burger").click(() => ($(".burger").toggleClass("active")));
     //above arrow function does the same, but I find it less readable.
