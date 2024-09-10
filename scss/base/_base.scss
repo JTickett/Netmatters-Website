@@ -55,8 +55,12 @@ body {
 }
 
 
-#page-wrapper.sidebar-visible{
-  left: -350px;
+#page-wrapper.sidebar-visible {
+  
+  left: -275px;
+  @include mq(large){
+    left: -350px;
+  }
 }
 
 

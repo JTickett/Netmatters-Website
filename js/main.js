@@ -4,7 +4,6 @@ $(document).ready(function(){
 
     let menuOpen = false;
 
-
     // $('.carousel-slider').slick({
     //     //autoplay: true,
     //     //autoplaySpeed: 4000,
@@ -13,7 +12,6 @@ $(document).ready(function(){
     //     adaptiveHeight: true,
     // });
 
-    
     //$(".burger").click(() => ($(".burger").toggleClass("active")));
     //above arrow function does the same, but I find it less readable.
     $(".burger").click(function(){
@@ -23,9 +21,6 @@ $(document).ready(function(){
             $("#sidebar").toggleClass("sidebar-visible");
             menuOpen = true;
 		  }, 50);
-
-          
-        
     });
 
     $("#page-wrapper").click(function(){
