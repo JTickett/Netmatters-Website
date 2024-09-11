@@ -1285,7 +1285,6 @@ section .banner-carousel {
 .service-card1:hover {
   background-color: #67809f;
   border-color: #67809f;
-  transition: 0.5s ease;
   top: -10px;
 }
 .service-card1:hover a > .service-card__button {
@@ -1298,7 +1297,6 @@ section .banner-carousel {
 .service-card2:hover {
   background-color: #4183d7;
   border-color: #4183d7;
-  transition: 0.5s ease;
   top: -10px;
 }
 .service-card2:hover a > .service-card__button {
@@ -1311,7 +1309,6 @@ section .banner-carousel {
 .service-card3:hover {
   background-color: #2ecc71;
   border-color: #2ecc71;
-  transition: 0.5s ease;
   top: -10px;
 }
 .service-card3:hover a > .service-card__button {
@@ -1324,7 +1321,6 @@ section .banner-carousel {
 .service-card4:hover {
   background-color: #d64541;
   border-color: #d64541;
-  transition: 0.5s ease;
   top: -10px;
 }
 .service-card4:hover a > .service-card__button {
@@ -1337,7 +1333,6 @@ section .banner-carousel {
 .service-card5:hover {
   background-color: #926fb1;
   border-color: #926fb1;
-  transition: 0.5s ease;
   top: -10px;
 }
 .service-card5:hover a > .service-card__button {
@@ -1350,7 +1345,6 @@ section .banner-carousel {
 .service-card6:hover {
   background-color: #f62459;
   border-color: #f62459;
-  transition: 0.5s ease;
   top: -10px;
 }
 .service-card6:hover a > .service-card__button {
@@ -1363,7 +1357,6 @@ section .banner-carousel {
 .service-card7:hover {
   background-color: #ce4125;
   border-color: #ce4125;
-  transition: 0.5s ease;
   top: -10px;
 }
 .service-card7:hover a > .service-card__button {
@@ -1933,6 +1926,8 @@ section .banner-carousel {
 }
 
 .news-card {
+  top: 0;
+  transition: 0.5s ease;
   position: relative;
   background-color: #ffffff;
   align-self: center;
@@ -1940,6 +1935,10 @@ section .banner-carousel {
   border-radius: 3px;
   margin: 30px 20px 20px;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+.news-card:hover {
+  transition: 0.5s ease;
+  top: -10px;
 }
 .news-card__container {
   display: grid;
@@ -2103,6 +2102,10 @@ section .banner-carousel {
 
 #news-card3 {
   grid-area: three;
+}
+
+div[id^=news-card] {
+  transition: 0.5s ease;
 }
 
 #email-section-background {

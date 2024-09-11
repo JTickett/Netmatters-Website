@@ -10,7 +10,8 @@
         bottom: 0;
         left: 0;
         z-index: 1;
-    
+
+
 }
 
 #news {
@@ -62,6 +63,15 @@
 
 
 .news-card {
+
+    top: 0;
+    transition: .5s ease;
+    &:hover {
+        transition: .5s ease;
+        @include cardhover();
+    }
+
+    
 
     position: relative;
     
@@ -240,3 +250,7 @@
 #news-card1 {grid-area: one;}
 #news-card2 {grid-area: two;}
 #news-card3 {grid-area: three;}
+
+div[id^='news-card']{
+    transition: .5s ease;
+}
