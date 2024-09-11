@@ -12,6 +12,46 @@ $(document).ready(function(){
         dots: true,
         adaptiveHeight: true
     });
+    
+
+    $('.logowrapper').slick({
+        arrows: false,
+        autoplay: true,
+        slidesToShow: 7,
+        draggable: false,
+        variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    infinite: true
+                }
+            },
+            {
+                breakpoint: 996,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll:1
+                }
+            }
+        ]
+    });
 
     // Variable to track if the menu is open or not. Default is false. 
     let menuOpen = false;
