@@ -4,13 +4,14 @@ $(document).ready(function(){
 
     
 
-    // $('.carousel-slider').slick({
-    //     //autoplay: true,
-    //     //autoplaySpeed: 4000,
-    //     arrows: false,
-    //     dots: true,
-    //     adaptiveHeight: true,
-    // });
+    $('.carousel-slider').slick({
+        //autoplay: true,
+        //autoplaySpeed: 4000,
+        slidesToShow: 1,
+        arrows: false,
+        dots: true,
+        adaptiveHeight: true
+    });
 
     // Variable to track if the menu is open or not. Default is false. 
     let menuOpen = false;
