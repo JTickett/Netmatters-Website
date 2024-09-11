@@ -7,6 +7,7 @@ section .banner-carousel {
     position: relative;
 }
 
+//  This is the container object for the slider
 .carousel-slider {
     display: flex;
     flex-direction: row;
@@ -14,9 +15,11 @@ section .banner-carousel {
     position: relative;
     overflow: hidden;
     height: 550px;
+    text-align: center;
+    color: $white;
 }
 
-
+//  This is each individual slide in the carousel
 .banner {
     
     display: flex !important;
@@ -86,3 +89,29 @@ section .banner-carousel {
 }
 
 //$service-webdesign button colour
+
+
+
+// Slick Dots styling
+
+.slick-dots {
+    bottom: 35px;
+  
+    li button:before {
+      font-size: 11px;
+      // width:10px;
+      // height:10px;
+  
+      color: #d6d6d6;
+    }
+  
+    li.slick-active button:before {
+      opacity: 0.75;
+      color: $white;
+      border-radius: 50%;
+      border: 1px solid $white;
+      // width:11px;
+      // height:11px;
+      // margin:5px 7px;
+    }
+  }

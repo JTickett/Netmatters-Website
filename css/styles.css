@@ -1000,6 +1000,8 @@ section .banner-carousel {
   position: relative;
   overflow: hidden;
   height: 550px;
+  text-align: center;
+  color: #ffffff;
 }
 
 .banner {
@@ -1063,6 +1065,20 @@ section .banner-carousel {
 .banner-text-wrapper a {
   margin-top: 31px;
   font-size: 1.25rem;
+}
+
+.slick-dots {
+  bottom: 35px;
+}
+.slick-dots li button:before {
+  font-size: 11px;
+  color: #d6d6d6;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
 }
 
 #services {
