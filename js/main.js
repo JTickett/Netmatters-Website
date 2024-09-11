@@ -5,14 +5,13 @@ $(document).ready(function(){
     
 
     $('.carousel-slider').slick({
-        //autoplay: true,
-        //autoplaySpeed: 4000,
+        autoplay: true,
+        autoplaySpeed: 4000,
         slidesToShow: 1,
         arrows: false,
         dots: true,
         adaptiveHeight: true
     });
-    
 
     $('.logowrapper').slick({
         arrows: false,
