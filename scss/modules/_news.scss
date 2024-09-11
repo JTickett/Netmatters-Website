@@ -2,6 +2,17 @@
 // News/Careers Styles Partial
 // =====================================================
 
+.art-link{
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    
+}
+
 #news {
 
     display: grid;
@@ -49,24 +60,10 @@
     }
 }
 
-#card1cat, #card1but {
-    background-color: $service-marketing;
-    color: $white;
-}
-#card2cat, #card2but {
-    background-color: $service-business;
-    color: $white;
-}
-#card3cat, #card3but {
-    background-color: $service-it ;
-    color: $white;
-}
-#card1tit{color:$service-marketing;}
-#card2tit{color:$service-business;}
-#card3tit{color:$service-it;}
-
 
 .news-card {
+
+    position: relative;
     
     &__container {
         display: grid;
@@ -102,7 +99,7 @@
         position: relative; //  Relative here allows the 'absolute' position below to reference it
 
         &__category {
-            background: $service-business;
+            //background: $service-business;
             display: block;
             //background-clip: border-box;
             background-origin: padding-box;
@@ -115,6 +112,11 @@
             line-height: 1.438rem;
             color: $white;
             text-transform: uppercase;
+            z-index: $z-sidebar;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
 
         &__image {
@@ -207,6 +209,24 @@
     }
 
 }
+
+
+.card1cat, .card1but {
+    background-color: $service-marketing;
+    color: $white;
+}
+.card2cat, .card2but {
+    background-color: $service-business;
+    color: $white;
+}
+.card3cat, .card3but {
+    background-color: $service-it ;
+    color: $white;
+}
+.card1tit{color:$service-marketing;}
+.card2tit{color:$service-business;}
+.card3tit{color:$service-it;}
+
 
 #news-hide {
     @include mq(medium) {
