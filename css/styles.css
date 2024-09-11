@@ -10,7 +10,7 @@
 [class^=icon-], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
-  speak: never;
+  font-synthesis: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -737,7 +737,6 @@ a {
   padding-right: 40px;
 }
 #header2__searchform-button {
-  background-color: none;
   border: none;
   right: 3px;
   top: 30px;
