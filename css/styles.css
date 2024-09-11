@@ -1001,7 +1001,7 @@ section .banner-carousel {
   overflow: hidden;
   height: 550px;
   text-align: center;
-  color: #ffffff;
+  color: #000000;
 }
 
 .banner {
