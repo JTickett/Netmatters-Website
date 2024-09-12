@@ -463,6 +463,10 @@ a {
   text-decoration: none;
 }
 
+#sidebar > ul > li:hover > a {
+  background-color: hsla(0, 0%, 100%, 0.05);
+}
+
 #sidebar {
   position: fixed;
   top: 0;

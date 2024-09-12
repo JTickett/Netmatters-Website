@@ -2,6 +2,10 @@
 //                 SIDE BAR
 //==========================================//
 
+#sidebar>ul>li:hover>a {
+    background-color: hsla(0,0%,100%,.05);
+}
+//div-ul-li-a
 #sidebar {
 
     position: fixed;
