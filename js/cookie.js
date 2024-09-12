@@ -3,7 +3,11 @@ $(document).ready(function(){
     cookieMessage();
 
     document.querySelector("#cookie-button2").addEventListener("click", function() {
+        
+        //  Hide the popup
         document.querySelector("#cookies").style.display = "none";
+        
+        //  ????
         //localStorage.setItem("cookie_consent", "accepted");
 
         // Set cookie to expire in 30 days
@@ -36,7 +40,9 @@ getCookie = (cName) => {
 }
 
 cookieMessage = () => {
-    if (!getCookie('cookie')) {
+
+    const cookieExists = !getCookie('cookie');
+    if (cookieExists) {
         document.querySelector("#cookies").style.display = "block";
     }
 }
