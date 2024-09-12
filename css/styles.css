@@ -373,21 +373,19 @@ a {
 #cookies {
   width: 600px;
   position: fixed;
-  bottom: 70%;
+  bottom: 10%;
   left: 50%;
   z-index: 6;
   background: #ffffff;
-  color: #000000;
-  padding: 10px 0;
   border-top: 1px solid #000000;
   transform: translate(-50%, -50%);
   display: none;
+  border-radius: 5px;
 }
 #cookies .cookie_container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .cookie-title h3 {
@@ -397,6 +395,7 @@ a {
   font-size: 1.625rem;
   margin: 0;
   padding: 1rem;
+  color: #333645;
 }
 
 .cookie-text {
@@ -409,11 +408,12 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 20px;
 }
 
 .cookie-button {
   background-color: #272936;
-  border-radius: 6px;
+  border-radius: 3px;
   line-height: 35px;
   color: #ffffff;
   display: inline-block;
@@ -423,7 +423,6 @@ a {
   text-decoration: none;
   font-size: 20px;
   padding: 10px 30px;
-  margin-top: 20px;
 }
 .cookie-button :hover {
   text-decoration: none;

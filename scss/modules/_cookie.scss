@@ -23,21 +23,21 @@
 #cookies {
     width: 600px;
     position: fixed;
-    bottom: 70%;
+    bottom: 10%;
     left: 50%;
     z-index: $z-cookies;
     background: $white;
-    color: $black;
-    padding: 10px 0;
+    // padding: 10px 0;
     border-top: 1px solid $black;
     transform: translate(-50%, -50%);
     display: none;
+    border-radius: 5px;
 
     .cookie_container {
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 0 20px;
+        // padding: 0 20px;
     }
 }
 
@@ -49,6 +49,7 @@
         font-size: 1.625rem;
         margin: 0;
         padding: 1rem;
+        color: $dark-txt;
     }
 }
 
@@ -62,13 +63,13 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 20px;
 }
 
 .cookie-button {
-    @include button($btn-drk, $bradius:6px, $lheight:35px);
+    @include button($btn-drk, $bradius:3px, $lheight:35px);
     font-size: 20px;
     padding: 10px 30px;
-    margin-top: 20px;
 }
 
 #cookie-button1{
