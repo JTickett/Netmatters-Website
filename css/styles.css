@@ -1003,31 +1003,31 @@ a {
   text-transform: none;
 }
 
-#nav-software {
+.nav-software {
   color: #67809f;
 }
 
-#nav-it {
+.nav-it {
   color: #4183d7;
 }
 
-#nav-marketing {
+.nav-marketing {
   color: #2ecc71;
 }
 
-#nav-telecoms {
+.nav-telecoms {
   color: #d64541;
 }
 
-#nav-web {
+.nav-web {
   color: #926fb1;
 }
 
-#nav-security {
+.nav-security {
   color: #f62459;
 }
 
-#nav-developer {
+.nav-developer {
   color: #ce4125;
 }
 
