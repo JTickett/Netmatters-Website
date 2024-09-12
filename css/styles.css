@@ -1144,8 +1144,7 @@ section .banner-carousel {
 .banner .banner-image-container img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .banner .banner-image-container::before {
   content: "";
@@ -2325,9 +2324,6 @@ li {
   padding: 0;
   margin: 0;
 }
-.footer__links > div > ul h4 {
-  margin-bottom: 26px;
-}
 .footer__link-row {
   padding-right: 15px;
   padding-left: 15px;
@@ -2349,9 +2345,9 @@ li {
     float: left;
   }
 }
-.footer__link-row > ul > h4 {
+.footer__link-header {
   font-weight: 400;
-  margin: 0 0 15px;
+  margin: 0 0 26px;
 }
 .footer__license {
   background-color: #212330;
