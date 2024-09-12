@@ -62,10 +62,11 @@
   }
 
   //  For the service cards hover effect.
-  @mixin cardhover($colour) { 
-    background-color:$colour; 
-    border-color:$colour;
-    transition: .5s ease;
+  @mixin cardhover($colour:null) { 
+    @if $colour != null {
+      background-color:$colour; 
+      border-color:$colour;
+    }
     top: -10px;
 
 }

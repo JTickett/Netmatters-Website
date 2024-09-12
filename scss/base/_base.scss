@@ -25,9 +25,43 @@ body {
 }
 
 #page-wrapper {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: left 0.5s;
+  left: 0px;
+  background-color: $white;
+  z-index: $z-pagewrapper;
+}
+
+#page-wrapper:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    background: rgba(0,0,0,.4);
+    z-index: $z-pagewrapper-dim;
+    content: "";
+    opacity: 0;
+    transition: opacity .5s,width .1s .5s,height .1s .5s;
+}
+
+#page-wrapper.sidebar-visible:after {    
+    width: 100%;
     height: 100%;
-    position: relative;
-    overflow: hidden;
+    opacity: 1;
+    transition: opacity .5s;
+    cursor: pointer;
+}
+
+
+#page-wrapper.sidebar-visible {
+  
+  left: -275px;
+  @include mq(large){
+    left: -350px;
+  }
 }
 
 
@@ -38,22 +72,31 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     //border: 1px solid yellow; // (Just for debug)
+
+    @include mq(medium) {
+      width: 750px;
+    }
+    @include mq(large) {
+        width: 970px;
+    }
+    @include mq(x-large) {
+        width: 1200px;
+    }
+
 }
 
 .section {
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 50px;
   padding-bottom: 50px;
-  @include mq(medium) {
-      width: 750px;
-  }
-  @include mq(large) {
-      width: 970px;
-  }
-  @include mq(x-large) {
-      width: 1200px;
-  }
+  // @include mq(medium) {
+  //     width: 750px;
+  // }
+  // @include mq(large) {
+  //     width: 970px;
+  // }
+  // @include mq(x-large) {
+  //     width: 1200px;
+  // }
 }
 
 .centered {

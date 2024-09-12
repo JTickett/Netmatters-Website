@@ -1,0 +1,164 @@
+//==========================================//
+//                 SIDE BAR
+//==========================================//
+
+#sidebar>ul>li:hover>a {
+    background-color: hsla(0,0%,100%,.05);
+}
+//div-ul-li-a
+#sidebar {
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: $z-sidebar;
+    float: right;
+    width: 275px;
+    height: 100vh;
+    overflow: auto;
+    display: block;
+    background-color: $dark-txt;
+    @include mq(large){width: 350px;}
+
+    &.sidebar-visible {
+        display: block !important;
+    }
+
+    // ALL UNORDERED LISTS 
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;    
+    }
+
+    // ALL ANCHOR TAGS
+    a {
+        color: #fff;
+        text-decoration: none;
+        background: transparent; 
+        text-transform: uppercase;
+    }
+
+    //=== NAVIGATION FOR SMALLER SCREENS ===//
+    ul.sidenav {
+        padding: 21px;
+        margin: -20px 0 0;
+        @include mq(large){display: none !important;}
+
+        & > li.siv-tab {
+            padding: 20px 0 0;
+
+            // UNIQUE ICON COLOURS
+            &.software > a > i {color: $service-software;}
+            &.support > a > i {color: $service-it;}
+            &.digital > a > i {color: $service-marketing;}
+            &.telecoms > a > i {color: $service-telecoms;}
+            &.webdesign > a > i {color: $service-webdesign;}
+            &.cyber > a > i {color: $service-cybersec;}
+            &.developer > a > i {color: $service-training;}
+
+            & > a { // NAV HEADINGS
+                display: block;
+                text-align: center;
+                border-radius: 3px;
+                font-size: 1.125rem;
+                padding: 19px 0 18px;
+                outline: 1px solid rgba(0, 0, 0, .25);
+                border: 1px solid hsla(0, 0%, 100%, .1);
+                & >* {display: block;}
+
+                i {
+                    padding-bottom: 10px;
+                    font-size: 1.438rem;
+                }
+                
+                small {
+                    font-size: .625rem;
+                    padding-bottom: 1px;
+                }
+            }
+
+            //=== SIDENAV SUBMENUS ===//
+            .siv-submenu {
+                margin-top: 20px;
+                border-radius: 3px;
+                overflow: hidden;
+
+                & > ul {
+                    padding: 0;
+                    width: auto !important;
+
+                    & > li:not(:first-child){
+                        border-top: 1px solid rgba(0, 0, 0, .45);
+                    }
+
+                    //SIDEVAN SUBMENU LIST LINKS
+                    & > li > a {
+                        padding: 10px;
+                        display: block;
+                        // color: #fff;
+                        text-align: center;
+                        text-transform: uppercase;
+                        // text-decoration: none;
+                        background-color: rgba(0, 0, 0, .25);
+                    }
+                }
+            }
+        }
+    }
+
+    //==================//
+    //    SIDE MENU     //
+    //==================//
+    ul.side-menu {
+        border-top: 1px solid rgba(0, 0, 0, .25);
+        border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+
+        & > li.service-hidden {
+            display: none;
+            @include mq(large){display: block;}
+        }
+
+        & > li {
+            border-top: 1px solid hsla(0, 0%, 100%, .1);
+            border-bottom: 1px solid rgba(0, 0, 0, .25);
+
+
+            & > a {
+                display: block;
+                padding: 20px;
+                line-height: 1;
+                font-size: 1rem;
+                position: relative;
+            }
+
+            .side-menu-list > ul {
+                padding-left: 0;
+                width: auto !important;
+
+                & > li {
+                    border-top: 1px solid rgba(0, 0, 0, .45);
+
+                    a {
+                        display: block;
+                        padding: 15px 20px;
+                        font-size: .875rem;
+                        position: relative;
+                        background-color: rgba(0, 0, 0, .25);
+                        border-top: 1px solid hsla(0, 0%, 100%, .05);
+
+                        span i {
+                            font-size: 0.5rem;
+                            padding-right: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        & li.mobile-support {
+            @include mq(medium){display: none !important;}
+        }
+
+    }
+}
