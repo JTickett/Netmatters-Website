@@ -239,10 +239,29 @@
     display: flex;
     //background-color: green;
     flex-wrap: wrap;
+    margin-top: -15px;
 
     width: 970px;
     @include mq(x-large){
         width: 1200px;
+    }
+
+
+    li:not(:first-child) {
+        width: 33%;
+        margin-top: 15px;
+
+        > a {
+            color: #fff;
+            font-size: 1.2rem;
+            line-height: 1.313rem;
+            padding: .625rem .938rem .625rem 0;
+            display: flex;
+            align-items: center;
+            :hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
 
@@ -251,11 +270,22 @@
     font-size: 2rem;
     font-weight: 500;
     width: 970px;
+    margin-top: 15px;
+    margin-bottom: 10px;
     @include mq(x-large){
         width: 1200px;
     }
     color: $white;
 }
+
+.submenu-item {
+    margin-left: 10px;
+}
+
+// This isn't working, so you need to come back and fix it.
+// .submenu-item-icon {
+//     text-decoration: none;
+// }
 
 .nav {
 
@@ -292,7 +322,7 @@
                 text-decoration: none;
                 display: block;
                 position: absolute;
-                background-color: $service-software;
+                background-color: $service-software-dark;
                 min-width: 100%;
                 z-index: $z-submenus;
                 left: 0px;
@@ -301,7 +331,7 @@
                 text-decoration: none;
                 display: block;
                 position: absolute;
-                background-color: $service-it;
+                background-color: $service-it-dark;
                 min-width: 100%;
                 z-index: $z-submenus;
                 left: 0px;
@@ -310,7 +340,7 @@
                 text-decoration: none;
                 display: block;
                 position: absolute;
-                background-color: $service-marketing;
+                background-color: $service-marketing-dark;
                 min-width: 100%;
                 z-index: $z-submenus;
                 left: 0px;
@@ -319,7 +349,7 @@
                 text-decoration: none;
                 display: block;
                 position: absolute;
-                background-color: $service-telecoms;
+                background-color: $service-telecoms-dark;
                 min-width: 100%;
                 z-index: $z-submenus;
                 left: 0px;
@@ -328,7 +358,7 @@
                 text-decoration: none;
                 display: block;
                 position: absolute;
-                background-color: $service-webdesign;
+                background-color: $service-webdesign-dark;
                 min-width: 100%;
                 z-index: $z-submenus;
                 left: 0px;
@@ -337,7 +367,7 @@
                 text-decoration: none;
                 display: block;
                 position: absolute;
-                background-color: $service-cybersec;
+                background-color: $service-cybersec-dark;
                 min-width: 100%;
                 z-index: $z-submenus;
                 left: 0px;
@@ -346,7 +376,7 @@
                 text-decoration: none;
                 display: block;
                 position: absolute;
-                background-color: $service-training;
+                background-color: $service-training-dark;
                 min-width: 100%;
                 z-index: $z-submenus;
                 left: 0px;
@@ -357,7 +387,7 @@
             font-size: large;
             flex: 1;      
 
-            a {
+            > a {
                 display: block;
                 padding-top: 19px;
                 padding-bottom: 18px;

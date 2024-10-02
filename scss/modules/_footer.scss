@@ -108,7 +108,11 @@ li {
             list-style: none;
             padding: 0;
             margin: 0;
-
+            
+            li {
+                font-size: 13px;
+                line-height: 22px;
+            }
         }
     }
 
@@ -185,10 +189,7 @@ h4 {
     font-weight: 400;
 }
 
-li {
-    font-size: 13px;
-    line-height: 22px;
-}
+
 
 //<a> tags within <li> to target only links at bottom of page.
 li a {
