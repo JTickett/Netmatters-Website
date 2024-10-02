@@ -16,14 +16,24 @@
 
 #news {
 
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+
     display: grid;
     text-align: center;
 
     h2 {
+        margin: 0px;
         text-align: left;
         font-size: 2.7rem;
-        font-weight: 600;
+        font-weight: $font-light;
         color: $newsletter-text-color;
+        strong {
+            font-weight: $font-bold;
+        }
     }
 
     &__viewmore {
