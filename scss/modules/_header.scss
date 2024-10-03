@@ -258,8 +258,15 @@
             padding: .625rem .938rem .625rem 0;
             display: flex;
             align-items: center;
-            :hover {
-                text-decoration: underline;
+            text-align: left;
+            &:hover {
+                text-decoration: none;
+                .submenu-item-icon {
+                    text-decoration: none;
+                }
+                .submenu-item {
+                    text-decoration: underline;
+                }
             }
         }
     }
@@ -282,10 +289,7 @@
     margin-left: 10px;
 }
 
-// This isn't working, so you need to come back and fix it.
-// .submenu-item-icon {
-//     text-decoration: none;
-// }
+
 
 .nav {
 
