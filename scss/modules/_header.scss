@@ -4,7 +4,7 @@
 
 #header-wrapper {
     background-color: $white;
-    transition: 0.8s ease-in-out;
+    transition: $sticky-header-speed ease-in-out;
 }
 
 // First Row contains the Logo, Contact Buttons and Burger Menu
