@@ -146,12 +146,6 @@ li {
         background-color: $footer-bottom-color;
         font-size: 13px;
 
-        width: 100%;
-
-
-        margin-right: 0px;
-        margin-left: 0px;
-
         padding-top: 5px;
         padding-bottom: 10px;;
 
@@ -174,7 +168,9 @@ li {
     }
 }
 
-
+.page-footer-background{
+    background-color: $footer-bottom;
+}
 
 
 // ------------------------------ Elements
