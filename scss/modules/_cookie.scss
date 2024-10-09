@@ -69,6 +69,17 @@
     line-height: 1.875rem;    
     border-bottom: 1px solid #d3d3d3;
     padding: 20px;
+    p {
+        margin: 0 0 25px;
+        
+        a {
+            //text-decoration: none;
+            color: $newsletter-text-color;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }
 
 .cookie-buttons {
