@@ -84,22 +84,29 @@
 
 .cookie-buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 20px;
+    height: 87px;
 }
 
 .cookie-button {
-    @include button($btn-drk, $bradius:3px, $lheight:35px);
-    font-size: 20px;
+    @include button($btn-drk, $bradius:3px, $lheight:25px);
+    font-size: 1.063rem;
     padding: 10px 30px;
+    flex-grow: 1;
+    text-align: center;
+    height: 100%;
 }
 
 #cookie-button1{
     background-color: $btn-contact;
+    margin-right: 12px;
 }
 #cookie-button2{
     background-color: $service-webdesign;
+    
+    margin-left: 12px;
 }
 
 
