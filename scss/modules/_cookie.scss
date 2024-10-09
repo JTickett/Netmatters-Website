@@ -19,15 +19,20 @@
     padding: 30px;
 
     .cookie_container {
-        width: 600px;
+        
+        width: auto;
+        background: $white;
         position: fixed;
         bottom: 10%;
         left: 50%;
         z-index: $z-cookies;
-        background: $white;
         border-top: 1px solid $black;
         transform: translate(-50%, -50%);
         border-radius: 5px;
+
+        @include mq(medium) {
+            width: 600px;
+        }
     }
 }
 
@@ -87,7 +92,11 @@
     justify-content: center;
     flex-wrap: wrap;
     padding: 20px;
-    height: 87px;
+    height: auto;
+    @include mq(medium) {
+        height: 87px;
+    }
+
 }
 
 .cookie-button {
@@ -101,12 +110,19 @@
 
 #cookie-button1{
     background-color: $btn-contact;
-    margin-right: 12px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    @include mq(medium) {
+        margin-bottom: 0px;
+        margin-right: 12px;
+    }
 }
 #cookie-button2{
     background-color: $service-webdesign;
-    
-    margin-left: 12px;
+    margin-left: 0px;
+    @include mq(medium) {
+        margin-left: 12px;
+    }
 }
 
 
