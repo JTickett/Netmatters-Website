@@ -15,7 +15,7 @@ $(document).ready(function(){
 
     $('.logowrapper').slick({
         arrows: false,
-        autoplay: true,
+        autoplay: false,
         slidesToShow: 7,
         draggable: false,
         variableWidth: true,
