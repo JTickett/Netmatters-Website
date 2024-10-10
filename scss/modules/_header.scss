@@ -79,12 +79,30 @@
         @include button($service-it);
         margin-left: 20px;
         font-size: 18px;
+        display: inline-flex;
+        span {
+            align-items: center;
+            display: inline-flex;
+            margin-right: 5px;
+        }
+        span::before {
+            font-size: 25px;
+        }
     }
 
     &__contactbtn {
         @include button($btn-contact);
         margin-left: 20px;
         font-size: 18px;
+        display: inline-flex;
+        span {
+            align-items: center;
+            display: inline-flex;
+            margin-right: 10px;
+        }
+        span::before {
+            font-size: 25px;
+        }
     }
 
     &__searchform {
