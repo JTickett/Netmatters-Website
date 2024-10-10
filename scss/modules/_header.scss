@@ -124,6 +124,11 @@
                 //  This is the padding for the larger size??)
                 padding-right: 40px;
             }
+            @include mq(x-large) {
+                display: flex;
+                width: 208px;
+            }
+
 
             box-sizing: content-box;
 
@@ -168,6 +173,19 @@
             border-style: none;
 
             height: 60px;
+
+            @include mq(medium) {
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+            @include mq(large) {
+                border-bottom-left-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+            @include mq(x-large) {
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
 
             //background-color: none;
             //border: none;
