@@ -70,7 +70,7 @@
         //  Only display these buttons at a larger screen size
         display: none;
         @include mq(large) {
-            display: block;
+            display: flex;
         }
 
     }
