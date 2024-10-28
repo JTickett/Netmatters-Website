@@ -483,7 +483,6 @@
 
     &.nav-listitem::after {
         display: inline;
-        border-color: #2ecc71;
     }
 
     & > a > span {
@@ -493,15 +492,22 @@
 
 .nav-listitem::after {
     display: none;
+    border-color: #ec28ec;
+    color: purple;
     content: "";
     position: absolute;
-    bottom: -35px;
+    transform: translateX(-50%);
+    // bottom: -35px;
+    // left: 0px;
     z-index: 90;
     width: 0;
     height: 0;
-    border-color: blue;
     border-style: solid;
-    border-width: 35px 68px 0
+    border-width: 35px 68px 0;
+    
+    @include mq(x-large) {
+        border-width: 35px 83.5px 0;
+    }
 }
 
 

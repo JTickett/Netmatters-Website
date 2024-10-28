@@ -20,7 +20,7 @@
 
     .cookie_container {
         
-        width: auto;
+        width: calc(100% - 60px);
         background: $white;
         position: fixed;
         bottom: 10%;
