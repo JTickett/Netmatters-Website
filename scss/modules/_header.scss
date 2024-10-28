@@ -477,23 +477,8 @@
 .nav-developer {color: $service-training}
 
 
-#navmenu-software:hover {
-    background-color: $service-software;
-    color: $white;
-
-    &.nav-listitem::after {
-        display: inline;
-    }
-
-    & > a > span {
-        color: $white;
-    }
-}
-
 .nav-listitem::after {
     display: none;
-    border-color: #ec28ec;
-    color: purple;
     content: "";
     position: absolute;
     transform: translateX(-50%);
@@ -504,6 +489,9 @@
     height: 0;
     border-style: solid;
     border-width: 35px 68px 0;
+
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: translateX(-50%) rotate(180deg);
     
     @include mq(x-large) {
         border-width: 35px 83.5px 0;
@@ -511,9 +499,28 @@
 }
 
 
+#navmenu-software:hover {
+    background-color: $service-software;
+    color: $white;
+
+    &.nav-listitem::after {
+        display: inline;
+        border-color: $service-software;
+    }
+
+    & > a > span {
+        color: $white;
+    }
+}
+
+
 #navmenu-it:hover {
     background-color: $service-it;
     color: $white;
+    &.nav-listitem::after {
+        display: inline;
+        border-color: $service-it;
+    }
     & > a > span {
         color: $white;
     }
@@ -521,6 +528,10 @@
 #navmenu-marketing:hover {
     background-color: $service-marketing;
     color: $white;
+    &.nav-listitem::after {
+        display: inline;
+        border-color: $service-marketing;
+    }
     & > a > span {
         color: $white;
     }
@@ -528,6 +539,10 @@
 #navmenu-telecoms:hover {
     background-color: $service-telecoms;
     color: $white;
+    &.nav-listitem::after {
+        display: inline;
+        border-color: $service-telecoms;
+    }
     & > a > span {
         color: $white;
     }
@@ -535,6 +550,10 @@
 #navmenu-web:hover {
     background-color: $service-webdesign;
     color: $white;
+    &.nav-listitem::after {
+        display: inline;
+        border-color: $service-webdesign;
+    }
     & > a > span {
         color: $white;
     }
@@ -542,6 +561,10 @@
 #navmenu-security:hover {
     background-color: $service-cybersec;
     color: $white;
+    &.nav-listitem::after {
+        display: inline;
+        border-color: $service-cybersec;
+    }
     & > a > span {
         color: $white;
     }
@@ -549,6 +572,10 @@
 #navmenu-developer:hover {
     background-color: $service-training;
     color: $white;
+    &.nav-listitem::after {
+        display: inline;
+        border-color: $service-training;
+    }
     & > a > span {
         color: $white;
     }
