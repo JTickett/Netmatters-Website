@@ -480,10 +480,31 @@
 #navmenu-software:hover {
     background-color: $service-software;
     color: $white;
+
+    &.nav-listitem::after {
+        display: inline;
+        border-color: #2ecc71;
+    }
+
     & > a > span {
         color: $white;
     }
 }
+
+.nav-listitem::after {
+    display: none;
+    content: "";
+    position: absolute;
+    bottom: -35px;
+    z-index: 90;
+    width: 0;
+    height: 0;
+    border-color: blue;
+    border-style: solid;
+    border-width: 35px 68px 0
+}
+
+
 #navmenu-it:hover {
     background-color: $service-it;
     color: $white;
