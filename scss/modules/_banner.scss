@@ -103,15 +103,11 @@ section .banner-carousel {
 
 
 // Slick Dots styling
-
 .slick-dots {
     bottom: 35px;
   
     li button:before {
-      font-size: 11px;
-      // width:10px;
-      // height:10px;
-  
+      font-size: 11px;  
       color: #d6d6d6;
     }
   
@@ -120,8 +116,5 @@ section .banner-carousel {
       color: $white;
       border-radius: 50%;
       border: 1px solid $white;
-      // width:11px;
-      // height:11px;
-      // margin:5px 7px;
     }
   }
