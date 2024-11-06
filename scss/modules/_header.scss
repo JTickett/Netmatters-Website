@@ -362,11 +362,10 @@
 
             color: $white;
             text-transform: uppercase;
-            :hover {
+            a:hover {
                 text-decoration: none;
             }
-            :hover + #submenu-software, #submenu-software:hover {
-                text-decoration: none;
+            &:hover #submenu-software {
                 display: block;
                 position: absolute;
                 background-color: $service-software-dark;
@@ -374,8 +373,7 @@
                 z-index: $z-submenus;
                 left: 0px;
             }
-            :hover + #submenu-it, #submenu-it:hover {
-                text-decoration: none;
+            &:hover #submenu-it {
                 display: block;
                 position: absolute;
                 background-color: $service-it-dark;
@@ -383,8 +381,7 @@
                 z-index: $z-submenus;
                 left: 0px;
             }
-            :hover + #submenu-marketing, #submenu-marketing:hover {
-                text-decoration: none;
+            &:hover #submenu-marketing {
                 display: block;
                 position: absolute;
                 background-color: $service-marketing-dark;
@@ -392,8 +389,7 @@
                 z-index: $z-submenus;
                 left: 0px;
             }
-            :hover + #submenu-telecoms, #submenu-telecoms:hover {
-                text-decoration: none;
+            &:hover #submenu-telecoms {
                 display: block;
                 position: absolute;
                 background-color: $service-telecoms-dark;
@@ -401,8 +397,7 @@
                 z-index: $z-submenus;
                 left: 0px;
             }
-            :hover + #submenu-web, #submenu-web:hover {
-                text-decoration: none;
+            &:hover #submenu-web {
                 display: block;
                 position: absolute;
                 background-color: $service-webdesign-dark;
@@ -410,8 +405,7 @@
                 z-index: $z-submenus;
                 left: 0px;
             }
-            :hover + #submenu-security, #submenu-security:hover {
-                text-decoration: none;
+            &:hover #submenu-security {
                 display: block;
                 position: absolute;
                 background-color: $service-cybersec-dark;
@@ -419,8 +413,7 @@
                 z-index: $z-submenus;
                 left: 0px;
             }
-            :hover + #submenu-developer, #submenu-developer:hover {
-                text-decoration: none;
+            &:hover #submenu-developer {
                 display: block;
                 position: absolute;
                 background-color: $service-training-dark;
