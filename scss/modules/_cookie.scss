@@ -90,10 +90,12 @@
 .cookie-buttons {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    // flex-wrap: wrap;
     padding: 20px;
     height: auto;
     @include mq(medium) {
+        flex-direction: row;
         height: 87px;
     }
 
