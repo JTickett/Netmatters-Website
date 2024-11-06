@@ -35,6 +35,10 @@
 
 }
 
+#services-header{
+    margin-bottom: 15px;
+}
+
 .services__viewmore {
     color: $newsletter-text-color;
     text-decoration: none;
@@ -46,8 +50,10 @@
         //  Don't display this on x-small and small screen sizes
         display: inline;
         float: right;
-        @include mq(small) {display: none;}
-        @include mq(x-small) {display: none;}
+
+        @media (max-width: 767px) { 
+            display: none;
+        }
 
         justify-self: right;
         color: $dark-txt;
@@ -62,8 +68,9 @@
     &-bottom {
         //  Only display this on x-small and small screen sizes
         display: none;
-        @include mq(small) {display: inline;}
-        @include mq(x-small) {display: inline;}
+        @media (max-width: 767px) { 
+            display: inline;
+        }
 
         font-size: 1.625rem;
         font-weight: $font-bold;
