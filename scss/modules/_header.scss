@@ -88,6 +88,10 @@
         span::before {
             font-size: 25px;
         }
+
+        &:hover {
+            background-color: $service-it-dark;
+        }
     }
 
     &__contactbtn {
@@ -102,6 +106,9 @@
         }
         span::before {
             font-size: 25px;
+        }
+        &:hover {
+            background-color: $btn-contact-hover;
         }
     }
 
