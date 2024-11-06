@@ -76,7 +76,7 @@
     }
 
     &__supportbtn {
-        @include button($service-it);
+        @include button($service-it, $lheight:44px);
         margin-left: 20px;
         font-size: 18px;
         display: inline-flex;
@@ -95,7 +95,7 @@
     }
 
     &__contactbtn {
-        @include button($btn-contact);
+        @include button($btn-contact, $lheight:44px);
         margin-left: 20px;
         font-size: 18px;
         display: inline-flex;
@@ -184,7 +184,7 @@
 
         &-button {
 
-            @include button($btn-contact);
+            @include button($btn-contact, $lheight:44px);
             cursor: pointer;
 
             padding-left: 20px;
@@ -194,11 +194,14 @@
 
             font-size: 23px;
             border-style: none;
-            height: 60px;
+            height: 56px;
 
             border-radius: 0 3px 3px 0;
             @media (min-width: 992px) and (max-width: 1259px) {
                 border-radius: 3px;
+            }
+            &:hover {
+                background-color: $btn-contact-hover;
             }
         }
 

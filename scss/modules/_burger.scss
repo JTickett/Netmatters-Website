@@ -8,13 +8,16 @@
     position: relative;
     flex-direction: column;
     width: 64px;
-    height: 60px;
+    height: 56px;
     gap: 7px;
     cursor: pointer;
     order: 3;
     margin-left: 20px;
     padding: 0px 15px;
     background: $footer-background-color;
+    &:hover {
+        background-color: #22242e;
+    }
     border: solid black 1px;
     border-radius: 3px;
 
