@@ -161,8 +161,6 @@
             padding-right: 15px;
             padding-top: 5px;
             padding-bottom: 5px;
-            
-            
             border-color: #ccc;
             border-radius: 2px;
             background-color: #fff;
@@ -189,26 +187,12 @@
 
             font-size: 23px;
             border-style: none;
-
             height: 60px;
 
-            @include mq(medium) {
-                border-bottom-left-radius: 0px;
-                border-bottom-right-radius: 0px;
+            border-radius: 0 3px 3px 0;
+            @media (min-width: 992px) and (max-width: 1259px) {
+                border-radius: 3px;
             }
-            @include mq(large) {
-                border-bottom-left-radius: 3px;
-                border-bottom-right-radius: 3px;
-            }
-            @include mq(x-large) {
-                border-bottom-left-radius: 0px;
-                border-bottom-right-radius: 0px;
-            }
-
-            //background-color: none;
-            //border: none;
-            //right: 3px;
-            //top: 30px;
         }
 
     }
