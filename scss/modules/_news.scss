@@ -20,6 +20,7 @@
         display: flex;
         justify-content: space-between;
         align-content: center;
+        
     }
 
     display: grid;
@@ -27,6 +28,7 @@
 
     h2 {
         margin: 0px;
+        margin-bottom: 28px;
         text-align: left;
         font-size: 36px;
         font-weight: $font-bold;
@@ -263,6 +265,9 @@
         display: block;
     }
     
+}
+#news-viewall{
+    margin-top: 0px;
 }
 
 #news-card1 {grid-area: one;}
