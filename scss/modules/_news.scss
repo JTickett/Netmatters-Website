@@ -260,8 +260,9 @@
         display: none;
     }
     @include mq(x-large) {
-        display: initial;
+        display: block;
     }
+    
 }
 
 #news-card1 {grid-area: one;}
