@@ -5,7 +5,7 @@ $(document).ready(function(){
     
 
     $('.carousel-slider').slick({
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 4000,
         slidesToShow: 1,
         arrows: false,

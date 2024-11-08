@@ -113,13 +113,38 @@ section .banner-carousel {
   
     li button:before {
       font-size: 11px;  
-      color: #d6d6d6;
+      color: #ffffff;
+      width: 24px;
+      height: 24px;
+    }
+
+    li {
+        color: white;
+        width: 24px;
+        height: 24px;
     }
   
     li.slick-active button:before {
-      
       color: $white;
       border-radius: 50%;
-      border: 3px solid REd;
+      border: 2px solid $white;
+      opacity: 1;
+      font-size: 12px;
+      width: 24px;
+      height: 24px;
     }
   }
+
+.slick-dots li button:before{
+    opacity: .5;
+    color: $white;
+    
+    &:hover{
+        color: #869791;
+    }
+}
+
+.slick-dots li button:hover {
+    opacity: .5;
+
+}
