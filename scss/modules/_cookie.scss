@@ -1,4 +1,46 @@
 
+#chat-button {
+    position: fixed;
+    cursor: pointer;
+    background: $footer-background-color;
+    color: $white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    z-index: $z-cookies;
+    font-size: 2rem;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+}
+
+
+
+
+#consent-button {
+    position: fixed;
+    line-height: 22px;
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background: #75788a;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: $white;
+    border: solid #75788a;
+    border-width: 1px 1px 0 0;
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: .8rem;
+    &:hover {
+        background-color: $btn-contact;
+        border-color: $btn-contact;
+    }
+}
+
 #cookies {
     position: fixed;
     top: 0;
@@ -33,31 +75,6 @@
         @include mq(medium) {
             width: 600px;
         }
-    }
-}
-
-
-#consent-button {
-    position: fixed;
-    line-height: 22px;
-    z-index: 99;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    background: #75788a;
-    font-weight: 600;
-    text-transform: capitalize;
-    color: #fff;
-    border: solid #75788a;
-    border-width: 1px 1px 0 0;
-    border-radius: 0;
-    border-top-right-radius: 10px;
-    padding: 0 10px;
-    cursor: pointer;
-    font-size: .8rem;
-    &:hover {
-        background-color: $btn-contact;
-        border-color: $btn-contact;
     }
 }
 
