@@ -99,18 +99,30 @@
 
             &--webdesign {
                 @include button($service-webdesign,$lheight:35px);
+                &:hover{
+                    background-color: $service-webdesign-dark;
+                }
                 margin-top: 11px;
             }
             &--marketing {
                 @include button($service-marketing,$lheight:35px);
+                &:hover{
+                    background-color: $service-marketing-dark;
+                }
                 margin-top: 11px;
             }
             &--software {
-                @include button($service-software,$lheight:35px);
+                @include button($service-newsoftware,$lheight:35px);
+                &:hover{
+                    background-color: $service-newsoftware-dark;
+                }
                 margin-top: 11px;
             }
             &--it {
                 @include button($service-it,$lheight:35px);
+                &:hover{
+                    background-color: $service-it-dark;
+                }
                 margin-top: 11px;
             }
             
