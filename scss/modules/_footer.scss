@@ -147,13 +147,13 @@ li {
         font-size: 13px;
 
         padding-top: 15px;
-        padding-bottom: 10px;;
+        padding-bottom: 15px;;
 
         display: flex;
         flex-direction: column;
 
         //  TODO: The spacing is not quite correct but it's mostly there.
-        @media (min-width: #{$break--s}) {
+        @media (min-width: $break--m) {
             flex-direction: row;
         }
 
@@ -165,7 +165,39 @@ li {
         a:hover {
             text-decoration: underline;
         }
+
+        p:nth-of-type(1) {
+            @media (min-width: $break--m) {
+            }
+        }
+        p:nth-of-type(2) {
+            
+            @media (min-width: $break--m) {
+                padding-left: 5px;
+            }
+        }
+
+        a {
+            @media (min-width: $break--m) {
+                &:before{
+                    padding-left: 5px;
+                    content: " - ";
+                    text-decoration: none;
+                    display: inline-block;  // This helps ensure the decoration break
+                    margin-right: 5px;
+                }
+            }
+            
+            &:hover:before {
+                text-decoration: none;  // Ensure it stays none even during hover
+            }
+        }
+        
     }
+}
+
+.visible-on-mobile {
+    display: block!important;
 }
 
 .page-footer-background{
