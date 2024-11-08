@@ -53,13 +53,13 @@ section .banner-carousel {
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(to right, 
-                rgba(0, 0, 0, 0.8) 0%, 
-                rgba(0, 0, 0, 0) 100%
-            );
 
-            // This is the actual gradient being used on Live. Why mine is different I'm not exactly sure, but it seems to work fine.
-            // background: linear-gradient(270deg, transparent 25%, #000);
+            // Don't remember why I did it this way, but keeping it for posterity.
+            // background: linear-gradient(to right, 
+            //     rgba(0, 0, 0, 0.8) 0%, 
+            //     rgba(0, 0, 0, 0) 100%
+            // );
+            background: linear-gradient(270deg, transparent 25%, #000);
 
             pointer-events: none; // This allows clicks to pass through to the image
         }
