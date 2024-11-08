@@ -100,7 +100,7 @@
     &__googlebutton{
         @include button($btn-google, $bradius:6px, $lheight:35px);
         font-size: 20px;
-        padding: 10px 27px;
+        padding: 10px 32px;
         margin-top: 20px;
 
         @include mq(x-large) {
@@ -116,7 +116,7 @@
     &__tpbutton {
         @include button($btn-trustpilot, $bradius:6px, $lheight:35px);
         font-size: 20px;
-        padding: 10px 27px;
+        padding: 10px 32px;
         margin-top: 20px;
 
         &:hover {
