@@ -3,6 +3,7 @@
 // =====================================================
 
 
+
 section .banner-carousel {
     position: relative;
 }
@@ -116,9 +117,9 @@ section .banner-carousel {
     }
   
     li.slick-active button:before {
-      opacity: 0.75;
+      
       color: $white;
       border-radius: 50%;
-      border: 1px solid $white;
+      border: 3px solid REd;
     }
   }
