@@ -55,6 +55,10 @@
     padding: 0 10px;
     cursor: pointer;
     font-size: .8rem;
+    &:hover {
+        background-color: $btn-contact;
+        border-color: $btn-contact;
+    }
 }
 
 
