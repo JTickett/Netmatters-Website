@@ -91,6 +91,8 @@
     position: relative;
     
     &__container {
+
+        margin: 0 -15px;
         display: grid;
         grid-template-areas:
         "one"
