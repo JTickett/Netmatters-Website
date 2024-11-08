@@ -59,7 +59,7 @@
         color: $dark-txt;
         font-weight: $font-bold;
         font-size: 36px;
-        :hover{
+        &:hover{
             text-decoration: underline;
         }
         color: $dark-txt;
@@ -75,6 +75,10 @@
         font-size: 1.625rem;
         font-weight: $font-bold;
         color: $dark-txt;
+
+        &:hover{
+            text-decoration: underline;
+        }
 
     }
 }
