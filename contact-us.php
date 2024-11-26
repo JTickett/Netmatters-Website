@@ -83,7 +83,27 @@
         </section>
 
         <section id="contact" class="reusable-container section">
-            
+            <div class="contact-details">
+                
+            </div>
+
+            <div>
+                <form method="post" action="">
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name" placeholder="Name">
+                    <label for="company">Company Name</label>
+                    <input type="text" name="company" placeholder="Company">
+                    <label for="email">Your Email</label>
+                    <input type="email" name="email" placeholder="Email">
+                    <label for="phone">Your Telephone Number</label>
+                    <input type="tel" name="phone" placeholder="Phone">
+                    <label for="message">Message</label>
+                    <textarea name="message" placeholder="Message">
+                        Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?
+                    </textarea>
+                    <button class="button" type="submit">Send Enquiry</button>
+                </form>
+            </div>
         </section>
 
         </main>
