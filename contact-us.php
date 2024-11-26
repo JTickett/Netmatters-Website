@@ -84,10 +84,29 @@
 
         <section id="contact" class="reusable-container section">
             <div class="contact-details">
-                
+                <p>Email us on:</p>
+
+                <a href="mailto:sales@netmatters.com">sales@netmatters.com</a>
+
+                <p>Business hours:</p>
+
+                <p>Monday - Friday 07:00 - 18:00</p>
+
+
+                <details>
+                    <summary>Out of Hours IT Support</summary>
+
+                    <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
+
+                    <p>Monday - Friday 18:00 - 22:00</p>
+                    <p>Saturday 08:00 - 16:00</p>
+                    <p>Sunday 10:00 - 18:00</p>
+
+                    <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call.</p>
+                </details>
             </div>
 
-            <div>
+            <div class="contact-form">
                 <form method="post" action="">
                     <label for="name">Your Name</label>
                     <input type="text" name="name" placeholder="Name">
@@ -101,9 +120,23 @@
                     <textarea name="message" placeholder="Message">
                         Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?
                     </textarea>
+
+                    <!-- Checkbox and Privacy Policy -->
+                    <div class="">
+                        <label class="" for="email_checkbox">
+                            <input class="" type="checkbox" id="email_checkbox" name="marketing">
+                            <span class=""></span>
+                            Please tick this box if you wish to receive marketing information from us. Please
+                            see our
+                            <a class="" href="#"> Privacy Policy </a>
+                            for more information on how we keep your data safe
+                        </label>
+                    </div>
+
                     <button class="button" type="submit">Send Enquiry</button>
                 </form>
             </div>
+
         </section>
 
         </main>
