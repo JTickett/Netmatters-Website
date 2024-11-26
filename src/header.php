@@ -5,7 +5,7 @@
 
         <!-- Logo -->
         <div id="header1__logo">
-            <a href="#">
+            <a href="index.php">
                 <img src="images/f-logo.webp" alt="Netmatters Logo">
             </a>
         </div>
@@ -32,7 +32,7 @@
                     <span class="icon-mouse"></span>
                     Support
                 </a>
-                <a id="header1__contactbtn" class="" href="#">
+                <a id="header1__contactbtn" class="" href="contact-us.php">
                     <span class="icon-email"></span>
                     Contact
                 </a>

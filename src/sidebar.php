@@ -430,7 +430,7 @@
             </li>
 
             <li>
-                <a href="#">Contact Us</a>
+                <a href="contact-us.php">Contact Us</a>
                 <div class="side-menu-list">
                     <ul>
                         <li>
