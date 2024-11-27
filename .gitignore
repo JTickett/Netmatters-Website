@@ -2,3 +2,4 @@ icons/
 *.zip
 .env
 /vendor
+/icons

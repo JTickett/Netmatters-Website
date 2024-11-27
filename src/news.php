@@ -13,9 +13,6 @@ $query->execute();
 // Fetch all results
 $results = $query->fetchAll();
 
-// Print the results
-//print_r($results);
-
 ?>
 
 
