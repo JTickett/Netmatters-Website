@@ -16,11 +16,6 @@ $results = $query->fetchAll();
 // Print the results
 //print_r($results);
 
-// Loop through the results
-foreach ($results as $result) {
-    
-}
-
 ?>
 
 
@@ -38,172 +33,86 @@ foreach ($results as $result) {
 
     <!-- Container for Cards -->
     <div class="news-card__container">
-        <!-- 1st Job Card Container -->
-            <div class="news-card__container-item">
-            <div class="news-card">
-                <div id="news-card1">
 
-                    <a href="#" class="art-link"></a>
+        <?php
+            foreach ($results as $result) {
 
-                    <!-- Image Container -->
-                    <div class="news-card-block1">
-                        <a class="news-card-block1__category card1cat" href="#">
-                            Insights
-                        </a>
-                        <picture class="news-card-block1__image">
-                            <img src="images/what-is-digital-dPNq.webp" alt="Digital Marketing Concept">
-                        </picture>
-                    </div>
+                // Set default values if the data is empty
+                $result['author_name'] = $result['author_name'] ?? 'Netmatters';
+                $result['author_image'] = $result['author_image'] ?? 'netmatters-ltd-VXAv.webp';
+                $result['description'] = $result['description'] ?? 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.';
 
-                    <!-- Detail Container -->
-                    <div class="news-card-block2">
-                        <h3 class="news-card-block2__title card1tit">
-                            What is Digital Marketing and How Can It Help...
-                        </h3>
-                        <p class="news-card-block2__title-readtime"> - 5 minute read</p>
-                        <p class="news-card-block2__description">
-                            If you own a business, it's likely you either already have an online presence or are
-                            considering hav...
-                        </p>
-                        <a class="button news-card-block2__button card1cat" href="#">
-                            Read More
-                        </a>
-                        <!-- User Container -->
-                        <div class="news-card-block2__author">
-                            <img class="news-card-block2__author-image" src="images/netmatters-ltd-VXAv.webp"
-                                alt="Netmatters Ltd logo">
-                            <div class="news-card-block2__author-text">
-                                <h5 class="news-card-block2__author-text-name">
-                                    Posted by
-                                    <br>
-                                    Netmatters
-                                </h5>
-                                <p class="news-card-block2__author-text-date">
-                                    5th April 2024
+                // Sanitize all fields
+                $result['id'] = htmlspecialchars($result['id']);
+                $result['category_name'] = htmlspecialchars($result['category_name']);
+                $result['category_color'] = htmlspecialchars($result['category_color']); 
+                $result['title'] = htmlspecialchars($result['title']);
+                $result['description'] = htmlspecialchars($result['description']);
+                $result['image'] = htmlspecialchars($result['image']);
+                $result['author_name'] = htmlspecialchars($result['author_name']);
+                $result['author_image'] = htmlspecialchars($result['author_image']);
+                $result['date'] = htmlspecialchars($result['date']);
+                ?>
+
+                <div class="news-card__container-item">
+                    <div class="news-card"<?= $result['id'] == 3 ? 'id="news-hide"' : '' ?>>
+                        <div id='news-card<?= $result['id'] ?>'>
+
+                            <a href="#" class="art-link"></a>
+
+                            <!-- Image Container -->
+                            <div class="news-card-block1">
+                                <a class="news-card-block1__category card<?= $result['id'] ?>cat" href="#">
+                                    <?= $result['category_name'] ?>
+                                </a>
+                                <picture class="news-card-block1__image">
+                                    <img src="images/<?= $result['image'] ?>" alt="<?= $result['title'] ?>">
+                                </picture>
+                            </div>
+
+                            <!-- Detail Container -->
+                            <div class="news-card-block2">
+                                <h3 class="news-card-block2__title card<?= $result['id'] ?>tit">
+                                    <?= $result['title'] ?>
+                                </h3>
+                                <p class="news-card-block2__title-readtime"> - 5 minute read</p>
+                                <p class="news-card-block2__description">
+                                    <?= $result['description'] ?>
                                 </p>
+                                <a class="button news-card-block2__button card<?= $result['id'] ?>cat" href="#">
+                                    Read More
+                                </a>
+                                <!-- User Container -->
+                                <div class="news-card-block2__author">
+                                    <img class="news-card-block2__author-image" src="images/<?= $result['author_image'] ?>" alt="<?= $result['author_name'] ?>">
+                                    <div class="news-card-block2__author-text">
+                                        <h5 class="news-card-block2__author-text-name">
+                                            Posted by
+                                            <br>
+                                            <?= $result['author_name'] ?>
+                                        </h5>
+                                        <p class="news-card-block2__author-text-date">
+                                            <?= date('jS F Y', strtotime($result['date'])) ?>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-            </div>
-        </div>
+                <?php
+            }
+        ?>
 
-        <div class="news-card__container-item">
-            <div class="news-card">
-                <div id="news-card2">
 
-                    <a href="#" class="art-link"></a>
-
-                    <!-- Image Container -->
-                    <div class="news-card-block1">
-                        <a class="news-card-block1__category card2cat" href="#">
-                            News
-                        </a>
-                        <picture class="news-card-block1__image">
-                            <img src="images/march-notables-2024-37Z5.png" alt="March Notables 2024">
-                        </picture>
-                    </div>
-
-                    <!-- Detail Container -->
-                    <div class="news-card-block2">
-                        <h3 class="news-card-block2__title card2tit">
-                            March Notables 2024 - Celebrating Our Team
-                        </h3>
-                        <p class="news-card-block2__title-readtime"> - 5 minute read</p>
-                        <p class="news-card-block2__description">
-                            March Notables 2024 Celebrating the achievements and dedication of our staff, at
-                            Netmatters, we put...
-                        </p>
-                        <a class="card2but button news-card-block2__button" href="#">
-                            Read More
-                        </a>
-                        <!-- User Container -->
-                        <div class="news-card-block2__author">
-                            <img class="news-card-block2__author-image" src="images/netmatters-ltd-VXAv.webp"
-                                alt="Netmatters Ltd logo">
-                            <div class="news-card-block2__author-text">
-                                <h5 class="news-card-block2__author-text-name">
-                                    Posted by
-                                    <br>
-                                    Netmatters
-                                </h5>
-                                <p class="news-card-block2__author-text-date">
-                                    5th April 2024
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="news-card__container-item">
-            <div class="news-card" id="news-hide">
-                <div id="news-card3">
-
-                    <a href="#" class="art-link"></a>
-
-                    <!-- Image Container -->
-                    <div class="news-card-block1">
-                        <a class="news-card-block1__category card3cat" href="#">
-                            Careers
-                        </a>
-                        <picture class="news-card-block1__image">
-                            <img src="images/1st-line-technician-PiSq.webp" alt="tech">
-                        </picture>
-                    </div>
-
-                    <!-- Detail Container -->
-                    <div class="news-card-block2">
-                        <h3 class="news-card-block2__title card3tit">
-                            1st Line Technician
-                        </h3>
-                        <p class="news-card-block2__title-readtime"> - 5 minute read</p>
-                        <p class="news-card-block2__description">
-                            Salary Range £25k-£29k + Bonuses + Pension Hours 40 hours per week, Monday - Friday
-                            Location Wymondh...
-                        </p>
-                        <a class="button news-card-block2__button card3but" href="#">
-                            Read More
-                        </a>
-                        <!-- User Container -->
-                        <div class="news-card-block2__author">
-                            <img class="news-card-block2__author-image"
-                                src="images/bethany-shakespeare-F6Iu.webp"
-                                alt="Bethany Shakespeare's profile picture">
-                            <div class="news-card-block2__author-text">
-                                <h5 class="news-card-block2__author-text-name">
-                                    Posted by
-                                    <br>
-                                    Bethany Shakespeare
-                                </h5>
-                                <p class="news-card-block2__author-text-date">
-                                    28th March 2024
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <footer>
-        <!-- <h3>
-        <a class="services__viewmore" href="">
-            View All
-            <span class="icon-arrow-right2"></span>
-        </a>
-    </h3> -->
         <h3>
             <a href="#" id="news__viewmore-bottom">
                 View All
                 <span class="icon-arrow-right2"></span> </a>
         </h3>
-
     </footer>
 
 </section>
