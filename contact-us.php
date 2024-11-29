@@ -36,8 +36,8 @@
             <div class="section-content">
 
                 <div class="office-card">
-                    <a href="#"><img src="images/cambridge.jpg" alt="Cambridge Office"></a>
-                    <a href="#"><h3 class="office-title">Cambridge Office</h3></a>
+                    <a class="office-image" href="#"><img src="images/cambridge.jpg" alt="Cambridge Office"></a>
+                    <h3 class="office-title"><a href="#">Cambridge Office</a></h3>
                     <p class="office-address">
                         Unit 1.31,
                         <br>St John's Innovation Centre,
@@ -46,12 +46,12 @@
                         <br>CB4 0WS
                     </p>
                     <a class="office-phone" href="tel:01223375772">01223 37 57 72</a>
-                    <a class="button service-color-webdesign" href="#">View More</a>
+                    <a class="office-button button service-color-webdesign" href="#">View More</a>
                 </div>
 
                 <div class="office-card">
-                    <a href="#"><img src="images/wymondham.jpg" alt="Wymondham Office"></a>
-                    <a href="#"><h3 class="office-title">Wymondham Office</h3></a>
+                    <a class="office-image" href="#"><img src="images/wymondham.jpg" alt="Wymondham Office"></a>
+                    <h3 class="office-title"><a href="#">Wymondham Office</a></h3>
                     <p class="office-address">
                         Unit 15,
                         <br>Penfold Drive,
@@ -60,12 +60,12 @@
                         <br>NR18 0WZ
                     </p>
                     <a class="office-phone" href="tel:01603704020">01603 70 40 20</a>
-                    <a class="button service-color-webdesign" href="#">View More</a>
+                    <a class="office-button button service-color-webdesign" href="#">View More</a>
                 </div>
 
                 <div class="office-card">
-                    <a href="#"><img src="images/yarmouth-2.jpg" alt="Yarmouth Office"></a>
-                    <a href="#"><h3 class="office-title">Yarmouth Office</h3></a>
+                    <a class="office-image" href="#"><img src="images/yarmouth-2.jpg" alt="Yarmouth Office"></a>
+                    <h3 class="office-title"><a href="#">Yarmouth Office</a></h3>
                     <p class="office-address">
                         Suite F23,
                         <br>Beacon Innovation Centre,
@@ -74,7 +74,7 @@
                         <br>NR31 7RA
                     </p>
                     <a class="office-phone" href="tel:01493603204">01493 60 32 04</a>
-                    <a class="button service-color-webdesign" href="#">View More</a>
+                    <a class="office-button button service-color-webdesign" href="#">View More</a>
                 </div>
 
             </div>
