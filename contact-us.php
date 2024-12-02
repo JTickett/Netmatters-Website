@@ -21,60 +21,84 @@
         <!-- Main Section -->
         <main id="page-main" class="">
 
-        <div class="breadcrumb">
+        <div class="breadcrumb reusable-container">
             <ul>
-                <li>Home<a href="index.php">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li>Our Offices</li>
             </ul>
         </div>
 
         <section id="offices" class="reusable-container section">
-            <div class="section-header">
-                <h2>Our Offices</h2>
+            <div id="offices-header">
+                <h1>Our Offices</h1>
             </div>
 
-            <div class="section-content">
+            <div class="offices-container">
 
-                <div class="office-card">
-                    <a class="office-image" href="#"><img src="images/cambridge.jpg" alt="Cambridge Office"></a>
-                    <h3 class="office-title"><a href="#">Cambridge Office</a></h3>
-                    <p class="office-address">
-                        Unit 1.31,
-                        <br>St John's Innovation Centre,
-                        <br>Cowley Road, Milton,
-                        <br>Cambridge,
-                        <br>CB4 0WS
-                    </p>
-                    <a class="office-phone" href="tel:01223375772">01223 37 57 72</a>
-                    <a class="office-button button service-color-webdesign" href="#">View More</a>
+                <div class="officer-card-wrapper">
+                    <div class="office-card">
+                        <a class="office-image" href="#"><img src="images/cambridge.jpg" alt="Cambridge Office"></a>
+                        <div class="office-content">
+                            <h3 class="office-title"><a href="#">Cambridge Office</a></h3>
+                            <p class="office-address">
+                                Unit 1.31,
+                                <br>St John's Innovation Centre,
+                                <br>Cowley Road, Milton,
+                                <br>Cambridge,
+                                <br>CB4 0WS
+                            </p>
+                            <div class="office-phone">
+                                <a href="tel:01223375772">01223 37 57 72</a>
+                            </div>
+                            <div class="office-button">
+                                <a class="button service-color-webdesign" href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="office-card">
-                    <a class="office-image" href="#"><img src="images/wymondham.jpg" alt="Wymondham Office"></a>
-                    <h3 class="office-title"><a href="#">Wymondham Office</a></h3>
-                    <p class="office-address">
-                        Unit 15,
-                        <br>Penfold Drive,
-                        <br>Gateway 11 Business Park,
-                        <br>Wymondham, Norfolk,
-                        <br>NR18 0WZ
-                    </p>
-                    <a class="office-phone" href="tel:01603704020">01603 70 40 20</a>
-                    <a class="office-button button service-color-webdesign" href="#">View More</a>
+                <div class="officer-card-wrapper">
+                    <div class="office-card">
+                        <a class="office-image" href="#"><img src="images/wymondham.jpg" alt="Wymondham Office"></a>
+                        <div class="office-content">
+                            <h3 class="office-title"><a href="#">Wymondham Office</a></h3>
+                            <p class="office-address">
+                                Unit 15,
+                                <br>Penfold Drive,
+                                <br>Gateway 11 Business Park,
+                                <br>Wymondham, Norfolk,
+                                <br>NR18 0WZ
+                            </p>
+                            <div class="office-phone">
+                                <a href="tel:01603704020">01603 70 40 20</a>
+                            </div>
+                            <div class="office-button">
+                                <a class="button service-color-webdesign" href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="office-card">
-                    <a class="office-image" href="#"><img src="images/yarmouth-2.jpg" alt="Yarmouth Office"></a>
-                    <h3 class="office-title"><a href="#">Yarmouth Office</a></h3>
-                    <p class="office-address">
-                        Suite F23,
-                        <br>Beacon Innovation Centre,
-                        <br>Beacon Park, Gorleston,
-                        <br>Great Yarmouth, Norfolk,
-                        <br>NR31 7RA
-                    </p>
-                    <a class="office-phone" href="tel:01493603204">01493 60 32 04</a>
-                    <a class="office-button button service-color-webdesign" href="#">View More</a>
+                <div class="officer-card-wrapper">
+                    <div class="office-card">
+                        <a class="office-image" href="#"><img src="images/yarmouth-2.jpg" alt="Yarmouth Office"></a>
+                        <div class="office-content">
+                            <h3 class="office-title"><a href="#">Yarmouth Office</a></h3>
+                            <p class="office-address">
+                                Suite F23,
+                                <br>Beacon Innovation Centre,
+                                <br>Beacon Park, Gorleston,
+                                <br>Great Yarmouth, Norfolk,
+                                <br>NR31 7RA
+                            </p>
+                            <div class="office-phone">
+                                <a href="tel:01493603204">01493 60 32 04</a>
+                            </div>
+                            <div class="office-button">
+                                <a class="button service-color-webdesign" href="#">View More</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
