@@ -19,8 +19,14 @@
 }
 
 .breadcrumb {
-    box-shadow: 0 5px 35px rgba(0,0,0,.1);
-    //padding: 14px 0 13px;
+
+    display: none;
+
+    @include mq(medium) {    
+        display: block;
+        box-shadow: 0 5px 35px rgba(0,0,0,.1);
+        padding: 14px 0 13px;
+    }
     ul {
         margin: 0px;
         li {
