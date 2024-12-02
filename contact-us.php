@@ -28,7 +28,7 @@
             </ul>
         </div>
 
-        <section id="offices" class="reusable-container section">
+        <section id="offices" class="reusable-container">
             <div id="offices-header">
                 <h1>Our Offices</h1>
             </div>
@@ -106,15 +106,17 @@
 
         </section>
 
-        <section id="contact" class="reusable-container section">
+        <section id="contact" class="reusable-container">
             <div class="contact-details">
-                <p>Email us on:</p>
+                <p><strong>Email us on:</strong></p>
 
-                <a href="mailto:sales@netmatters.com">sales@netmatters.com</a>
+                <p>
+                    <a href="mailto:sales@netmatters.com">sales@netmatters.com</a>
+                </p>
 
-                <p>Business hours:</p>
+                <p><strong>Business hours:</strong></p>
 
-                <p>Monday - Friday 07:00 - 18:00</p>
+                <p><strong>Monday - Friday 07:00 - 18:00</strong></p>
 
 
                 <details>
@@ -122,42 +124,72 @@
 
                     <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
 
-                    <p>Monday - Friday 18:00 - 22:00</p>
-                    <p>Saturday 08:00 - 16:00</p>
-                    <p>Sunday 10:00 - 18:00</p>
+                    <p>
+                        <strong>Monday - Friday 18:00 - 22:00</strong>
+                        <br>
+                        <strong>Saturday 08:00 - 16:00</strong>
+                        <br>
+                        <strong>Sunday 10:00 - 18:00</strong>
+                    </p>
 
                     <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call.</p>
                 </details>
             </div>
 
-            <div class="contact-form">
+            <div class="contact-form section">
                 <form method="post" action="">
-                    <label for="name">Your Name</label>
-                    <input type="text" name="name" placeholder="Name">
-                    <label for="company">Company Name</label>
-                    <input type="text" name="company" placeholder="Company">
-                    <label for="email">Your Email</label>
-                    <input type="email" name="email" placeholder="Email">
-                    <label for="phone">Your Telephone Number</label>
-                    <input type="tel" name="phone" placeholder="Phone">
-                    <label for="message">Message</label>
-                    <textarea name="message" placeholder="Message">
-                        Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?
-                    </textarea>
+
+                    <div class="form-flex-container">
+                        <div class="form-group">
+                            <label class="required-field" for="name">Your Name</label>
+                            <input class="form-control" type="text" name="name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input class="form-control" type="text" name="company" placeholder="Company">
+                        </div>
+                        <div class="form-group">
+                            <label class="required-field" for="email">Your Email</label>
+                            <input class="form-control" type="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label class="required-field" for="phone">Your Telephone Number</label>
+                            <input class="form-control" type="tel" name="phone" placeholder="Phone">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="contact-message" class="form-control" name="message" placeholder="Message">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
+                    </div>
 
                     <!-- Checkbox and Privacy Policy -->
-                    <div class="">
-                        <label class="" for="email_checkbox">
-                            <input class="" type="checkbox" id="email_checkbox" name="marketing">
-                            <span class=""></span>
-                            Please tick this box if you wish to receive marketing information from us. Please
-                            see our
-                            <a class="" href="#"> Privacy Policy </a>
-                            for more information on how we keep your data safe
+                    <div class="form-group">
+                        <label class="form-checkbox" for="email_checkbox">
+                            <input type="checkbox" id="email_checkbox" name="marketing">
+                            <span>
+                                Please tick this box if you wish to receive marketing information from us. Please
+                                see our
+                                <a href="#"> Privacy Policy</a>
+                                 for more information on how we keep your data safe.
+                            </span>
                         </label>
                     </div>
 
-                    <button class="button" type="submit">Send Enquiry</button>
+                    <div class="form-group">
+                        <span id="recaptcha-text">
+                        This site is protected by reCAPTCHA and the Google 
+                        <a href=""><u>Privacy Policy</u></a>
+                         and 
+                        <a href=""><u>Terms of Service</u></a>
+                         apply.
+                        </span>
+                    </div>
+
+                    <div class="form-button">
+                        <button class="button" type="submit">Send Enquiry</button>
+                        <small id="required-fields-label">Fields Required</small>
+                    </div>
                 </form>
             </div>
 
