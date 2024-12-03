@@ -36,6 +36,14 @@
         form {
 
             .form-checkbox {
+                display: flex;
+                #email_checkbox {
+                    display: none;
+                }
+
+                #visible_checkbox{
+                    margin-bottom: 40px;
+                }
                 
                 span { 
                     line-height: 32px;

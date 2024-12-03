@@ -167,8 +167,9 @@
 
                     <!-- Checkbox and Privacy Policy -->
                     <div class="form-group">
-                        <label class="form-checkbox" for="email_checkbox">
+                        <label id="email_checkbox_label" class="form-checkbox" for="email_checkbox">
                             <input type="checkbox" id="email_checkbox" name="marketing">
+                            <span id="visible_checkbox" class="email-form__checkbox-box"></span>
                             <span>
                                 Please tick this box if you wish to receive marketing information from us. Please
                                 see our
