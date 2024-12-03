@@ -21,19 +21,21 @@
         <!-- Main Section -->
         <main id="page-main" class="">
 
-        <div class="breadcrumb reusable-container">
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li>Our Offices</li>
-            </ul>
+        <div class="breadcrumb">
+            <div class="reusable-container">
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li>Our Offices</li>
+                </ul>
+            </div>
         </div>
 
-        <section id="offices" class="reusable-container">
+        <section id="offices" class="">
             <div id="offices-header">
-                <h1>Our Offices</h1>
+                <h1 class="reusable-container">Our Offices</h1>
             </div>
 
-            <div class="offices-container">
+            <div class="offices-container reusable-container">
 
                 <div class="officer-card-wrapper">
                     <div class="office-card">

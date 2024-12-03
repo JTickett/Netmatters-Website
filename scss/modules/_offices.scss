@@ -3,15 +3,23 @@
 }
 
 #offices-header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    @media (max-width: $break--l) {
+        background-color: $newsletter-text-color;
+    }
     h1 {
-        margin: 0 0 28px;
-        max-width: 750px;
+        margin-bottom: 28px;
+        margin-top: 0px;
         font-weight: $font-light;
         color: $newsletter-text-color;
+        padding-top: 50px;
+        font-size: 2.25rem;
 
-        @media (max-width: $break--l) {
-            padding: 24px 0;
-            background-color: $newsletter-text-color;
+        @media (max-width: $break--l) { 
+            padding-top: 24px;
+            padding-bottom: 24px;
             color: $white;
         }
 
@@ -27,12 +35,17 @@
         box-shadow: 0 5px 35px rgba(0,0,0,.1);
         padding: 14px 0 13px;
     }
+    @media (max-width: $break--l) {
+        border-top: 1px solid $newsletter-text-color;
+    }
     ul {
         margin: 0px;
         li {
+            font-size: 13px;
             display: inline;
             a {
                 color: $newsletter-text-color;
+                font-weight: $font-xbold;
             }
             &:not(:first-child) {
                 &::before {
@@ -52,15 +65,18 @@
     flex-direction: column;
     margin-bottom: 40px;
 
+    margin-left: auto;
+    margin-right: auto;
+
     @include mq(medium) {
         width: 750px;
     }
     @include mq(large) {
-        width: 970px;
+        width: 970px + 30px;
         flex-direction: row;
     }
     @include mq(x-large) {
-        width: 1200px;
+        width: 1200px + 30px;
     }
 }
 

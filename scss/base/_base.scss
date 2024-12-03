@@ -74,7 +74,7 @@ body {
     //border: 1px solid yellow; // (Just for debug)
 
     @include mq(medium) {
-      width: 750px;
+        width: 750px;
     }
     @include mq(large) {
         width: 970px;
