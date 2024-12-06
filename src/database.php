@@ -55,4 +55,49 @@ function getPDO() {
 }
 
 
+// This is only called once the form has been both validated and sanitised.
+function insertContactSubmission($name, $company, $email, $phone, $message) {
+    try {
+        $pdo = getPDO();
+        $query = "INSERT INTO contact_submissions (name, company, email, phone, message, submission_date) VALUES (:name, :company, :email, :phone, :message, NOW())";
+        $stmt = $pdo->prepare($query);
+        $stmt->bindValue(':name', $name);
+        $stmt->bindValue(':company', $company);
+        $stmt->bindValue(':email', $email);
+        $stmt->bindValue(':phone', $phone);
+        $stmt->bindValue(':message', $message);
+        $success = $stmt->execute();
+        
+        if ($success) {
+            return ['success' => true, 'message' => 'Contact submission inserted successfully.'];
+        } else {
+            return ['success' => false, 'message' => 'Failed to insert contact submission.'];
+        }
+    } catch (PDOException $e) {
+        error_log('PDO Error: ' . $e->getMessage());
+        return ['success' => false, 'message' => 'Database error occurred.'];
+    } catch (Exception $e) {
+        error_log('General Error: ' . $e->getMessage());
+        return ['success' => false, 'message' => 'An error occurred.'];
+    }
+}
+
+function getNews($quantity = 3) {
+
+    try {
+        $pdo = getPDO();
+        $query = $pdo->prepare("SELECT * FROM news ORDER BY date DESC LIMIT $quantity");
+        $query->execute();
+        $results = $query->fetchAll();
+
+        return $results;
+    } catch (PDOException $e) {
+        error_log('PDO Error: ' . $e->getMessage());
+        return [];
+    } catch (Exception $e) {
+        error_log('General Error: ' . $e->getMessage());
+        return [];
+    }
+}
+
 ?>

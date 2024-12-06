@@ -4,3 +4,15 @@
 .hidden {
     display: none;
 }
+
+
+// Form validation related styles
+
+.form-control.has-error {
+    border-color: $has-error-color;
+}
+
+
+.form-control:invalid {
+    border-color: $has-error-color;
+}

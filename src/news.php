@@ -1,17 +1,12 @@
 <?php
 require_once 'database.php';
 
-// Get PDO connection 
-$pdo = getPDO();
+$results = getNews();
 
-// Prepare SQL statement
-$query = $pdo->prepare("SELECT * FROM news ORDER BY date DESC LIMIT 3");
-
-// Execute the statement
-$query->execute();
-
-// Fetch all results
-$results = $query->fetchAll();
+if (empty($results)) {
+    echo '<p>No news found</p>';
+    exit;
+}
 
 ?>
 

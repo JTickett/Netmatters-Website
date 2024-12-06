@@ -139,7 +139,7 @@
             </div>
 
             <div class="contact-form section">
-                <form method="post" action="">
+                <form id="email-form" method="post" action="">
 
                     <div class="form-flex-container">
                         <div class="form-group">
@@ -211,6 +211,7 @@
     <script src="js/main.js"></script>
     <script src="js/stickyhead.js"></script>
     <script src="js/cookie.js"></script>
+    <script src="js/contact.js"></script>
 
 
 </body>
