@@ -12,7 +12,6 @@
                     <h4>FOLLOW US ON:</h4>
 
                     <div class="footer__socials__icon-container">
-                        <!-- TODO: These obviously need to be Icons rather than placeholder text -->
                         <a href="#">
                             <div class="footer__socials__icon" id="footer__social__fb">
                                 <span class="icon-facebook"></span>

@@ -82,6 +82,7 @@ function insertContactSubmission($name, $company, $email, $phone, $message) {
     }
 }
 
+// Get the latest news items 
 function getNews($quantity = 3) {
 
     try {

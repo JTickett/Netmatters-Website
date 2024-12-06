@@ -502,10 +502,7 @@
                             <div class="client__bubblebox">
                                 <div class="client__bubble">
                                     <h3 class="client__bubble-header">Xupes</h3>
-                                    <p class="client__bubble-text">
-                                        <!-- No text -->
-                                    </p>
-
+                                    <p class="client__bubble-text"></p>
                                     <div class="client__bubble-triangle"></div>
                                 </div>
                             </div>
@@ -523,7 +520,18 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- TODO: Add Missing Client: Survey Solutions -->
+                        
+                        <div class="client">
+                            <img class="client__logo" src="images/clients/survey-solutions.png" alt="Survey Solutions Logo">
+                            <div class="client__bubblebox">
+                                <div class="client__bubble">
+                                    <h3 class="client__bubble-header">Survey Solutions</h3>
+                                    <p class="client__bubble-text"></p>
+                                    <div class="client__bubble-triangle"></div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="client">
                             <img class="client__logo" src="images/clients/girlguiding-anglia.png"
                                 alt="Girl Guiding Anglia Logo">

@@ -152,7 +152,6 @@ li {
         display: flex;
         flex-direction: column;
 
-        //  TODO: The spacing is not quite correct but it's mostly there.
         @media (min-width: $break--m) {
             flex-direction: row;
         }

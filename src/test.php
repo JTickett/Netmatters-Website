@@ -1,6 +1,8 @@
 <?php
 
 require_once 'contact-validation.php';
+require_once 'database.php';
+
 
 // Debug
 ini_set('display_errors', 1);
