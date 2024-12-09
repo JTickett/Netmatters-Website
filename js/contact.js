@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const phoneField = form.elements['phone'];
     const messageField = form.elements['message'];
 
-    email.willValidate = false;
+    emailField.willValidate = false;
 
     function isNameValid() {
         // Get the name value
@@ -117,13 +117,31 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    function isFormValid() {
+        
+        var nameValid = isNameValid();
+        var emailValid = isEmailValid();
+        var phoneValid = isPhoneValid();
+        var messageValid = isMessageValid();
+        // console.log('nameValid: ' + nameValid);
+        // console.log('emailValid: ' + emailValid);
+        // console.log('phoneValid: ' + phoneValid);
+        // console.log('messageValid: ' + messageValid);
+        
+        if (nameValid && emailValid && phoneValid && messageValid) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     nameField.addEventListener('input', function() {
         isNameValid();
     });
     
-    companyField.addEventListener('input', function() {
-        isCompanyValid();
-    });
+    // companyField.addEventListener('input', function() {
+    //     isCompanyValid();
+    // });
     
     emailField.addEventListener('input', function() {
         isEmailValid();
@@ -143,16 +161,13 @@ document.addEventListener('DOMContentLoaded', function() {
     form.addEventListener('submit', function(event) {
         event.preventDefault();
 
-
-
-        console.log('hasError: ' + hasError);
-
-        if (hasError) {
+        // If any of the fields are invalid, alert the user
+        if (isFormValid()) {
             //alert('Please fill in all required fields');
-            console.log('Alerted user to fill in all required fields');
+            console.log('Form Submitted');
         } else {
             //alert('Form submitted');
-            console.log('Form submitted');
+            console.log('Alert user to fill in all required fields');
         }
     });
 

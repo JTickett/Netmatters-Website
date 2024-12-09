@@ -161,7 +161,7 @@
                     </div>
                     
                     <div class="form-group">
-                        <label for="message">Message</label>
+                        <label class="required-field" for="message">Message</label>
                         <textarea id="contact-message" class="form-control" name="message" placeholder="Message">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
                     </div>
 
