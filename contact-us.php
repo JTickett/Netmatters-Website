@@ -144,19 +144,19 @@
                     <div class="form-flex-container">
                         <div class="form-group">
                             <label class="required-field" for="name">Your Name</label>
-                            <input class="form-control" type="text" name="name" placeholder="Name">
+                            <input class="form-control" type="text" name="name">
                         </div>
                         <div class="form-group">
                             <label for="company">Company Name</label>
-                            <input class="form-control" type="text" name="company" placeholder="Company">
+                            <input class="form-control" type="text" name="company">
                         </div>
                         <div class="form-group">
                             <label class="required-field" for="email">Your Email</label>
-                            <input class="form-control" type="email" name="email" placeholder="Email">
+                            <input class="form-control" type="email" name="email">
                         </div>
                         <div class="form-group">
                             <label class="required-field" for="phone">Your Telephone Number</label>
-                            <input class="form-control" type="tel" name="phone" placeholder="Phone">
+                            <input class="form-control" type="tel" name="phone">
                         </div>
                     </div>
                     

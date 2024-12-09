@@ -59,7 +59,7 @@ function getPDO() {
 function insertContactSubmission($name, $company, $email, $phone, $message) {
     try {
         $pdo = getPDO();
-        $query = "INSERT INTO contact_submissions (name, company, email, phone, message, submission_date) VALUES (:name, :company, :email, :phone, :message, NOW())";
+        $query = "INSERT INTO contact (name, company, email, phone, message, submission_date) VALUES (:name, :company, :email, :phone, :message, NOW())";
         $stmt = $pdo->prepare($query);
         $stmt->bindValue(':name', $name);
         $stmt->bindValue(':company', $company);
@@ -84,7 +84,6 @@ function insertContactSubmission($name, $company, $email, $phone, $message) {
 
 // Get the latest news items 
 function getNews($quantity = 3) {
-
     try {
         $pdo = getPDO();
         $query = $pdo->prepare("SELECT * FROM news ORDER BY date DESC LIMIT $quantity");
