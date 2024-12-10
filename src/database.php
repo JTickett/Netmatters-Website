@@ -56,16 +56,17 @@ function getPDO() {
 
 
 // This is only called once the form has been both validated and sanitised.
-function insertContactSubmission($name, $company, $email, $phone, $message) {
+function insertContactSubmission($name, $company, $email, $phone, $message, $marketing) {
     try {
         $pdo = getPDO();
-        $query = "INSERT INTO contact (name, company, email, phone, message, submission_date) VALUES (:name, :company, :email, :phone, :message, NOW())";
+        $query = "INSERT INTO contact (name, company, email, phone, message, marketing, date) VALUES (:name, :company, :email, :phone, :message, :marketing, NOW())";
         $stmt = $pdo->prepare($query);
         $stmt->bindValue(':name', $name);
         $stmt->bindValue(':company', $company);
         $stmt->bindValue(':email', $email);
         $stmt->bindValue(':phone', $phone);
         $stmt->bindValue(':message', $message);
+        $stmt->bindValue(':marketing', $marketing);
         $success = $stmt->execute();
         
         if ($success) {
@@ -74,8 +75,13 @@ function insertContactSubmission($name, $company, $email, $phone, $message) {
             return ['success' => false, 'message' => 'Failed to insert contact submission.'];
         }
     } catch (PDOException $e) {
-        error_log('PDO Error: ' . $e->getMessage());
-        return ['success' => false, 'message' => 'Database error occurred.'];
+        error_log('PDO Error in insertContactSubmission: ' . $e->getMessage() . 
+                  ' [Error Code: ' . $e->getCode() . ']');
+        return [
+            'success' => false, 
+            'message' => 'Database error occurred.', 
+            'debug' => $e->getMessage()  // Only in development environment
+        ];
     } catch (Exception $e) {
         error_log('General Error: ' . $e->getMessage());
         return ['success' => false, 'message' => 'An error occurred.'];

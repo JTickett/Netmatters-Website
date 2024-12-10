@@ -1,20 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    // create session variable
+    // Create session variable
     var hasError = false;
 
     const kayleighsSpecialRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     const phoneRegex = /^[0-9]{10,15}$/;
 
-    // get the form element
+    // Get the form element
     const form = document.getElementById('email-form');
 
-    // assign form elements to variables
+    // Assign form elements to variables
     const nameField = form.elements['name'];
     const companyField = form.elements['company'];
     const emailField = form.elements['email'];
     const phoneField = form.elements['phone'];
     const messageField = form.elements['message'];
+    const marketing = form.elements['marketing'];
 
     emailField.willValidate = false;
 
@@ -123,11 +124,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var emailValid = isEmailValid();
         var phoneValid = isPhoneValid();
         var messageValid = isMessageValid();
-        // console.log('nameValid: ' + nameValid);
-        // console.log('emailValid: ' + emailValid);
-        // console.log('phoneValid: ' + phoneValid);
-        // console.log('messageValid: ' + messageValid);
-        
+
         if (nameValid && emailValid && phoneValid && messageValid) {
             return true;
         } else {
@@ -164,7 +161,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // If any of the fields are invalid, alert the user
         if (isFormValid()) {
             //alert('Please fill in all required fields');
-            console.log('Form Submitted');
+            console.log('Form Submitting...');
+            submitForm(nameField.value.trim(), companyField.value.trim(), emailField.value.trim(), phoneField.value.trim(), messageField.value.trim(), marketing.checked);
         } else {
             //alert('Form submitted');
             console.log('Alert user to fill in all required fields');
@@ -174,4 +172,45 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 });
+
+function submitForm(name, company, email, phone, message, marketing) {
+
+    const formData = new FormData();
+    formData.append("name", name);
+    formData.append("company", company);
+    formData.append("email", email);
+    formData.append("phone", phone);
+    formData.append("message", message);
+    formData.append("marketing", marketing);
+
+    fetch("src/contact-validation.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(console.log('Response!'))
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            // Show success message
+            successMessage.innerHTML = data.message;
+            // successMessageBox.style.display = "block";
+            // errorMessageBox.style.display = "none";
+            form.reset();
+        } else {
+            console.log('Error!');
+            console.log(data);
+            // Show error message
+            // errorMessages.textContent = data.message || "An error occurred. Please try again later.";
+            // errorMessageBox.style.display = "block";
+            // successMessageBox.style.display = "none";
+        }
+    })
+    .catch(error => {
+        //console.error("Error:", error); // Log fetch errors
+        // errorMessages.innerHTML = "An unexpected error occurred. Please try again.";
+        // errorMessageBox.style.display = "block";
+        // successMessageBox.style.display = "none";
+    });
+
+}
 
