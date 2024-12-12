@@ -28,7 +28,6 @@
 
     h2 {
         margin: 0px;
-        margin-bottom: 28px;
         text-align: left;
         font-size: 36px;
         font-weight: $font-bold;
@@ -78,6 +77,7 @@
 
 .news-card__container-item {
     padding: 0 15px;
+    margin-top: 30px;
 }
 
 .news-card {
@@ -215,15 +215,14 @@
             }
 
             &-text {
-
-                //display: table-cell;
-                //vertical-align: middle;
                 padding-left: 20px;
                 line-height: 1.35rem;
                 text-align: left;
 
                 h5, p {
+                    font-size: .875rem;
                     margin:0;
+                    // I don't actually remember why this linebreak tag is present but hidden! TODO: Review this!
                     br {
                         display: none;
                     }
