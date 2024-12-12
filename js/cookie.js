@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     document.querySelector("#consent-button").addEventListener("click", function() {
-        document.querySelector("#cookies").style.display = "block";
+        document.querySelector("#cookies").style.display = "flex";
     });
 });
 
