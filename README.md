@@ -24,10 +24,9 @@ Only the homepage, and contact page are currently implemented, but the site is d
 
 ## Setup Details
 
-1. Set up the Web Server and SQL Server, make sure the web server is configured to use PHP 8.2.12 or higher.
+1. Set up the Web Server and SQL Server, making sure the web server is configured to use PHP 8.2.12 or higher.
 
-<!-- TODO: Provide a script to automate this -->
-2. Establish the MySQL database using the schema provided in the `sql` folder, and configure it with a user that has the necessary permissions to create tables, and insert data. 
+2. Establish the MySQL database using the migration script `migration.sql` found in the root folder, and configure it with a user that has the necessary permissions to select and insert data into the database on these tables. 
 
 3. Clone the repository, and place the files in the root directory of the web server.
 
