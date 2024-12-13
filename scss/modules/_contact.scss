@@ -1,8 +1,21 @@
 #contact {
+
+  display: flex;
+  flex-direction: column;
+  @include mq(x-large) {
+    flex-direction: row-reverse;
+  }
+
   .contact-details {
+    padding-right: 15px;
+    padding-left: 15px;
+    @include mq(x-large) {
+      width: 33.33333333333333%;
+    }
     p {
       color: $newsletter-text-color;
       margin-bottom: 25px;
+      margin-top: 0px;
       line-height: 1.875rem;
       strong {
         font-weight: $font-bold;
@@ -10,13 +23,22 @@
       a {
         font-size: 1.625rem;
         color: $service-webdesign;
-        font-weight: $font-xbold;
+        font-weight: $font-bold;
         &:hover {
           text-decoration: underline;
         }
       }
     }
+
+    details > p {
+      color: $body-color;
+      strong {
+        color: $newsletter-text-color;
+      }
+    }
+
     details > summary {
+      height: 55px;
       font-weight: $font-bold;
       line-height: 1.875rem;
       color: $newsletter-text-color;
@@ -28,6 +50,12 @@
   }
 
   .contact-form {
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
+    @include mq(x-large) {
+      width: 66.66666666666666%;
+    }
     form {
       .form-checkbox {
         display: flex;

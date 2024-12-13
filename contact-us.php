@@ -85,7 +85,7 @@
                     <div class="office-card">
                         <a class="office-image" href="#"><img src="images/yarmouth-2.jpg" alt="Yarmouth Office"></a>
                         <div class="office-content">
-                            <h3 class="office-title"><a href="#">Yarmouth Office</a></h3>
+                            <h3 class="office-title"><a href="#">Great Yarmouth Office</a></h3>
                             <p class="office-address">
                                 Suite F23,
                                 <br>Beacon Innovation Centre,
@@ -109,6 +109,7 @@
         </section>
 
         <section id="contact" class="reusable-container">
+
             <div class="contact-details">
                 <p><strong>Email us on:</strong></p>
 
