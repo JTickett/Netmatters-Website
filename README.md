@@ -10,15 +10,16 @@ The live NetMatters website that this is based on, can be found at: [https://net
 Main languages/technologies used:
 - HTML5
 - CSS3 (SCSS)
-- JavaScript (ES6+)
+- JavaScript ES6+
+- jQuery v3.7.1
 - PHP 8.2.12+
 - SQL
 
 Only the homepage, and contact page are currently implemented, but the site is designed to be fully responsive and accessible.
 
 ## Requirements
-
-- A MySQL database is required to run this site. You must also have a user with the necessary permissions to create tables, and insert data.
+    
+- A MySQL server is required to run this site.
 - The web server must be configured to use PHP 8.2.12 or higher.
 - The MySQL database schema must be established before the site can be used. (Instructions below)
 
