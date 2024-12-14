@@ -2,20 +2,20 @@
 <html lang="en">
 
 <?php
-    include('src/head.php');
+    include('src/includes/head.php');
 ?>
 
 <body>
 
     <?php
-        include('src/cookies.php');
-        include('src/sidebar.php');
+        include('src/includes/cookies.php');
+        include('src/includes/sidebar.php');
     ?>
 
     <div id="page-wrapper">
 
         <?php
-            include('src/header.php');
+            include('src/includes/header.php');
         ?>
 
         <!-- Main Section -->
@@ -383,7 +383,7 @@
             </div>
 
             <?php
-                include('src/news.php');
+                include('src/includes/news.php');
             ?>
 
             <!-- Logo Roller -->
@@ -659,8 +659,8 @@
 
         </main>
         <?php
-            include('src/footer.php');
-            include('src/scripts.php');
+            include('src/includes/footer.php');
+            include('src/includes/scripts.php');
         ?>
     </div>
 </body>
