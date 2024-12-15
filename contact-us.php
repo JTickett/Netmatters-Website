@@ -142,6 +142,20 @@
             <div class="contact-form section">
                 <form id="email-form" method="post" action="">
 
+                    <div id="message-area">
+
+                        <div class="message-box success">
+                            Your message has been sent!
+                            <button class="success">x</button>
+                        </div>
+
+                        <div class="message-box fail">
+                            There was an error sending your message.
+                            <button class="fail">x</button>
+                        </div>
+
+                    </div>
+
                     <div class="form-flex-container">
                         <div class="form-group">
                             <label class="required-field" for="name">Your Name</label>

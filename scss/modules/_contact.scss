@@ -57,6 +57,54 @@
       width: 66.66666666666666%;
     }
     form {
+
+      #message-area {
+        display: block;
+        .message-box {
+
+          padding: 15px;
+          margin-bottom: 20px;
+          border: 1px solid transparent;
+          border-radius: 2px;
+
+          button {
+            float: right;
+            font-size: 21px;
+            font-weight: $font-xbold;
+            line-height: 1;
+            color: $black;
+            text-shadow: 0 1px 0 $white;
+            opacity: .2;
+            filter: alpha(opacity=20);  
+            padding: 0;
+            cursor: pointer;
+            background: transparent;
+            border: 0;
+
+            &:focus, &:hover {
+              color: #000;
+              text-decoration: none;
+              cursor: pointer;
+              opacity: .5;
+              filter: alpha(opacity=50);
+            }
+
+          }
+        }
+
+        .success {
+          background-color: $status-success-background;
+          border-color: $status-success-border;
+          color: $status-success-color;
+        }
+
+        .fail {
+          background-color: $status-fail-background;
+          border-color: $status-fail-border;
+          color: $status-fail-color;
+        }
+      }
+
       .form-checkbox {
         display: flex;
         #email_checkbox {
