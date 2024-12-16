@@ -54,7 +54,6 @@ function getPDO() {
     return $pdo;
 }
 
-
 // This is only called once the form has been both validated and sanitised.
 function insertContactSubmission($name, $company, $email, $phone, $message, $marketing) {
     try {

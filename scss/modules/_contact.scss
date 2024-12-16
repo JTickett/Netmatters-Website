@@ -1,5 +1,4 @@
 #contact {
-
   display: flex;
   flex-direction: column;
   @include mq(x-large) {
@@ -57,11 +56,9 @@
       width: 66.66666666666666%;
     }
     form {
-
       #message-area {
         display: block;
         .message-box {
-
           padding: 15px;
           margin-bottom: 20px;
           border: 1px solid transparent;
@@ -74,21 +71,21 @@
             line-height: 1;
             color: $black;
             text-shadow: 0 1px 0 $white;
-            opacity: .2;
-            filter: alpha(opacity=20);  
+            opacity: 0.2;
+            filter: alpha(opacity=20);
             padding: 0;
             cursor: pointer;
             background: transparent;
             border: 0;
 
-            &:focus, &:hover {
+            &:focus,
+            &:hover {
               color: #000;
               text-decoration: none;
               cursor: pointer;
-              opacity: .5;
+              opacity: 0.5;
               filter: alpha(opacity=50);
             }
-
           }
         }
 
