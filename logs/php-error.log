@@ -1,0 +1,21 @@
+[17-Dec-2024 16:13:46 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: insertContactSubmission(): Argument #1 ($formData) must be of type FormData, string given, called in D:\Dropbox\Projects\NetMatters\Netmatters-Website\src\contact-validation.php on line 82 and defined in D:\Dropbox\Projects\NetMatters\Netmatters-Website\src\database.php:58
+Stack trace:
+#0 D:\Dropbox\Projects\NetMatters\Netmatters-Website\src\contact-validation.php(82): insertContactSubmission('James Tickett', '', 'jtickett@gmail....', '01702467599', 'Hi, I am intere...', 0)
+#1 {main}
+  thrown in D:\Dropbox\Projects\NetMatters\Netmatters-Website\src\database.php on line 58
+[17-Dec-2024 16:15:59 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: insertContactSubmission(): Argument #1 ($formData) must be of type FormData, string given, called in D:\Dropbox\Projects\NetMatters\Netmatters-Website\src\contact-validation.php on line 82 and defined in D:\Dropbox\Projects\NetMatters\Netmatters-Website\src\database.php:58
+Stack trace:
+#0 D:\Dropbox\Projects\NetMatters\Netmatters-Website\src\contact-validation.php(82): insertContactSubmission('James Tickett', '', 'jtickett@gmail....', '01702467599', 'Hi, I am intere...', 0)
+#1 {main}
+  thrown in D:\Dropbox\Projects\NetMatters\Netmatters-Website\src\database.php on line 58
+[17-Dec-2024 16:18:11 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: insertContactSubmission(): Argument #1 ($formData) must be of type FormData, string given, called in D:\Dropbox\Projects\NetMatters\Netmatters-Website\src\contact-validation.php on line 82 and defined in D:\Dropbox\Projects\NetMatters\Netmatters-Website\src\database.php:58
+Stack trace:
+#0 D:\Dropbox\Projects\NetMatters\Netmatters-Website\src\contact-validation.php(82): insertContactSubmission('James Tickett', '', 'jtickett@gmail....', '01702467599', 'Hi, I am intere...', 0)
+#1 {main}
+  thrown in D:\Dropbox\Projects\NetMatters\Netmatters-Website\src\database.php on line 58
+[17-Dec-2024 16:24:32 Europe/Berlin] PHP Warning:  Undefined array key "marketing" in D:\Dropbox\Projects\NetMatters\Netmatters-Website\src\contact-validation.php on line 70
+[17-Dec-2024 16:26:45 Europe/Berlin] PHP Warning:  Undefined array key "marketing" in D:\Dropbox\Projects\NetMatters\Netmatters-Website\src\contact-validation.php on line 70
+[17-Dec-2024 16:27:49 Europe/Berlin] PHP Warning:  Undefined array key "marketing" in D:\Dropbox\Projects\NetMatters\Netmatters-Website\src\contact-validation.php on line 70
+[17-Dec-2024 16:28:33 Europe/Berlin] PHP Warning:  Undefined array key "marketing" in D:\Dropbox\Projects\NetMatters\Netmatters-Website\src\contact-validation.php on line 70
+[17-Dec-2024 16:28:36 Europe/Berlin] PHP Warning:  Undefined array key "marketing" in D:\Dropbox\Projects\NetMatters\Netmatters-Website\src\contact-validation.php on line 70
+[17-Dec-2024 16:28:39 Europe/Berlin] PHP Warning:  Undefined array key "marketing" in D:\Dropbox\Projects\NetMatters\Netmatters-Website\src\contact-validation.php on line 70

@@ -140,7 +140,7 @@
             </div>
 
             <div class="contact-form section">
-                <form id="email-form" method="post" action="">
+                <form id="email-form" method="POST" action="src/contact-validation.php">
 
                     <div id="message-area">
 

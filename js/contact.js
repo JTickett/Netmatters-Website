@@ -17,8 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const messageField = form.elements['message'];
     const marketing = form.elements['marketing'];
 
-    emailField.willValidate = false;
-
     function isNameValid() {
         // Get the name value
         $name = nameField.value.trim();
@@ -135,10 +133,6 @@ document.addEventListener('DOMContentLoaded', function() {
     nameField.addEventListener('input', function() {
         isNameValid();
     });
-    
-    // companyField.addEventListener('input', function() {
-    //     isCompanyValid();
-    // });
     
     emailField.addEventListener('input', function() {
         isEmailValid();
