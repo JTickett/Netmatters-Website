@@ -141,16 +141,19 @@
 
             <div class="contact-form section">
                 <form id="email-form" method="POST" action="src/contact-validation.php">
+                    
+                    <input type="hidden" name="redirect" value="../contact-us.php">
 
                     <div id="message-area">
 
-                        <div class="message-box success">
-                            Your message has been sent!
+
+                        <div id="success-message" class="message-box success">
+                            Placeholder text!
                             <button class="success">x</button>
                         </div>
 
-                        <div class="message-box fail">
-                            There was an error sending your message.
+                        <div id="fail-message" class="message-box fail">
+                            Placeholder text!
                             <button class="fail">x</button>
                         </div>
 

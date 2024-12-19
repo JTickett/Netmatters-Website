@@ -58,6 +58,15 @@
     form {
       #message-area {
         display: block;
+
+        #success-message {
+          display: none;
+        }
+
+        #fail-message {
+          display: none;
+        }
+
         .message-box {
           padding: 15px;
           margin-bottom: 20px;

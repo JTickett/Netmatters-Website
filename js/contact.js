@@ -17,6 +17,22 @@ document.addEventListener('DOMContentLoaded', function() {
     const messageField = form.elements['message'];
     const marketing = form.elements['marketing'];
 
+    
+    // add an event listener to the form
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // If any of the fields are invalid, alert the user
+        if (isFormValid()) {
+            //alert('Please fill in all required fields');
+            console.log('Form Submitting...');
+            submitForm(nameField.value.trim(), companyField.value.trim(), emailField.value.trim(), phoneField.value.trim(), messageField.value.trim(), marketing.checked);
+        } else {
+            //alert('Form submitted');
+            console.log('Alert user to fill in all required fields');
+        }
+    });
+
     function isNameValid() {
         // Get the name value
         $name = nameField.value.trim();
@@ -147,27 +163,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
-
-    // add an event listener to the form
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        // If any of the fields are invalid, alert the user
-        if (isFormValid()) {
-            //alert('Please fill in all required fields');
-            console.log('Form Submitting...');
-            submitForm(nameField.value.trim(), companyField.value.trim(), emailField.value.trim(), phoneField.value.trim(), messageField.value.trim(), marketing.checked);
-        } else {
-            //alert('Form submitted');
-            console.log('Alert user to fill in all required fields');
-        }
-    });
-
-
-
 });
 
 function submitForm(name, company, email, phone, message, marketing) {
+
+    const successMessage = document.getElementById('success-message');
+    const failMessage = document.getElementById('fail-message');
 
     const formData = new FormData();
     formData.append("name", name);
@@ -187,23 +188,29 @@ function submitForm(name, company, email, phone, message, marketing) {
         if (data.success) {
             // Show success message
             successMessage.innerHTML = data.message;
-            // successMessageBox.style.display = "block";
-            // errorMessageBox.style.display = "none";
+            console.log(data);
+            console.log(data.message);
+            console.log(data.message.toString());
+            successMessage.style.display = "block";
+
+            const form = document.getElementById('email-form');
             form.reset();
         } else {
             console.log('Error!');
             console.log(data);
             // Show error message
-            // errorMessages.textContent = data.message || "An error occurred. Please try again later.";
-            // errorMessageBox.style.display = "block";
-            // successMessageBox.style.display = "none";
+            let errorMessages = [];
+            for (let i = 0; i < data.message.length; i++) {
+                errorMessages.push(data.message[i]);
+            }
+            failMessage.innerHTML = errorMessages.join('<br>');
+            failMessage.style.display = "block";
         }
     })
     .catch(error => {
-        //console.error("Error:", error); // Log fetch errors
-        // errorMessages.innerHTML = "An unexpected error occurred. Please try again.";
-        // errorMessageBox.style.display = "block";
-        // successMessageBox.style.display = "none";
+        console.error("Error:", error);
+        failMessage.innerHTML = "An unexpected error occurred. Please try again.";
+        failMessage.style.display = "block";
     });
 
 }

@@ -19,3 +19,8 @@ Stack trace:
 [17-Dec-2024 16:28:33 Europe/Berlin] PHP Warning:  Undefined array key "marketing" in D:\Dropbox\Projects\NetMatters\Netmatters-Website\src\contact-validation.php on line 70
 [17-Dec-2024 16:28:36 Europe/Berlin] PHP Warning:  Undefined array key "marketing" in D:\Dropbox\Projects\NetMatters\Netmatters-Website\src\contact-validation.php on line 70
 [17-Dec-2024 16:28:39 Europe/Berlin] PHP Warning:  Undefined array key "marketing" in D:\Dropbox\Projects\NetMatters\Netmatters-Website\src\contact-validation.php on line 70
+[19-Dec-2024 17:38:26 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot access "self" when no class scope is active in D:\Dropbox\Projects\NetMatters\Netmatters-Website\src\contact-validation.php:55
+Stack trace:
+#0 {main}
+  thrown in D:\Dropbox\Projects\NetMatters\Netmatters-Website\src\contact-validation.php on line 55
+[19-Dec-2024 18:24:37 Europe/Berlin] PHP Warning:  Undefined array key "marketing" in D:\Dropbox\Projects\NetMatters\Netmatters-Website\src\contact-validation.php on line 39

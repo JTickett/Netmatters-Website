@@ -23,7 +23,7 @@ header('Content-Type: application/json');
 ob_start();
 
 // Default response
-//$result = ["success" => false, "message" => ""];
+$result = ["success" => false, "message" => ""];
 
 // If this is a POST request, process the form data
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -47,8 +47,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // TODO: The validation functions should be in the Form class
     $formData->validateFields();
 
-
-    $result = insertContactSubmission($formData);
+    if (count($formData->responseStatuses) > 0) {
+        $result["success"] = false;
+        $result["message"] = $formData->responseStatuses;
+    } else {
+        // If the data is valid, insert it into the database
+        $formData->responseStatuses[] = self::$statusMessages["success"];
+        $result = insertContactSubmission($formData);
+    }
 
     // var_dump($result); die();
 

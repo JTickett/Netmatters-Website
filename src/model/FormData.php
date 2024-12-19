@@ -8,6 +8,8 @@
  * @author   James Tickett
  */
 
+ const PHONE_REGEX = '/^[0-9]{10,15}$/';
+ const EMAIL_REGEX = '/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/';
 
 class FormData {
 
@@ -15,15 +17,15 @@ class FormData {
     private static $statusMessages = [
         // Generic status messages
         "success" => "Your message has been sent!",
-        "error" => "There was an error sending your message.",
-        "fast" => "Please wait until submitting the form again.", // This is used to prevent spamming the form
+        "error" => "There was an error sending your message.", // I may use this for DB error messages or other Exceptions
+        "fast" => "Please wait until submitting the form again.", // This is used to prevent spamming the form, but unknown trigger specific error
 
         // Missing field messages
-        "requiredName" => "The name field is required.",
-        "requiredEmail" => "The email field is required.",
-        "requiredTelephone" => "The telephone field is required.",
-        "requiredCaptcha" => "The captcha field is required.",
-        "requiredMessage" => "The message field is required.",
+        "missingName" => "The name field is required.",
+        "missingEmail" => "The email field is required.",
+        "missingTelephone" => "The telephone field is required.",
+        "missingCaptcha" => "The captcha field is required.", // Unknown how to trigger this
+        "missingMessage" => "The message field is required.",
 
         // Invalid field messages
         "invalidEmail" => "The email format is invalid.", // This can be triggered by "test@test"
@@ -39,11 +41,6 @@ class FormData {
     public $marketing;
 
     public $responseStatuses = [];
-
-    // Add a static getter method
-    public static function getStatusMessage($key) {
-        return self::$statusMessages[$key] ?? null;
-    }
 
     // Sanitise the data.
     public function sanitiseFields() {
@@ -61,14 +58,44 @@ class FormData {
         // If they are not, it should return an error message, *BUT* it should also return the fields that are *invalid* too.
 
         if (empty($this->name)) {
-            $this->responseStatuses[] = self::$statusMessages["requiredName"];
+            $this->responseStatuses[] = self::$statusMessages["missingName"];
+        }
+
+        if (empty($this->email)) {
+            $this->responseStatuses[] = self::$statusMessages["missingEmail"]; 
+        } else if (!$this->isEmailValid()) {
+            $this->responseStatuses[] = self::$statusMessages["invalidEmail"];
+        }
+
+        if (empty($this->phone)) {
+            $this->responseStatuses[] = self::$statusMessages["missingTelephone"];
+        } else if (!$this->isPhoneValid()) {
+            $this->responseStatuses[] = self::$statusMessages["invalidTelephone"];
+        }
+
+        if (empty($this->message)) {
+            $this->responseStatuses[] = self::$statusMessages["missingMessage"];
+        } else if (!$this->isMessageValid()) {
+            $this->responseStatuses[] = self::$statusMessages["invalidMessage"];
         }
 
     }
 
-    public function isNameValid() {
-        return strlen($this->name) >= 5;
+    public function isEmailValid() {
+        // This is the ideal method you would normally use, but Kayleigh needs a custom regex to deny "test@test"
+        // return filter_var($this->email, FILTER_VALIDATE_EMAIL);
+        return preg_match(EMAIL_REGEX, $this->email);
     }
+
+    public function isPhoneValid() {
+        return preg_match(PHONE_REGEX, $this->phone);
+    }   
+
+    public function isMessageValid() {
+        return strlen($this->message) >= 5;
+    }
+
+
 }
 
 
