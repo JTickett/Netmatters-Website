@@ -22,6 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
     form.addEventListener('submit', function(event) {
         event.preventDefault();
 
+        const messageBoxes = document.getElementById('message-area');
+        messageBoxes.innerHTML = '';
+
         // If any of the fields are invalid, alert the user
         if (isFormValid()) {
             //alert('Please fill in all required fields');
@@ -165,10 +168,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+function makeMessageBox(message, type) {
+    const messageBoxes = document.getElementById('message-area');
+    const messageBox = document.createElement('div');
+    const button = document.createElement('button');
+    button.innerHTML = 'x';
+
+    if (type === 'success') {
+        messageBox.classList.add('message-box', 'success');
+        button.classList.add('success');
+    } else if (type === 'fail') {
+        messageBox.classList.add('message-box', 'fail');
+        button.classList.add('fail');
+    }
+
+    messageBox.innerHTML = message;
+    messageBox.appendChild(button);
+    messageBoxes.appendChild(messageBox);
+}
+
 function submitForm(name, company, email, phone, message, marketing) {
 
-    const successMessage = document.getElementById('success-message');
-    const failMessage = document.getElementById('fail-message');
+    const messageBoxes = document.getElementById('message-area');
+    messageBoxes.innerHTML = '';
 
     const formData = new FormData();
     formData.append("name", name);
@@ -187,11 +209,10 @@ function submitForm(name, company, email, phone, message, marketing) {
     .then(data => {
         if (data.success) {
             // Show success message
-            successMessage.innerHTML = data.message;
+            makeMessageBox(data.message, 'success');
             console.log(data);
             console.log(data.message);
             console.log(data.message.toString());
-            successMessage.style.display = "block";
 
             const form = document.getElementById('email-form');
             form.reset();
@@ -199,18 +220,15 @@ function submitForm(name, company, email, phone, message, marketing) {
             console.log('Error!');
             console.log(data);
             // Show error message
-            let errorMessages = [];
+
             for (let i = 0; i < data.message.length; i++) {
-                errorMessages.push(data.message[i]);
+                makeMessageBox(data.message[i], 'fail');
             }
-            failMessage.innerHTML = errorMessages.join('<br>');
-            failMessage.style.display = "block";
         }
     })
     .catch(error => {
         console.error("Error:", error);
-        failMessage.innerHTML = "An unexpected error occurred. Please try again.";
-        failMessage.style.display = "block";
+        makeMessageBox("An unexpected error occurred. Please try again.", 'fail');
     });
 
 }

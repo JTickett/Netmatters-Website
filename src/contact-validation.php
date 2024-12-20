@@ -52,7 +52,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $result["message"] = $formData->responseStatuses;
     } else {
         // If the data is valid, insert it into the database
-        $formData->responseStatuses[] = self::$statusMessages["success"];
         $result = insertContactSubmission($formData);
     }
 

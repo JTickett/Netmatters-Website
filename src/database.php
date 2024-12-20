@@ -69,7 +69,7 @@ function insertContactSubmission(FormData $formData) {
         $success = $stmt->execute();
         
         if ($success) {
-            return ['success' => true, 'message' => 'Contact submission inserted successfully.'];
+            return ['success' => true, 'message' => 'Your message has been sent!'];
         } else {
             return ['success' => false, 'message' => 'Failed to insert contact submission.'];
         }

@@ -16,7 +16,7 @@ class FormData {
     // This is a static variable that holds the status messages.
     private static $statusMessages = [
         // Generic status messages
-        "success" => "Your message has been sent!",
+        "success" => "Your message has been sent!", 
         "error" => "There was an error sending your message.", // I may use this for DB error messages or other Exceptions
         "fast" => "Please wait until submitting the form again.", // This is used to prevent spamming the form, but unknown trigger specific error
 
@@ -44,13 +44,14 @@ class FormData {
 
     // Sanitise the data.
     public function sanitiseFields() {
-
+        //error_log('Sanitising fields: ' . $this->name . ' ' . $this->company . ' ' . $this->email . ' ' . $this->phone . ' ' . $this->message . ' ' . $this->marketing);
         $this->name = trim($this->name ?? '');
         $this->company = trim($this->company ?? '');
         $this->email = trim($this->email ?? '');
         $this->phone = trim($this->phone ?? '');
         $this->message = trim($this->message ?? '');
-        $this->marketing = (int)($this->marketing ?? 0);
+        $this->marketing = filter_var($this->marketing ?? false, FILTER_VALIDATE_BOOLEAN);
+        //error_log('Sanitised fields: ' . $this->name . ' ' . $this->company . ' ' . $this->email . ' ' . $this->phone . ' ' . $this->message . ' ' . $this->marketing);
     }
 
     public function validateFields() {
