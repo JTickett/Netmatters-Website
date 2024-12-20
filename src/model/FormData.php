@@ -50,7 +50,7 @@ class FormData {
         $this->email = trim($this->email ?? '');
         $this->phone = trim($this->phone ?? '');
         $this->message = trim($this->message ?? '');
-        $this->marketing = filter_var($this->marketing ?? false, FILTER_VALIDATE_BOOLEAN);
+        $this->marketing = (filter_var($this->marketing ?? false, FILTER_VALIDATE_BOOLEAN)) ? 1 : 0;
         //error_log('Sanitised fields: ' . $this->name . ' ' . $this->company . ' ' . $this->email . ' ' . $this->phone . ' ' . $this->message . ' ' . $this->marketing);
     }
 

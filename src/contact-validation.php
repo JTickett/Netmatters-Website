@@ -39,8 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $formData->marketing = $_POST['marketing'];
 
     $formData->sanitiseFields();
-
-
+    
 
     // Validate the data.
     // (JS should do this, but we can't be dependant on it since it's client side)
