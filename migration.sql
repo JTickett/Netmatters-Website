@@ -35,7 +35,7 @@ CREATE TABLE `contact` (
   `phone` text NOT NULL,
   `message` text NOT NULL,
   `marketing` tinyint(1) NOT NULL,
-  `date` date NOT NULL
+  `date` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
