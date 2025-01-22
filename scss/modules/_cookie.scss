@@ -64,12 +64,8 @@
         
         width: calc(100% - 60px);
         background: $white;
-        position: fixed;
-        bottom: 10%;
-        left: 50%;
         z-index: $z-cookies;
         border-top: 1px solid $black;
-        transform: translate(-50%, -50%);
         border-radius: 5px;
 
         @include mq(medium) {

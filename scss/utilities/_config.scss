@@ -16,6 +16,8 @@ $newsletter-background-color        : $newsletter-grey;
 $newsletter-text-color              : #333645;
 $newsletter-link-alt-color          : #121419;
 
+$required-field-color               : #d24d57;
+$has-error-color                    : #d64541;
 
 $footer-background-color            : $footer-blue;
 $footer-text-color                  : $white;
@@ -50,8 +52,16 @@ $service-business-dark              : #ab6d0a;
 $service-newsoftware                : #f7b322;
 $service-newsoftware-dark           : #e8a008;
 
+$status-success-background          : $service-marketing;
+$status-success-border              : #d6e9c6;
+$status-success-color               : $white;
+
+$status-fail-background             : #f2dede;
+$status-fail-border                 : #ebccd1;
+$status-fail-color                  : #a94442;
 
 //  Misc
+$body-color: #666;
 $dark-bg: #323544;
 $vdark-bg: #22242e;
 $light-bg: #ddd;
@@ -87,7 +97,7 @@ $font-xbold: 700;
 //  Breakpoints
 $break--xs: 1px;
 $break--s: 460px;
-$break--m: 768px;
+$break--m: 767px;
 $break--l: 992px;
 $break--xl: 1260px;
 

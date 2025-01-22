@@ -1,24 +1,17 @@
-$(document).ready(function(){
-
+document.addEventListener("DOMContentLoaded", function() {
     cookieMessage();
 
     document.querySelector("#cookie-button2").addEventListener("click", function() {
-        
-        //  Hide the popup
+        // Hide the popup
         document.querySelector("#cookies").style.display = "none";
-        
-        //  ????
-        //localStorage.setItem("cookie_consent", "accepted");
 
         // Set cookie to expire in 30 days
         setCookie("cookie", true, 30);
     });
 
     document.querySelector("#consent-button").addEventListener("click", function() {
-        document.querySelector("#cookies").style.display = "block";
+        document.querySelector("#cookies").style.display = "flex";
     });
-
-
 });
 
 function setCookie(name, value, days) {
@@ -28,7 +21,7 @@ function setCookie(name, value, days) {
     document.cookie = name + "=" + value + ";" + expires + ";path=/";
 }
 
-getCookie = (cName) => {
+function getCookie(cName) {
     const name = cName + "=";
     const cDecoded = decodeURIComponent(document.cookie);
     const cArr = cDecoded.split('; ');
@@ -39,11 +32,10 @@ getCookie = (cName) => {
     return result;
 }
 
-cookieMessage = () => {
-
+function cookieMessage() {
     const cookieExists = !getCookie('cookie');
     if (cookieExists) {
-        document.querySelector("#cookies").style.display = "block";
+        document.querySelector("#cookies").style.display = "flex";
     }
 }
 

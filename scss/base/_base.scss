@@ -17,7 +17,7 @@ body {
 }
 
 body {
-  color: #666;
+  color: $body-color;
   font-size: 1rem;
   font-family: Poppins, sans-serif;
   letter-spacing: 0.4px;
@@ -74,7 +74,7 @@ body {
     //border: 1px solid yellow; // (Just for debug)
 
     @include mq(medium) {
-      width: 750px;
+        width: 750px;
     }
     @include mq(large) {
         width: 970px;
@@ -109,4 +109,8 @@ body {
 
 a {
   text-decoration: none;
+}
+
+strong {
+  font-weight: $font-bold;
 }
