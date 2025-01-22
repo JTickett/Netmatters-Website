@@ -35,7 +35,7 @@ function getCookie(cName) {
 function cookieMessage() {
     const cookieExists = !getCookie('cookie');
     if (cookieExists) {
-        document.querySelector("#cookies").style.display = "block";
+        document.querySelector("#cookies").style.display = "flex";
     }
 }
 
